@@ -1,0 +1,356 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date         : Thu Jan  4 21:48:13 2024
+| Host         : matthew-xilinx running 64-bit Ubuntu 22.04.1 LTS
+| Command      : report_drc -file cpm_pcie_exerciser_wrapper_drc_routed.rpt -pb cpm_pcie_exerciser_wrapper_drc_routed.pb -rpx cpm_pcie_exerciser_wrapper_drc_routed.rpx
+| Design       : cpm_pcie_exerciser_wrapper
+| Device       : xcvp1202-vsva2785-2MHP-e-S-es1
+| Speed File   : -2MHP
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 60
++------------+----------+-------------------------+------------+
+| Rule       | Severity | Description             | Violations |
++------------+----------+-------------------------+------------+
+| AVALXA-267 | Warning  | CLK_DOM_COM_NC          | 3          |
+| AVALXA-271 | Warning  | CLK_DOM_COM_NC          | 53         |
+| DPOP-5     | Warning  | PREG Output pipelining  | 1          |
+| DPOP-6     | Warning  | MREG Output pipelining  | 1          |
+| PDCN-1569  | Warning  | LUT equation term check | 1          |
+| RTSTAT-10  | Warning  | No routable loads       | 1          |
++------------+----------+-------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+AVALXA-267#1 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[0].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_14: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-267#2 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[1].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_14: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-267#3 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[2].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_14: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#1 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_CC_512/axi_cc_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM_1.sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#2 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_CC_512/axi_cc_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM_1.sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_1: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#3 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_CC_512/axi_cc_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM_1.sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_2: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#4 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_CC_512/axi_cc_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM_1.sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_3: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#5 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_CC_512/axi_cc_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM_1.sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_4: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#6 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[0].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#7 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[0].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_10: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#8 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[0].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_11: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#9 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[0].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_12: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#10 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[0].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_13: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#11 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[0].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_1: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#12 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[0].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_2: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#13 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[0].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_3: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#14 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[0].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_4: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#15 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[0].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_5: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#16 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[0].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_6: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#17 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[0].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#18 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[0].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_8: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#19 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[0].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_9: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#20 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[1].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#21 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[1].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_10: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#22 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[1].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_11: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#23 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[1].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_12: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#24 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[1].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_13: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#25 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[1].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_1: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#26 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[1].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_2: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#27 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[1].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_3: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#28 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[1].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_4: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#29 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[1].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_5: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#30 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[1].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_6: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#31 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[1].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#32 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[1].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_8: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#33 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[1].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_9: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#34 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[2].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#35 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[2].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_10: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#36 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[2].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_11: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#37 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[2].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_12: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#38 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[2].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_13: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#39 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[2].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_1: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#40 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[2].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_2: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#41 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[2].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_3: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#42 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[2].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_4: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#43 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[2].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_5: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#44 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[2].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_6: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#45 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[2].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_7: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#46 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[2].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_8: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#47 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.BLKMEM[2].sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_9: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#48 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#49 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_1: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#50 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_2: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#51 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_mem/inst/u_trace_mem/BRAM.XPM.sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_3: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#52 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/aer_set/inst/axis_mem/inst/u_trace_mem/BRAM.XPM_1.sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+AVALXA-271#53 Warning
+CLK_DOM_COM_NC  
+Cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/aer_set/inst/axis_mem/inst/u_trace_mem/BRAM.XPM_1.sdpram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_1: When cell attribute CLOCK_DOMAINS=COMMON, if cell attribute WRITE_MODE_A and WRITE_MODE_B are not READ_FIRST, there may be address collision if the same address appears on both read and write ports resulting in unknown or corrupted data. It is suggested to confirm via unisim simulation with SIM_COLLISION_CHECK != NONE that an address collision never occurs and if so try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+DPOP-5#1 Warning
+PREG Output pipelining  
+DSP pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_MEM/EP_MEM/expect_cpld_data_size_reg0 output pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_MEM/EP_MEM/expect_cpld_data_size_reg0/P[57:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-6#1 Warning
+MREG Output pipelining  
+DSP pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_MEM/EP_MEM/expect_cpld_data_size_reg0 multiplier stage pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_MEM/EP_MEM/expect_cpld_data_size_reg0/P[57:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDCN-1569#1 Warning
+LUT equation term check  
+Used physical LUT pin 'A4' of cell pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/aer_set/inst/axis_ila_intf/inst/status_cnt_burst_len[15]_i_29 (pin pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/aer_set/inst/axis_ila_intf/inst/status_cnt_burst_len[15]_i_29/I0) is not included in the LUT equation: 'O6=(A5)+((~A5)*A6)+((~A5)*(~A6)*A1)+((~A5)*(~A6)*(~A1)*A2*(~A3))+((~A5)*(~A6)*(~A1)*(~A2))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+1334 net(s) have no routable loads. The problem bus(es) and/or net(s) are pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_CC_512/axi_cc_states/inst/axis_itct/inst/u_mu_itct/cfg_out_o,
+pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_INTR_CTRL/cfg_interrupt_msix_int,
+pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_INTR_CTRL/cfg_interrupt_msix_vec_pending[1:0],
+pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RC_1024/client_tag_released_0,
+pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RC_1024/client_tag_released_0_wire,
+pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RC_1024/client_tag_released_1,
+pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RC_1024/client_tag_released_1_wire,
+pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RC_1024/client_tag_released_2,
+pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RC_1024/client_tag_released_2_wire,
+pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RC_1024/client_tag_released_3,
+pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RC_1024/client_tag_released_3_wire,
+pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RC_1024/client_tag_released_4,
+pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RC_1024/client_tag_released_4_wire,
+pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states/inst/axis_itct/inst/u_mu_itct/cfg_out_o,
+pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/aer_set/inst/axis_itct/inst/u_mu_itct/cfg_out_o
+ (the first 15 of 1082 listed nets/buses).
+Related violations: <none>
+
+

@@ -1,0 +1,61 @@
+{
+	"version": "1.0",
+	"modules": {
+		"exerciser": {
+			"proto_instances": {
+				"/versal_cips_0/pcie1_m_axis_cq": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "pcie1_user_clk"},
+						"ARESET": { "actual": "pcie1_user_reset"},
+						"TDATA": { "actual": "pcie1_m_axis_cq_tdata"},
+						"TKEEP": { "actual": "pcie1_m_axis_cq_tkeep"},
+						"TLAST": { "actual": "pcie1_m_axis_cq_tlast"},
+						"TREADY": { "actual": "pcie1_m_axis_cq_tready"},
+						"TUSER": { "actual": "pcie1_m_axis_cq_tuser"},
+						"TVALID": { "actual": "pcie1_m_axis_cq_tvalid"}
+					}
+				},
+				"/versal_cips_0/pcie1_m_axis_rc": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "pcie1_user_clk"},
+						"ARESET": { "actual": "pcie1_user_reset"},
+						"TDATA": { "actual": "pcie1_m_axis_rc_tdata"},
+						"TKEEP": { "actual": "pcie1_m_axis_rc_tkeep"},
+						"TLAST": { "actual": "pcie1_m_axis_rc_tlast"},
+						"TREADY": { "actual": "pcie1_m_axis_rc_tready"},
+						"TUSER": { "actual": "pcie1_m_axis_rc_tuser"},
+						"TVALID": { "actual": "pcie1_m_axis_rc_tvalid"}
+					}
+				},
+				"/versal_cips_0/pcie1_s_axis_cc": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "pcie1_user_clk"},
+						"ARESET": { "actual": "pcie1_user_reset"},
+						"TDATA": { "actual": "pcie1_s_axis_cc_tdata"},
+						"TKEEP": { "actual": "pcie1_s_axis_cc_tkeep"},
+						"TLAST": { "actual": "pcie1_s_axis_cc_tlast"},
+						"TREADY": { "actual": "pcie1_s_axis_cc_tready"},
+						"TUSER": { "actual": "pcie1_s_axis_cc_tuser"},
+						"TVALID": { "actual": "pcie1_s_axis_cc_tvalid"}
+					}
+				},
+				"/versal_cips_0/pcie1_s_axis_rq": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "pcie1_user_clk"},
+						"ARESET": { "actual": "pcie1_user_reset"},
+						"TDATA": { "actual": "pcie1_s_axis_rq_tdata"},
+						"TKEEP": { "actual": "pcie1_s_axis_rq_tkeep"},
+						"TLAST": { "actual": "pcie1_s_axis_rq_tlast"},
+						"TREADY": { "actual": "pcie1_s_axis_rq_tready"},
+						"TUSER": { "actual": "pcie1_s_axis_rq_tuser"},
+						"TVALID": { "actual": "pcie1_s_axis_rq_tvalid"}
+					}
+				}
+			}
+		}
+	}
+}

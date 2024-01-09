@@ -1,0 +1,1482 @@
+
+*** Running vivado
+    with args -log axis_ila_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source axis_ila_1.tcl
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+Sourcing tcl script '/root/.Xilinx/Vivado/Vivado_init.tcl'
+501 Beta devices matching pattern found, 126 enabled.
+enable_beta_device: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2432.992 ; gain = 132.934 ; free physical = 223216 ; free virtual = 239539
+source axis_ila_1.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: axis_ila_1
+Command: synth_design -top axis_ila_1 -part xcvp1202-vsva2785-2MHP-e-S-es1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvp1202-es1'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvp1202-es1'
+INFO: [Device 21-403] Loading part xcvp1202-vsva2785-2MHP-e-S-es1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4060346
+INFO: [Synth 8-11241] undeclared symbol 'match_allx', assumed default net type 'wire' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:909]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 4360.105 ; gain = 811.957 ; free physical = 221016 ; free virtual = 237338
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'axis_ila_1' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/synth/axis_ila_1.v:53]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/synth/axis_ila_1.v:526]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_cap_ctrl_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/synth/bd_f030_0_axis_cap_ctrl_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_cap_ctrl_v1_0_0_axis_cap_ctrl' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:2]
+INFO: [Synth 8-6157] synthesizing module 'axis_cap_ctrl_v1_0_0_case1' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:788]
+INFO: [Synth 8-6155] done synthesizing module 'axis_cap_ctrl_v1_0_0_case1' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:788]
+INFO: [Synth 8-6157] synthesizing module 'axis_cap_ctrl_v1_0_0_case2' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:869]
+INFO: [Synth 8-6155] done synthesizing module 'axis_cap_ctrl_v1_0_0_case2' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:869]
+INFO: [Synth 8-6157] synthesizing module 'axis_cap_ctrl_v1_0_0_case3' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:970]
+INFO: [Synth 8-6155] done synthesizing module 'axis_cap_ctrl_v1_0_0_case3' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:970]
+INFO: [Synth 8-6157] synthesizing module 'axis_cap_ctrl_v1_0_0_case4' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:1066]
+INFO: [Synth 8-6155] done synthesizing module 'axis_cap_ctrl_v1_0_0_case4' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:1066]
+INFO: [Synth 8-6157] synthesizing module 'axis_cap_ctrl_v1_0_0_case5' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:1180]
+INFO: [Synth 8-6155] done synthesizing module 'axis_cap_ctrl_v1_0_0_case5' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:1180]
+INFO: [Synth 8-6157] synthesizing module 'axis_cap_ctrl_v1_0_0_case7' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:1407]
+INFO: [Synth 8-226] default block is never used [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:1450]
+INFO: [Synth 8-6155] done synthesizing module 'axis_cap_ctrl_v1_0_0_case7' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:1407]
+INFO: [Synth 8-6157] synthesizing module 'axis_cap_ctrl_v1_0_0_case6' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:1293]
+INFO: [Synth 8-6155] done synthesizing module 'axis_cap_ctrl_v1_0_0_case6' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:1293]
+INFO: [Synth 8-6157] synthesizing module 'axis_cap_ctrl_v1_0_0_case8' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:1535]
+INFO: [Synth 8-226] default block is never used [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:1579]
+INFO: [Synth 8-6155] done synthesizing module 'axis_cap_ctrl_v1_0_0_case8' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:1535]
+INFO: [Synth 8-226] default block is never used [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:589]
+INFO: [Synth 8-226] default block is never used [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:631]
+INFO: [Synth 8-6155] done synthesizing module 'axis_cap_ctrl_v1_0_0_axis_cap_ctrl' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/hdl/axis_cap_ctrl_v1_0_rfs.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_cap_ctrl_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_3/synth/bd_f030_0_axis_cap_ctrl_0.v:53]
+WARNING: [Synth 8-7071] port 'done_async' of module 'bd_f030_0_axis_cap_ctrl_0' is unconnected for instance 'axis_cap_ctrl' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:216]
+WARNING: [Synth 8-7071] port 'lwcnt_rst_o' of module 'bd_f030_0_axis_cap_ctrl_0' is unconnected for instance 'axis_cap_ctrl' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:216]
+WARNING: [Synth 8-7071] port 'ct_state_async' of module 'bd_f030_0_axis_cap_ctrl_0' is unconnected for instance 'axis_cap_ctrl' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:216]
+WARNING: [Synth 8-7023] instance 'axis_cap_ctrl' of module 'bd_f030_0_axis_cap_ctrl_0' has 34 connections declared, but only 31 given [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:216]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_dbg_stub_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_0/synth/bd_f030_0_axis_dbg_stub_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_dbg_stub_v1_0_0_axis_dbg_stub' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_0/hdl/axis_dbg_stub_v1_0_rfs.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'axis_dbg_stub_v1_0_0_axis_dbg_stub' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_0/hdl/axis_dbg_stub_v1_0_rfs.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_dbg_stub_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_0/synth/bd_f030_0_axis_dbg_stub_0.v:53]
+WARNING: [Synth 8-7071] port 'm_axis_tvalid' of module 'bd_f030_0_axis_dbg_stub_0' is unconnected for instance 'axis_dbg_stub' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:248]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'bd_f030_0_axis_dbg_stub_0' is unconnected for instance 'axis_dbg_stub' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:248]
+WARNING: [Synth 8-7071] port 'm_axis_tdata' of module 'bd_f030_0_axis_dbg_stub_0' is unconnected for instance 'axis_dbg_stub' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:248]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'bd_f030_0_axis_dbg_stub_0' is unconnected for instance 'axis_dbg_stub' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:248]
+WARNING: [Synth 8-7023] instance 'axis_dbg_stub' of module 'bd_f030_0_axis_dbg_stub_0' has 20 connections declared, but only 16 given [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:248]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_dbg_sync_2_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_18/synth/bd_f030_0_axis_dbg_sync_2_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_dbg_sync_v1_0_vl_rfs.v:4]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_dbg_sync_v1_0_vl_rfs.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_dbg_sync_2_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_18/synth/bd_f030_0_axis_dbg_sync_2_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_dbg_sync_3_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_19/synth/bd_f030_0_axis_dbg_sync_3_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_dbg_sync_v1_0_0_axis_dbg_sync__parameterized0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_dbg_sync_v1_0_vl_rfs.v:4]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:902]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:902]
+INFO: [Synth 8-6155] done synthesizing module 'axis_dbg_sync_v1_0_0_axis_dbg_sync__parameterized0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_dbg_sync_v1_0_vl_rfs.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_dbg_sync_3_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_19/synth/bd_f030_0_axis_dbg_sync_3_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_dbg_sync_4_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_20/synth/bd_f030_0_axis_dbg_sync_4_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_dbg_sync_4_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_20/synth/bd_f030_0_axis_dbg_sync_4_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_dbg_sync_5_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_21/synth/bd_f030_0_axis_dbg_sync_5_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_dbg_sync_v1_0_0_axis_dbg_sync__parameterized1' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_dbg_sync_v1_0_vl_rfs.v:4]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized0' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:902]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized0' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:902]
+INFO: [Synth 8-6155] done synthesizing module 'axis_dbg_sync_v1_0_0_axis_dbg_sync__parameterized1' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_dbg_sync_v1_0_vl_rfs.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_dbg_sync_5_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_21/synth/bd_f030_0_axis_dbg_sync_5_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_dbg_sync_6_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_22/synth/bd_f030_0_axis_dbg_sync_6_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_dbg_sync_v1_0_0_axis_dbg_sync__parameterized2' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_dbg_sync_v1_0_vl_rfs.v:4]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
+INFO: [Synth 8-6155] done synthesizing module 'axis_dbg_sync_v1_0_0_axis_dbg_sync__parameterized2' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_dbg_sync_v1_0_vl_rfs.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_dbg_sync_6_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_22/synth/bd_f030_0_axis_dbg_sync_6_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_ila_intf_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/synth/bd_f030_0_axis_ila_intf_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_ila_intf_v1_0_0_axis_ila_intf' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:585]
+INFO: [Synth 8-6157] synthesizing module 'axis_ila_intf_v1_0_0_clk_status' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3038]
+INFO: [Synth 8-6157] synthesizing module 'axis_dbg_sync_v1_0_0_axis_dbg_sync__parameterized3' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_dbg_sync_v1_0_vl_rfs.v:4]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized0' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized0' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'axis_dbg_sync_v1_0_0_axis_dbg_sync__parameterized3' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_dbg_sync_v1_0_vl_rfs.v:4]
+WARNING: [Synth 8-7071] port 'src_in_bus' of module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' is unconnected for instance 'des_flag_0_sync_inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3076]
+WARNING: [Synth 8-7071] port 'dest_ack' of module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' is unconnected for instance 'des_flag_0_sync_inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3076]
+WARNING: [Synth 8-7071] port 'src_send' of module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' is unconnected for instance 'des_flag_0_sync_inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3076]
+WARNING: [Synth 8-7071] port 'dest_rst_in' of module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' is unconnected for instance 'des_flag_0_sync_inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3076]
+WARNING: [Synth 8-7071] port 'src_rst_in' of module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' is unconnected for instance 'des_flag_0_sync_inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3076]
+WARNING: [Synth 8-7071] port 'dest_arst' of module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' is unconnected for instance 'des_flag_0_sync_inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3076]
+WARNING: [Synth 8-7071] port 'dest_out_bus' of module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' is unconnected for instance 'des_flag_0_sync_inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3076]
+WARNING: [Synth 8-7071] port 'src_rcv' of module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' is unconnected for instance 'des_flag_0_sync_inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3076]
+WARNING: [Synth 8-7071] port 'dest_req' of module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' is unconnected for instance 'des_flag_0_sync_inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3076]
+WARNING: [Synth 8-7023] instance 'des_flag_0_sync_inst' of module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' has 13 connections declared, but only 4 given [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3076]
+WARNING: [Synth 8-7071] port 'src_in_bus' of module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' is unconnected for instance 'axis_flag_0_sync_inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3089]
+WARNING: [Synth 8-7071] port 'dest_ack' of module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' is unconnected for instance 'axis_flag_0_sync_inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3089]
+WARNING: [Synth 8-7071] port 'src_send' of module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' is unconnected for instance 'axis_flag_0_sync_inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3089]
+WARNING: [Synth 8-7071] port 'dest_rst_in' of module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' is unconnected for instance 'axis_flag_0_sync_inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3089]
+WARNING: [Synth 8-7071] port 'src_rst_in' of module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' is unconnected for instance 'axis_flag_0_sync_inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3089]
+WARNING: [Synth 8-7071] port 'dest_arst' of module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' is unconnected for instance 'axis_flag_0_sync_inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3089]
+WARNING: [Synth 8-7071] port 'dest_out_bus' of module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' is unconnected for instance 'axis_flag_0_sync_inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3089]
+WARNING: [Synth 8-7071] port 'src_rcv' of module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' is unconnected for instance 'axis_flag_0_sync_inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3089]
+WARNING: [Synth 8-7071] port 'dest_req' of module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' is unconnected for instance 'axis_flag_0_sync_inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3089]
+WARNING: [Synth 8-7023] instance 'axis_flag_0_sync_inst' of module 'axis_dbg_sync_v1_0_0_axis_dbg_sync' has 13 connections declared, but only 4 given [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3089]
+INFO: [Synth 8-6155] done synthesizing module 'axis_ila_intf_v1_0_0_clk_status' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3038]
+INFO: [Synth 8-6157] synthesizing module 'axis_ila_intf_v1_0_0_reg_array' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:2444]
+INFO: [Synth 8-6157] synthesizing module 'axis_ila_intf_v1_0_0_axis_dbg_sync' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:2807]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'axis_ila_intf_v1_0_0_axis_dbg_sync' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:2807]
+WARNING: [Synth 8-7071] port 'src_in' of module 'axis_ila_intf_v1_0_0_axis_dbg_sync' is unconnected for instance 'u_done_sync' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:2527]
+WARNING: [Synth 8-7071] port 'dest_rst_in' of module 'axis_ila_intf_v1_0_0_axis_dbg_sync' is unconnected for instance 'u_done_sync' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:2527]
+WARNING: [Synth 8-7071] port 'src_rst_in' of module 'axis_ila_intf_v1_0_0_axis_dbg_sync' is unconnected for instance 'u_done_sync' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:2527]
+WARNING: [Synth 8-7071] port 'dest_arst' of module 'axis_ila_intf_v1_0_0_axis_dbg_sync' is unconnected for instance 'u_done_sync' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:2527]
+WARNING: [Synth 8-7071] port 'dest_out' of module 'axis_ila_intf_v1_0_0_axis_dbg_sync' is unconnected for instance 'u_done_sync' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:2527]
+WARNING: [Synth 8-7023] instance 'u_done_sync' of module 'axis_ila_intf_v1_0_0_axis_dbg_sync' has 13 connections declared, but only 8 given [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:2527]
+INFO: [Synth 8-6155] done synthesizing module 'axis_ila_intf_v1_0_0_reg_array' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:2444]
+INFO: [Synth 8-6157] synthesizing module 'axis_ila_intf_v1_0_0_generic_mux' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3005]
+INFO: [Synth 8-6155] done synthesizing module 'axis_ila_intf_v1_0_0_generic_mux' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3005]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:169]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:169]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:169]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:169]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:169]
+INFO: [Synth 8-6157] synthesizing module 'axis_ila_intf_v1_0_0_axis_valid_last_gen' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:2248]
+INFO: [Synth 8-6155] done synthesizing module 'axis_ila_intf_v1_0_0_axis_valid_last_gen' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:2248]
+INFO: [Synth 8-226] default block is never used [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:1683]
+INFO: [Synth 8-6155] done synthesizing module 'axis_ila_intf_v1_0_0_axis_ila_intf' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:3]
+WARNING: [Synth 8-7071] port 'trace_rd_data_i' of module 'axis_ila_intf_v1_0_0_axis_ila_intf' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/synth/bd_f030_0_axis_ila_intf_0.v:349]
+WARNING: [Synth 8-7023] instance 'inst' of module 'axis_ila_intf_v1_0_0_axis_ila_intf' has 73 connections declared, but only 72 given [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/synth/bd_f030_0_axis_ila_intf_0.v:349]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_ila_intf_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/synth/bd_f030_0_axis_ila_intf_0.v:53]
+WARNING: [Synth 8-7071] port 'config_fsm_addr_o' of module 'bd_f030_0_axis_ila_intf_0' is unconnected for instance 'axis_ila_intf' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:289]
+WARNING: [Synth 8-7071] port 'config_fsm_en_rb_o' of module 'bd_f030_0_axis_ila_intf_0' is unconnected for instance 'axis_ila_intf' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:289]
+WARNING: [Synth 8-7071] port 'config_fsm_en_o' of module 'bd_f030_0_axis_ila_intf_0' is unconnected for instance 'axis_ila_intf' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:289]
+WARNING: [Synth 8-7071] port 'config_fsm_we_o' of module 'bd_f030_0_axis_ila_intf_0' is unconnected for instance 'axis_ila_intf' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:289]
+WARNING: [Synth 8-7071] port 'cnt_config_dout' of module 'bd_f030_0_axis_ila_intf_0' is unconnected for instance 'axis_ila_intf' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:289]
+WARNING: [Synth 8-7071] port 'cnt_config_en_o' of module 'bd_f030_0_axis_ila_intf_0' is unconnected for instance 'axis_ila_intf' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:289]
+WARNING: [Synth 8-7071] port 'config_fsm_data_o' of module 'bd_f030_0_axis_ila_intf_0' is unconnected for instance 'axis_ila_intf' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:289]
+WARNING: [Synth 8-7071] port 'wr_sqc_config_o' of module 'bd_f030_0_axis_ila_intf_0' is unconnected for instance 'axis_ila_intf' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:289]
+WARNING: [Synth 8-7071] port 'tas_enable_iclk_o' of module 'bd_f030_0_axis_ila_intf_0' is unconnected for instance 'axis_ila_intf' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:289]
+WARNING: [Synth 8-7023] instance 'axis_ila_intf' of module 'bd_f030_0_axis_ila_intf_0' has 56 connections declared, but only 47 given [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:289]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_ila_pp_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_29/synth/bd_f030_0_axis_ila_pp_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_ila_pp_v1_0_0_axis_ila_pp' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_29/hdl/axis_ila_pp_v1_0_rfs.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'axis_ila_pp_v1_0_0_axis_ila_pp' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_29/hdl/axis_ila_pp_v1_0_rfs.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_ila_pp_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_29/synth/bd_f030_0_axis_ila_pp_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_itct_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_28/synth/bd_f030_0_axis_itct_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_itct_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_28/synth/bd_f030_0_axis_itct_0.v:53]
+WARNING: [Synth 8-7071] port 'tc_cfg_en' of module 'bd_f030_0_axis_itct_0' is unconnected for instance 'axis_itct' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:367]
+WARNING: [Synth 8-7071] port 'tc_cfg_din' of module 'bd_f030_0_axis_itct_0' is unconnected for instance 'axis_itct' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:367]
+WARNING: [Synth 8-7071] port 'cfg_out_o' of module 'bd_f030_0_axis_itct_0' is unconnected for instance 'axis_itct' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:367]
+WARNING: [Synth 8-7023] instance 'axis_itct' of module 'bd_f030_0_axis_itct_0' has 84 connections declared, but only 81 given [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:367]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_mem_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_30/synth/bd_f030_0_axis_mem_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_mem_v1_0_0_axis_mem' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_30/hdl/axis_mem_v1_0_rfs.v:630]
+INFO: [Synth 8-6157] synthesizing module 'axis_mem_v1_0_0_mem' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_30/hdl/axis_mem_v1_0_rfs.v:359]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's.   [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:510]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6155] done synthesizing module 'axis_mem_v1_0_0_mem' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_30/hdl/axis_mem_v1_0_rfs.v:359]
+INFO: [Synth 8-6157] synthesizing module 'axis_mem_v1_0_0_generic_memrd' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_30/hdl/axis_mem_v1_0_rfs.v:74]
+INFO: [Synth 8-155] case statement is not full and has no default [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_30/hdl/axis_mem_v1_0_rfs.v:197]
+INFO: [Synth 8-6157] synthesizing module 'axis_mem_v1_0_0_generic_mux' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_30/hdl/axis_mem_v1_0_rfs.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'axis_mem_v1_0_0_generic_mux' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_30/hdl/axis_mem_v1_0_rfs.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'axis_mem_v1_0_0_generic_memrd' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_30/hdl/axis_mem_v1_0_rfs.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'axis_mem_v1_0_0_axis_mem' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_30/hdl/axis_mem_v1_0_rfs.v:630]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_mem_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_30/synth/bd_f030_0_axis_mem_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_mu0_0_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/synth/bd_f030_0_axis_mu0_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_mu_v1_0_0_axis_mu' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:518]
+INFO: [Synth 8-6157] synthesizing module 'axis_mu_v1_0_0_allx' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:124]
+INFO: [Synth 8-6157] synthesizing module 'CFGLUT5' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1971]
+INFO: [Synth 8-6155] done synthesizing module 'CFGLUT5' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1971]
+INFO: [Synth 8-6155] done synthesizing module 'axis_mu_v1_0_0_allx' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:124]
+INFO: [Synth 8-6157] synthesizing module 'axis_mu_v1_0_0_allx_carry_logic' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1934]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1934]
+INFO: [Synth 8-6155] done synthesizing module 'axis_mu_v1_0_0_allx_carry_logic' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'axis_mu_v1_0_0_axis_mu' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:518]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_mu0_0_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/synth/bd_f030_0_axis_mu0_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_mu10_0_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_14/synth/bd_f030_0_axis_mu10_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_mu_v1_0_0_axis_mu__parameterized0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:518]
+INFO: [Synth 8-6157] synthesizing module 'axis_mu_v1_0_0_allx__parameterized0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'axis_mu_v1_0_0_allx__parameterized0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:124]
+INFO: [Synth 8-6157] synthesizing module 'axis_mu_v1_0_0_allx_carry_logic__parameterized0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'axis_mu_v1_0_0_allx_carry_logic__parameterized0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'axis_mu_v1_0_0_axis_mu__parameterized0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:518]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_mu10_0_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_14/synth/bd_f030_0_axis_mu10_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_mu11_0_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_15/synth/bd_f030_0_axis_mu11_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_mu11_0_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_15/synth/bd_f030_0_axis_mu11_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_mu12_0_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_16/synth/bd_f030_0_axis_mu12_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_mu_v1_0_0_axis_mu__parameterized1' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:518]
+INFO: [Synth 8-6157] synthesizing module 'axis_mu_v1_0_0_allx__parameterized1' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'axis_mu_v1_0_0_allx__parameterized1' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:124]
+INFO: [Synth 8-6157] synthesizing module 'axis_mu_v1_0_0_allx_carry_logic__parameterized1' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'axis_mu_v1_0_0_allx_carry_logic__parameterized1' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'axis_mu_v1_0_0_axis_mu__parameterized1' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:518]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_mu12_0_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_16/synth/bd_f030_0_axis_mu12_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_mu13_0_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_17/synth/bd_f030_0_axis_mu13_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_mu13_0_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_17/synth/bd_f030_0_axis_mu13_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_mu1_0_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_5/synth/bd_f030_0_axis_mu1_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_mu1_0_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_5/synth/bd_f030_0_axis_mu1_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_mu2_0_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_6/synth/bd_f030_0_axis_mu2_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_mu2_0_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_6/synth/bd_f030_0_axis_mu2_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_mu3_0_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_7/synth/bd_f030_0_axis_mu3_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_mu_v1_0_0_axis_mu__parameterized2' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:518]
+INFO: [Synth 8-6157] synthesizing module 'axis_mu_v1_0_0_allx__parameterized2' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'axis_mu_v1_0_0_allx__parameterized2' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'axis_mu_v1_0_0_axis_mu__parameterized2' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:518]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_mu3_0_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_7/synth/bd_f030_0_axis_mu3_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_mu4_0_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_8/synth/bd_f030_0_axis_mu4_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_mu4_0_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_8/synth/bd_f030_0_axis_mu4_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_mu5_0_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_9/synth/bd_f030_0_axis_mu5_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_mu5_0_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_9/synth/bd_f030_0_axis_mu5_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_mu6_0_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_10/synth/bd_f030_0_axis_mu6_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_mu6_0_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_10/synth/bd_f030_0_axis_mu6_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_mu7_0_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_11/synth/bd_f030_0_axis_mu7_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_mu7_0_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_11/synth/bd_f030_0_axis_mu7_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_mu8_0_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_12/synth/bd_f030_0_axis_mu8_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_mu8_0_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_12/synth/bd_f030_0_axis_mu8_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_axis_mu9_0_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_13/synth/bd_f030_0_axis_mu9_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_axis_mu9_0_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_13/synth/bd_f030_0_axis_mu9_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_cc_axis_mu0_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_24/synth/bd_f030_0_cc_axis_mu0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_mu_v1_0_0_axis_mu__parameterized3' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:518]
+INFO: [Synth 8-6157] synthesizing module 'axis_mu_v1_0_0_mu_eq' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:230]
+INFO: [Synth 8-6155] done synthesizing module 'axis_mu_v1_0_0_mu_eq' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:230]
+INFO: [Synth 8-6155] done synthesizing module 'axis_mu_v1_0_0_axis_mu__parameterized3' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:518]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_cc_axis_mu0_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_24/synth/bd_f030_0_cc_axis_mu0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_cc_axis_mu1_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_25/synth/bd_f030_0_cc_axis_mu1_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_cc_axis_mu1_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_25/synth/bd_f030_0_cc_axis_mu1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_cc_axis_mu2_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_26/synth/bd_f030_0_cc_axis_mu2_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_cc_axis_mu2_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_26/synth/bd_f030_0_cc_axis_mu2_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_cc_axis_mu3_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_27/synth/bd_f030_0_cc_axis_mu3_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_cc_axis_mu3_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_27/synth/bd_f030_0_cc_axis_mu3_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_tc_axis_mu0_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_23/synth/bd_f030_0_tc_axis_mu0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_mu_v1_0_0_axis_mu__parameterized4' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:518]
+INFO: [Synth 8-6157] synthesizing module 'axis_mu_v1_0_0_mu_eq__parameterized0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:230]
+INFO: [Synth 8-6155] done synthesizing module 'axis_mu_v1_0_0_mu_eq__parameterized0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:230]
+INFO: [Synth 8-6155] done synthesizing module 'axis_mu_v1_0_0_axis_mu__parameterized4' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_4/hdl/axis_mu_v1_0_rfs.v:518]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_tc_axis_mu0_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_23/synth/bd_f030_0_tc_axis_mu0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_f030_0_xlconstant_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_1/synth/bd_f030_0_xlconstant_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_1/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_1/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0_xlconstant_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_1/synth/bd_f030_0_xlconstant_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_f030_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/synth/bd_f030_0.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'axis_ila_1' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/synth/axis_ila_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element dest_req_ext_ff_reg was removed.  [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:623]
+WARNING: [Synth 8-6014] Unused sequential element I_EN_CTL_EQ1.data_dly_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:2668]
+WARNING: [Synth 8-6014] Unused sequential element rd_en_dly_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:2563]
+WARNING: [Synth 8-6014] Unused sequential element wr_en_dly_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:2564]
+WARNING: [Synth 8-6014] Unused sequential element en_transfer_inv_dly_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:2280]
+WARNING: [Synth 8-6014] Unused sequential element soft_rst_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:348]
+WARNING: [Synth 8-6014] Unused sequential element invalid_opcode_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:351]
+WARNING: [Synth 8-6014] Unused sequential element en_trace_int_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:352]
+WARNING: [Synth 8-6014] Unused sequential element reg_rd_en_int_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:583]
+WARNING: [Synth 8-6014] Unused sequential element reg_rd_en_int_dly_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:584]
+WARNING: [Synth 8-6014] Unused sequential element reg_rd_en_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:577]
+WARNING: [Synth 8-6014] Unused sequential element rd_state_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:585]
+WARNING: [Synth 8-6014] Unused sequential element rd_core_status_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:953]
+WARNING: [Synth 8-6014] Unused sequential element axis_tdata_reg_dly_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:1667]
+WARNING: [Synth 8-6014] Unused sequential element state_m_axis_tdata_dly_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:1669]
+WARNING: [Synth 8-6014] Unused sequential element sig_cnt_switch_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:2151]
+WARNING: [Synth 8-6014] Unused sequential element counter01_config_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:2152]
+WARNING: [Synth 8-6014] Unused sequential element counter23_config_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:2153]
+WARNING: [Synth 8-6014] Unused sequential element cnt_config_en23_reg_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:2154]
+WARNING: [Synth 8-6014] Unused sequential element cnt_config_en01_reg_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_2/hdl/axis_ila_intf_v1_0_rfs.v:2155]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3071]
+WARNING: [Synth 8-6014] Unused sequential element SQC_EN.trig_delay0_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_30/hdl/axis_mem_v1_0_rfs.v:743]
+WARNING: [Synth 8-6014] Unused sequential element SQC_ADV_TRIG.mem_data_shift1_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_30/hdl/axis_mem_v1_0_rfs.v:751]
+WARNING: [Synth 8-6014] Unused sequential element Less_than_512_2.we_4_ext_reg_r_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_30/hdl/axis_mem_v1_0_rfs.v:990]
+WARNING: [Synth 8-6014] Unused sequential element Less_than_512_2.wr_flag_r_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/bd_0/ip/ip_30/hdl/axis_mem_v1_0_rfs.v:991]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:52 ; elapsed = 00:01:53 . Memory (MB): peak = 4601.738 ; gain = 1053.590 ; free physical = 220765 ; free virtual = 237091
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:52 ; elapsed = 00:01:53 . Memory (MB): peak = 4601.738 ; gain = 1053.590 ; free physical = 220765 ; free virtual = 237091
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:52 ; elapsed = 00:01:53 . Memory (MB): peak = 4601.738 ; gain = 1053.590 ; free physical = 220765 ; free virtual = 237091
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.1 . Memory (MB): peak = 4601.738 ; gain = 0.000 ; free physical = 220765 ; free virtual = 237092
+INFO: [Netlist 29-17] Analyzing 165 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Chipscope 16-579] Latest version is versal_cips_v3_3 for versal_cips_v3_2
+INFO: [Constraints 18-6336] Loading Clock Expansion Window constraints config file for device xcvp1202.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/axis_ila_1_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/axis_ila_1_ooc.xdc] for cell 'inst'
+Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/axis_ila_v1_2/constraints/axis_ila.xdc] for cell 'inst'
+Finished Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/axis_ila_v1_2/constraints/axis_ila.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/axis_ila_v1_2/constraints/axis_ila.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/axis_ila_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/axis_ila_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/axis_ila_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/axis_ila_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/axis_ila_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/axis_ila_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/axis_ila_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/axis_ila_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/axis_ila_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/axis_ila_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/axis_ila_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/axis_ila_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 12 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4665.770 ; gain = 0.000 ; free physical = 220764 ; free virtual = 237091
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 122 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 97 instances
+  CFGLUT5 => SRLC32E: 25 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4665.770 ; gain = 0.000 ; free physical = 220764 ; free virtual = 237091
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:05 ; elapsed = 00:02:07 . Memory (MB): peak = 4665.770 ; gain = 1117.621 ; free physical = 220763 ; free virtual = 237089
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvp1202-vsva2785-2MHP-e-S-es1
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:05 ; elapsed = 00:02:07 . Memory (MB): peak = 4665.770 ; gain = 1117.621 ; free physical = 220763 ; free virtual = 237089
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu0_0/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc, line 104).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu1_0/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc, line 107).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu2_0/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc, line 110).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu3_0/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc, line 113).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu4_0/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc, line 116).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu5_0/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc, line 119).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu6_0/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc, line 122).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu7_0/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc, line 125).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu8_0/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc, line 128).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu9_0/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc, line 131).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu10_0/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc, line 134).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu11_0/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc, line 137).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu12_0/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc, line 140).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu13_0/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc, line 143).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/tc_axis_mu0/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc, line 146).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/cc_axis_mu0/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc, line 149).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/cc_axis_mu1/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc, line 152).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/cc_axis_mu2/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc, line 155).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/cc_axis_mu3/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/dont_touch.xdc, line 158).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_dbg_stub. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xlconstant. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_ila_intf. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_cap_ctrl. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu0_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu1_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu2_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu3_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu4_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu5_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu6_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu7_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu8_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu9_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu10_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu11_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu12_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mu13_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_dbg_sync_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_dbg_sync_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_dbg_sync_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_dbg_sync_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_dbg_sync_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/tc_axis_mu0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/cc_axis_mu0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/cc_axis_mu1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/cc_axis_mu2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/cc_axis_mu3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_itct. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_ila_pp. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mem. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_dbg_sync_3/inst/\genblk1_2.xpm_cdc_array_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_dbg_sync_4/inst/\genblk1_2.xpm_cdc_array_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_dbg_sync_5/inst/\genblk1_2.xpm_cdc_array_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_dbg_sync_6/inst/\genblk1.xpm_cdc_async_rst_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_ila_intf/inst/u_core_reg/u_done_sync/\genblk1_0.xpm_cdc_handshake_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_dbg_sync_2/inst/\genblk1_3.xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mem/inst/xpm_cdc_en_deep_strg_o. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_ila_intf/inst/u_core_reg/u_done_sync/\genblk1_0.xpm_cdc_handshake_inst /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_ila_intf/inst/u_core_reg/u_done_sync/\genblk1_0.xpm_cdc_handshake_inst /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_ila_intf/inst/u_clk_status/des_flag_0_sync_inst/\genblk1_3.xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_ila_intf/inst/u_clk_status/axis_flag_0_sync_inst/\genblk1_3.xpm_cdc_single_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_mem/inst/u_trace_mem/\BRAM.XPM_1.sdpram . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:06 ; elapsed = 00:02:07 . Memory (MB): peak = 4665.770 ; gain = 1117.621 ; free physical = 220763 ; free virtual = 237089
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axis_cap_ctrl_v1_0_0_case1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axis_cap_ctrl_v1_0_0_case2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axis_cap_ctrl_v1_0_0_case3'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axis_cap_ctrl_v1_0_0_case4'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axis_cap_ctrl_v1_0_0_case5'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axis_cap_ctrl_v1_0_0_case7'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axis_cap_ctrl_v1_0_0_case6'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axis_cap_ctrl_v1_0_0_case8'
+INFO: [Synth 8-802] inferred FSM for state register 'state_rd_wr_reg' in module 'axis_ila_intf_v1_0_0_reg_array'
+INFO: [Synth 8-802] inferred FSM for state register 'state_valid_reg' in module 'axis_ila_intf_v1_0_0_axis_valid_last_gen'
+INFO: [Synth 8-802] inferred FSM for state register 'state_last_reg' in module 'axis_ila_intf_v1_0_0_axis_valid_last_gen'
+INFO: [Synth 8-802] inferred FSM for state register 'next_state_reg' in module 'axis_ila_intf_v1_0_0_axis_ila_intf'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'axis_mem_v1_0_0_generic_memrd'
+INFO: [Synth 8-802] inferred FSM for state register 'next_state_reg' in module 'axis_mu_v1_0_0_axis_mu'
+INFO: [Synth 8-802] inferred FSM for state register 'next_state_reg' in module 'axis_mu_v1_0_0_axis_mu__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'next_state_reg' in module 'axis_mu_v1_0_0_axis_mu__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'next_state_reg' in module 'axis_mu_v1_0_0_axis_mu__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'next_state_reg' in module 'axis_mu_v1_0_0_axis_mu__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'next_state_reg' in module 'axis_mu_v1_0_0_axis_mu__parameterized4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                                0 |                               00
+                    TRIG |                                1 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axis_cap_ctrl_v1_0_0_case1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                    TRIG |                              100 |                               10
+                   TRIG2 |                              010 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axis_cap_ctrl_v1_0_0_case2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                    TRIG |                              100 |                               10
+                   TRIG2 |                              010 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axis_cap_ctrl_v1_0_0_case3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                    TRIG |                              100 |                               10
+               POST_TRIG |                              010 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axis_cap_ctrl_v1_0_0_case4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                PRE_TRIG |                               10 |                               01
+                    TRIG |                               01 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axis_cap_ctrl_v1_0_0_case5'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0010 |                               00
+                PRE_TRIG |                             0100 |                               01
+                    TRIG |                             1000 |                               10
+               POST_TRIG |                             0001 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axis_cap_ctrl_v1_0_0_case7'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                PRE_TRIG |                               10 |                               01
+                    TRIG |                               01 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axis_cap_ctrl_v1_0_0_case6'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0010 |                               00
+                PRE_TRIG |                             0100 |                               01
+                    TRIG |                             1000 |                               10
+               POST_TRIG |                             0001 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axis_cap_ctrl_v1_0_0_case8'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               LOAD_ADDR |                              001 |                               00
+                INC_ADDR |                              100 |                               01
+             DELAY_STATE |                              010 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_rd_wr_reg' using encoding 'one-hot' in module 'axis_ila_intf_v1_0_0_reg_array'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                LOAD_CNT |                               01 |                               01
+                 INC_CNT |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_valid_reg' in module 'axis_ila_intf_v1_0_0_axis_valid_last_gen'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                LOAD_CNT |                               00 |                               01
+                 INC_CNT |                               01 |                               10
+                WAIT_CNT |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_last_reg' using encoding 'sequential' in module 'axis_ila_intf_v1_0_0_axis_valid_last_gen'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                              001 |                               00
+                  iSTATE |                              010 |                               01
+                 iSTATE1 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'next_state_reg' using encoding 'one-hot' in module 'axis_ila_intf_v1_0_0_axis_ila_intf'
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "xpm_memory_base:/gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "xpm_memory_base:/gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "xpm_memory_base:/gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "xpm_memory_base:/gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 33 for RAM "xpm_memory_base:/gen_wr_a.gen_word_narrow.mem_reg"
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              RESET_ADDR |                          0000001 |                          0000001
+            REQUEST_READ |                          0000010 |                          0000010
+           WAIT_READ_ACK |                          0000100 |                          0000100
+             OUTPUT_DATA |                          0001000 |                          0001000
+                    IDLE |                          0010000 |                          0010000
+         INCREMENT_BLOCK |                          0100000 |                          0100000
+       INCREMENT_ADDRESS |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'axis_mem_v1_0_0_generic_memrd'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'next_state_reg' using encoding 'sequential' in module 'axis_mu_v1_0_0_axis_mu'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'next_state_reg' using encoding 'sequential' in module 'axis_mu_v1_0_0_axis_mu__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'next_state_reg' using encoding 'sequential' in module 'axis_mu_v1_0_0_axis_mu__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'next_state_reg' using encoding 'sequential' in module 'axis_mu_v1_0_0_axis_mu__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'next_state_reg' using encoding 'sequential' in module 'axis_mu_v1_0_0_axis_mu__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'next_state_reg' using encoding 'sequential' in module 'axis_mu_v1_0_0_axis_mu__parameterized4'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:46 ; elapsed = 00:02:47 . Memory (MB): peak = 4665.770 ; gain = 1117.621 ; free physical = 220760 ; free virtual = 237090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   17 Bit       Adders := 4     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 8     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 9     
+	   2 Input    3 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	              608 Bit    Registers := 1     
+	              512 Bit    Registers := 1     
+	              320 Bit    Registers := 1     
+	              192 Bit    Registers := 1     
+	              177 Bit    Registers := 3     
+	              176 Bit    Registers := 1     
+	              128 Bit    Registers := 4     
+	               32 Bit    Registers := 40    
+	               17 Bit    Registers := 12    
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               10 Bit    Registers := 19    
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 9     
+	                3 Bit    Registers := 29    
+	                2 Bit    Registers := 23    
+	                1 Bit    Registers := 172   
++---RAMs : 
+	             177K Bit	(1024 X 177 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input  320 Bit        Muxes := 4     
+	   2 Input  177 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 10    
+	   3 Input   32 Bit        Muxes := 2     
+	  10 Input   32 Bit        Muxes := 2     
+	   4 Input   32 Bit        Muxes := 2     
+	   8 Input   32 Bit        Muxes := 2     
+	   4 Input   20 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 2     
+	   3 Input   17 Bit        Muxes := 7     
+	   4 Input   16 Bit        Muxes := 1     
+	   8 Input   16 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 3     
+	   6 Input   13 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 8     
+	   3 Input   10 Bit        Muxes := 2     
+	   8 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   3 Input    7 Bit        Muxes := 1     
+	   8 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 2     
+	   4 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 3     
+	   4 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 16    
+	   4 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 16    
+	   2 Input    3 Bit        Muxes := 27    
+	   6 Input    3 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 3     
+	  10 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 1     
+	   9 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 33    
+	   2 Input    2 Bit        Muxes := 77    
+	   4 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 111   
+	   3 Input    1 Bit        Muxes := 80    
+	  10 Input    1 Bit        Muxes := 8     
+	   4 Input    1 Bit        Muxes := 19    
+	   8 Input    1 Bit        Muxes := 11    
+	   6 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3984 (col length:166)
+BRAMs: 2682 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "inst/i_0/axis_mem/inst/\u_trace_mem/BRAM.XPM_1.sdpram /xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "inst/i_0/axis_mem/inst/\u_trace_mem/BRAM.XPM_1.sdpram /xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "inst/i_0/axis_mem/inst/\u_trace_mem/BRAM.XPM_1.sdpram /xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "inst/i_0/axis_mem/inst/\u_trace_mem/BRAM.XPM_1.sdpram /xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 33 for RAM "inst/i_0/axis_mem/inst/\u_trace_mem/BRAM.XPM_1.sdpram /xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg"
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__45") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__46") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__48") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__49") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__54") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__55") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__56") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__57") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__58") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__59") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__61") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__63") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__65") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__66") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__67") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__68") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__69") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__70") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__71") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__72") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__73") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__74") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__75") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__76") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__77") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__78") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__79") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__80") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__81") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__82") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__83") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__84") because of no pipeline register is available
+WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__85") because of no pipeline register is available
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:52 ; elapsed = 00:02:53 . Memory (MB): peak = 4665.770 ; gain = 1117.621 ; free physical = 220760 ; free virtual = 237090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++----------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                                                 | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++----------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst/i_0/axis_mem/inst/\u_trace_mem/BRAM.XPM_1.sdpram /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 1 K x 177(NO_CHANGE)   | W |   | 1 K x 177(NO_CHANGE)   |   | R | Port A and B     | 0      | 5      | 1,1,1,1,1       | 
++----------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:03 ; elapsed = 00:03:06 . Memory (MB): peak = 5255.664 ; gain = 1707.516 ; free physical = 220175 ; free virtual = 236505
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:04 ; elapsed = 00:03:07 . Memory (MB): peak = 5280.688 ; gain = 1732.539 ; free physical = 220132 ; free virtual = 236462
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++----------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                                                 | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++----------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst/i_0/axis_mem/inst/\u_trace_mem/BRAM.XPM_1.sdpram /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 1 K x 177(NO_CHANGE)   | W |   | 1 K x 177(NO_CHANGE)   |   | R | Port A and B     | 0      | 5      | 1,1,1,1,1       | 
++----------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__4`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__4' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__5`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__5' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_handshake`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_handshake' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__parameterized0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__parameterized0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__parameterized0__2`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__parameterized0__2' done
+
+
+INFO: [Synth 8-5816] Retiming module `axis_ila_intf_v1_0_0_axis_ila_intf`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `axis_ila_intf_v1_0_0_axis_ila_intf' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_ila_intf_0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_ila_intf_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_cap_ctrl_0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_cap_ctrl_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `axis_dbg_stub_v1_0_0_axis_dbg_stub`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `axis_dbg_stub_v1_0_0_axis_dbg_stub' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_dbg_stub_0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_dbg_stub_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_dbg_sync_2_0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_dbg_sync_2_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_dbg_sync_3_0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_dbg_sync_3_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__2`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__2' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_dbg_sync_4_0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_dbg_sync_4_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__parameterized0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_array_single__parameterized0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_dbg_sync_5_0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_dbg_sync_5_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_async_rst`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_async_rst' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_dbg_sync_6_0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_dbg_sync_6_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `axis_ila_pp_v1_0_0_axis_ila_pp`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `axis_ila_pp_v1_0_0_axis_ila_pp' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_ila_pp_0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_ila_pp_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `axis_itct_v1_0_0_axis_itct`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `axis_itct_v1_0_0_axis_itct' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_itct_0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_itct_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_memory_base`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_memory_base' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_memory_sdpram`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_memory_sdpram' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__6`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `xpm_cdc_single__6' done
+
+
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/we_write_i_reg with forward move, found 0 loads out of which
+0 loads can have forward move
+
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/addr_write_i_reg[9] with forward move, found 0 loads out of which
+0 loads can have forward move
+
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/addr_write_i_reg[8] with forward move, found 0 loads out of which
+0 loads can have forward move
+
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/addr_write_i_reg[7] with forward move, found 0 loads out of which
+0 loads can have forward move
+
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/addr_write_i_reg[6] with forward move, found 0 loads out of which
+0 loads can have forward move
+
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/addr_write_i_reg[5] with forward move, found 0 loads out of which
+0 loads can have forward move
+
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/addr_write_i_reg[4] with forward move, found 0 loads out of which
+0 loads can have forward move
+
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/addr_write_i_reg[3] with forward move, found 0 loads out of which
+0 loads can have forward move
+
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/addr_write_i_reg[2] with forward move, found 0 loads out of which
+0 loads can have forward move
+
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/addr_write_i_reg[1] with forward move, found 0 loads out of which
+0 loads can have forward move
+
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/addr_write_i_reg[0] with forward move, found 0 loads out of which
+0 loads can have forward move
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `axis_mem_v1_0_0_axis_mem`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `axis_mem_v1_0_0_axis_mem' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mem_0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mem_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mu0_0_0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mu0_0_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu__parameterized0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu__parameterized0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mu10_0_0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mu10_0_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu__parameterized0__4`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu__parameterized0__4' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mu11_0_0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mu11_0_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu__parameterized1`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu__parameterized1' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mu12_0_0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mu12_0_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu__parameterized0__3`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu__parameterized0__3' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mu13_0_0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mu13_0_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu__parameterized1__5`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu__parameterized1__5' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mu1_0_0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mu1_0_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu__parameterized1__4`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu__parameterized1__4' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mu2_0_0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mu2_0_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu__parameterized2`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu__parameterized2' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mu3_0_0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mu3_0_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu__parameterized0__2`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu__parameterized0__2' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mu4_0_0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mu4_0_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu__parameterized1__3`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu__parameterized1__3' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mu5_0_0`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_f030_0_axis_mu5_0_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu__parameterized1__2`
+   Worst Slack before retiming is 7557 and worst slack after retiming is 7557
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `axis_mu_v1_0_0_axis_mu__parameterized1__2' done
+
+
+INFO: [Common 17-14] Message 'Synth 8-5816' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:05 ; elapsed = 00:03:08 . Memory (MB): peak = 5288.695 ; gain = 1740.547 ; free physical = 220123 ; free virtual = 236453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/we_write_i_reg with forward move, found 0 loads out of which
+0 loads can have forward move
+
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/addr_write_i_reg[9] with forward move, found 0 loads out of which
+0 loads can have forward move
+
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/addr_write_i_reg[8] with forward move, found 0 loads out of which
+0 loads can have forward move
+
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/addr_write_i_reg[7] with forward move, found 0 loads out of which
+0 loads can have forward move
+
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/addr_write_i_reg[6] with forward move, found 0 loads out of which
+0 loads can have forward move
+
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/addr_write_i_reg[5] with forward move, found 0 loads out of which
+0 loads can have forward move
+
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/addr_write_i_reg[4] with forward move, found 0 loads out of which
+0 loads can have forward move
+
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/addr_write_i_reg[3] with forward move, found 0 loads out of which
+0 loads can have forward move
+
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/addr_write_i_reg[2] with forward move, found 0 loads out of which
+0 loads can have forward move
+
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/addr_write_i_reg[1] with forward move, found 0 loads out of which
+0 loads can have forward move
+
+INFO: [Synth 8-6069] LOCAL FORWARD RETIMING for instance inst/axis_mem/inst/u_trace_mem/addr_write_i_reg[0] with forward move, found 0 loads out of which
+0 loads can have forward move
+
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:07 ; elapsed = 00:03:10 . Memory (MB): peak = 5288.695 ; gain = 1740.547 ; free physical = 220123 ; free virtual = 236453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:07 ; elapsed = 00:03:10 . Memory (MB): peak = 5288.695 ; gain = 1740.547 ; free physical = 220123 ; free virtual = 236453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:07 ; elapsed = 00:03:10 . Memory (MB): peak = 5288.695 ; gain = 1740.547 ; free physical = 220123 ; free virtual = 236453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:08 ; elapsed = 00:03:11 . Memory (MB): peak = 5288.695 ; gain = 1740.547 ; free physical = 220123 ; free virtual = 236453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:08 ; elapsed = 00:03:11 . Memory (MB): peak = 5288.695 ; gain = 1740.547 ; free physical = 220123 ; free virtual = 236453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:08 ; elapsed = 00:03:11 . Memory (MB): peak = 5288.695 ; gain = 1740.547 ; free physical = 220123 ; free virtual = 236453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------------------+--------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name              | RTL Name                                                     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------------------+--------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|axis_mem_v1_0_0_axis_mem | u_generic_memrd/multiple_read_latency.read_enable_out_reg[3] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|axis_mem_v1_0_0_axis_mem | u_generic_memrd/multiple_enable_latency.enable_out_reg[3]    | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++-------------------------+--------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |CARRY4       |    43|
+|2     |CFGLUT5      |   122|
+|3     |LOOKAHEAD8   |     6|
+|6     |LUT1         |    35|
+|7     |LUT2         |   293|
+|8     |LUT3         |   495|
+|9     |LUT4         |   272|
+|10    |LUT5         |   495|
+|11    |LUT6         |   573|
+|12    |LUT6CY       |    44|
+|13    |LUT6         |     4|
+|14    |RAMB36E5_INT |     5|
+|15    |SRL16E       |     2|
+|16    |FDCE         |     2|
+|17    |FDRE         |  3512|
+|18    |FDSE         |    20|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:08 ; elapsed = 00:03:11 . Memory (MB): peak = 5288.695 ; gain = 1740.547 ; free physical = 220123 ; free virtual = 236453
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 146 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:58 ; elapsed = 00:03:01 . Memory (MB): peak = 5288.695 ; gain = 1676.516 ; free physical = 220123 ; free virtual = 236453
+Synthesis Optimization Complete : Time (s): cpu = 00:03:08 ; elapsed = 00:03:11 . Memory (MB): peak = 5288.703 ; gain = 1740.547 ; free physical = 220123 ; free virtual = 236453
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 5288.703 ; gain = 0.000 ; free physical = 220406 ; free virtual = 236736
+INFO: [Netlist 29-17] Analyzing 218 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Chipscope 16-579] Latest version is versal_cips_v3_3 for versal_cips_v3_2
+INFO: [Constraints 18-6336] Loading Clock Expansion Window constraints config file for device xcvp1202.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5364.461 ; gain = 0.000 ; free physical = 220383 ; free virtual = 236713
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 371 instances were transformed.
+  (CARRY8) => LOOKAHEAD8: 24 instances
+  (CARRY8) => LUT6CY (LUTCY1, LUTCY2): 172 instances
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 97 instances
+  CFGLUT5 => SRLC32E: 25 instances
+  LUT6CY => LUT6CY (LUTCY1, LUTCY2): 44 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 4 instances
+  RAMB36E5 => RAMB36E5_INT: 5 instances
+
+Synth Design complete | Checksum: 1160c3eb
+INFO: [Common 17-83] Releasing license: Synthesis
+464 Infos, 116 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:17 ; elapsed = 00:03:19 . Memory (MB): peak = 5364.461 ; gain = 2626.281 ; free physical = 220383 ; free virtual = 236713
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 4800.385; main = 4497.017; forked = 345.470
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 6277.820; main = 5364.465; forked = 989.121
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint '/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/axis_ila_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP axis_ila_1, cache-ID = 3e8a47528a18c333
+INFO: [Coretcl 2-1174] Renamed 124 cell refs.
+INFO: [Common 17-1381] The checkpoint '/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/axis_ila_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file axis_ila_1_utilization_synth.rpt -pb axis_ila_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jan  3 15:50:58 2024...

@@ -1,0 +1,118 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date         : Thu Jan  4 21:48:20 2024
+| Host         : matthew-xilinx running 64-bit Ubuntu 22.04.1 LTS
+| Command      : report_methodology -file cpm_pcie_exerciser_wrapper_methodology_drc_routed.rpt -pb cpm_pcie_exerciser_wrapper_methodology_drc_routed.pb -rpx cpm_pcie_exerciser_wrapper_methodology_drc_routed.rpx
+| Design       : cpm_pcie_exerciser_wrapper
+| Device       : xcvp1202-vsva2785-2MHP-e-S-es1
+| Speed File   : -2MHP
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 12
++-----------+----------+--------------------------------------------+------------+
+| Rule      | Severity | Description                                | Violations |
++-----------+----------+--------------------------------------------+------------+
+| AVAL-344  | Warning  | Design_needs_USER_RAM_AVERAGE_ACTIVITY_set | 1          |
+| LUTAR-1   | Warning  | LUT drives async reset alert               | 4          |
+| TIMING-9  | Warning  | Unknown CDC Logic                          | 1          |
+| TIMING-10 | Warning  | Missing property on synchronizer           | 1          |
+| TIMING-20 | Warning  | Non-clocked latch                          | 4          |
+| LATCH-1   | Advisory | Existing latches in the design             | 1          |
++-----------+----------+--------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+AVAL-344#1 Warning
+Design_needs_USER_RAM_AVERAGE_ACTIVITY_set  
+The design property USER_RAM_AVERAGE_ACTIVITY on the top-level current_design object is unset (or set to -1).  The estimated RAM_AVERAGE_ACTIVITY used for the design is 5 and assumes a worst-case switching scenario for the URAM and BRAM.  RAM activity directly impacts clock uncertainty and the RAM_AVERAGE_ACTIVITY property may not be accurate for designs that are not final.  It is recommended that the USER_RAM_AVERAGE_ACTIVITY property be specified.  Please refer to the Versal ACAP Clocking Resources Architecture Manual and the Versal ACAP Hardware, IP, and Platform Development Methodology User Guide for more information on specifying the USER_RAM_AVERAGE_ACTIVITY.
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell exerciser_i/versal_cips_0/inst/cpm_0/inst/DPLL1_FD_CAL_inst_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) exerciser_i/versal_cips_0/inst/cpm_0/inst/DPLL1_FD_CAL_inst/Isync_drst/sync_reg_reg[0]/CLR,
+exerciser_i/versal_cips_0/inst/cpm_0/inst/DPLL1_FD_CAL_inst/Isync_drst/sync_reg_reg[1]/CLR,
+exerciser_i/versal_cips_0/inst/cpm_0/inst/DPLL1_FD_CAL_inst/Isync_drst/sync_reg_reg[2]/CLR,
+exerciser_i/versal_cips_0/inst/cpm_0/inst/DPLL1_FD_CAL_inst/Isync_rst/sync_reg_reg[0]/CLR,
+exerciser_i/versal_cips_0/inst/cpm_0/inst/DPLL1_FD_CAL_inst/Isync_rst/sync_reg_reg[1]/CLR
+exerciser_i/versal_cips_0/inst/cpm_0/inst/DPLL1_FD_CAL_inst/Isync_rst/sync_reg_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie_1_wrapper_i/user_lnk_up_cdc_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie_1_wrapper_i/user_lnk_up_cdc/arststages_ff_reg[0]/CLR
+exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie_1_wrapper_i/user_lnk_up_cdc/arststages_ff_reg[1]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie_1_wrapper_i/user_lnk_up_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie_1_wrapper_i/user_lnk_up_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie_1_wrapper_i/user_reset_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie_1_wrapper_i/user_reset_cdc/arststages_ff_reg[0]/PRE,
+exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie_1_wrapper_i/user_reset_cdc/arststages_ff_reg[1]/PRE,
+exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie_1_wrapper_i/user_reset_reg/PRE,
+exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie_1_wrapper_i/user_reset_reg_replica/PRE,
+exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie_1_wrapper_i/user_reset_reg_replica_1/PRE,
+exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie_1_wrapper_i/user_reset_reg_replica_2/PRE,
+exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie_1_wrapper_i/user_reset_reg_replica_3/PRE,
+exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie_1_wrapper_i/user_reset_reg_replica_4/PRE,
+exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie_1_wrapper_i/user_reset_reg_replica_5/PRE,
+exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie_1_wrapper_i/user_reset_reg_replica_6/PRE,
+exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie_1_wrapper_i/user_reset_reg_replica_7/PRE,
+exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie_1_wrapper_i/user_reset_reg_replica_8/PRE
+exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie_1_wrapper_i/user_reset_reg_replica_9/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_CC_512/completion_state_reg[0] cannot be properly analyzed as its control pin pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_CC_512/completion_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_CC_512/completion_state_reg[1] cannot be properly analyzed as its control pin pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_CC_512/completion_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_CC_512/completion_state_reg[2] cannot be properly analyzed as its control pin pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_CC_512/completion_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_CC_512/posioned_completion_reg cannot be properly analyzed as its control pin pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_CC_512/posioned_completion_reg/G is not reached by a timing clock
+Related violations: <none>
+
+LATCH-1#1 Advisory
+Existing latches in the design  
+There are 4 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+Related violations: <none>
+
+

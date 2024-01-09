@@ -1,0 +1,1482 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Jan  4 21:37:36 2024
+# Process ID: 2180624
+# Current directory: /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/synth_1
+# Command line: vivado -log cpm_pcie_exerciser_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpm_pcie_exerciser_wrapper.tcl
+# Log file: /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/synth_1/cpm_pcie_exerciser_wrapper.vds
+# Journal file: /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/synth_1/vivado.jou
+# Running On: matthew-xilinx, OS: Linux, CPU Frequency: 400.000 MHz, CPU Physical cores: 32, Host memory: 269937 MB
+#-----------------------------------------------------------
+Sourcing tcl script '/root/.Xilinx/Vivado/Vivado_init.tcl'
+501 Beta devices matching pattern found, 126 enabled.
+enable_beta_device: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2433.840 ; gain = 133.934 ; free physical = 221696 ; free virtual = 238158
+source cpm_pcie_exerciser_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/utils_1/imports/synth_1/cpm_pcie_pio_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/utils_1/imports/synth_1/cpm_pcie_pio_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top cpm_pcie_exerciser_wrapper -part xcvp1202-vsva2785-2MHP-e-S-es1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvp1202-es1'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvp1202-es1'
+INFO: [Device 21-403] Loading part xcvp1202-vsva2785-2MHP-e-S-es1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2180757
+INFO: [Synth 8-11241] undeclared symbol 'crdt_rls_en_nxt', assumed default net type 'wire' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ipshared/e224/hdl/cpm5_v1_0_vl_rfs.sv:5086]
+WARNING: [Synth 8-10458] `include directive is not isolated on its own line [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:2854]
+WARNING: [Synth 8-10458] `include directive is not isolated on its own line [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:2855]
+INFO: [Synth 8-11241] undeclared symbol 'dpll1_dco_dclk', assumed default net type 'wire' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:8803]
+INFO: [Synth 8-11241] undeclared symbol 'emio_gem1_txr_fixed_lat', assumed default net type 'wire' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_0/hdl/pspmc_v1_3_2.v:8127]
+INFO: [Synth 8-11241] undeclared symbol 'xpipe0_phystatus', assumed default net type 'wire' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_0/hdl/pspmc_v1_3_2.v:9789]
+INFO: [Synth 8-11241] undeclared symbol 'apb3_pen_int', assumed default net type 'wire' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/bd_6f6a_cpm_0_0_gt_quad_3_inst.v:1339]
+INFO: [Synth 8-11241] undeclared symbol 'apb3_pen_int', assumed default net type 'wire' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/bd_6f6a_cpm_0_0_gt_quad_2_inst.v:1339]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 4012.523 ; gain = 354.762 ; free physical = 219684 ; free virtual = 236304
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cpm_pcie_exerciser_wrapper' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/synth/exerciser.v:13]
+INFO: [Synth 8-6157] synthesizing module 'exerciser_versal_cips_0_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/synth/exerciser_versal_cips_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f6a' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/synth/bd_6f6a.v:10]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f6a_cpm_0_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/synth/bd_6f6a_cpm_0_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f6a_cpm_0_0_core_top' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f6a_cpm_0_0_gt_quad_2' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/bd_6f6a_cpm_0_0_gt_quad_2_inst.v:52]
+INFO: [Synth 8-6157] synthesizing module 'GTYP_QUAD' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:56100]
+INFO: [Synth 8-6155] done synthesizing module 'GTYP_QUAD' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:56100]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f6a_cpm_0_0_gt_quad_2_gtyp_rstdone' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/bd_6f6a_cpm_0_0_gt_quad_2_inst.v:3302]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f6a_cpm_0_0_gt_quad_2_gtyp_rstdone' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/bd_6f6a_cpm_0_0_gt_quad_2_inst.v:3302]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/bd_6f6a_cpm_0_0_gt_quad_2_inst.v:52]
+WARNING: [Synth 8-7071] port 's_axi_lite_arready' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_rdata' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_rvalid' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_awready' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_wready' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_rresp' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_bresp' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_bvalid' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_lcpllrsvdout' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_rpllrsvdout' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_lcpllrsvdout' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_rpllrsvdout' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'altclk' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_clk' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_resetn' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_araddr' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_arvalid' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_rready' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_awaddr' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_awvalid' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_wdata' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_wvalid' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_bready' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_lcpllclkrsvd0' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_lcpllclkrsvd1' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_lcpllgtgrefclk' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_lcpllrsvd0' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_lcpllrsvd1' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_rpllclkrsvd0' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_rpllclkrsvd1' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_rpllgtgrefclk' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_rpllrsvd0' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_rpllrsvd1' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_lcpllclkrsvd0' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_lcpllclkrsvd1' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_lcpllgtgrefclk' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_lcpllrsvd0' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_lcpllrsvd1' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_rpllclkrsvd0' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_rpllclkrsvd1' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_rpllgtgrefclk' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_rpllrsvd0' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_rpllrsvd1' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+WARNING: [Synth 8-7023] instance 'inst' of module 'bd_6f6a_cpm_0_0_gt_quad_2_inst' has 1059 connections declared, but only 1016 given [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:3313]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f6a_cpm_0_0_gt_quad_2' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/synth/bd_6f6a_cpm_0_0_gt_quad_2.v:53]
+WARNING: [Synth 8-7071] port 'hsclk0_rxrecclksel' of module 'bd_6f6a_cpm_0_0_gt_quad_2' is unconnected for instance 'gt_quad_inst2' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:2854]
+WARNING: [Synth 8-7071] port 'hsclk1_rxrecclksel' of module 'bd_6f6a_cpm_0_0_gt_quad_2' is unconnected for instance 'gt_quad_inst2' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:2854]
+WARNING: [Synth 8-7023] instance 'gt_quad_inst2' of module 'bd_6f6a_cpm_0_0_gt_quad_2' has 1016 connections declared, but only 1014 given [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:2854]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f6a_cpm_0_0_gt_quad_3' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/bd_6f6a_cpm_0_0_gt_quad_3_inst.v:52]
+INFO: [Synth 8-6157] synthesizing module 'GTYP_QUAD__parameterized0' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:56100]
+INFO: [Synth 8-6155] done synthesizing module 'GTYP_QUAD__parameterized0' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:56100]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f6a_cpm_0_0_gt_quad_3_gtyp_rstdone' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/bd_6f6a_cpm_0_0_gt_quad_3_inst.v:3302]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f6a_cpm_0_0_gt_quad_3_gtyp_rstdone' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/bd_6f6a_cpm_0_0_gt_quad_3_inst.v:3302]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/bd_6f6a_cpm_0_0_gt_quad_3_inst.v:52]
+WARNING: [Synth 8-7071] port 's_axi_lite_arready' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_rdata' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_rvalid' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_awready' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_wready' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_rresp' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_bresp' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_bvalid' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_lcpllrsvdout' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_rpllrsvdout' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_lcpllrsvdout' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_rpllrsvdout' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'altclk' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_clk' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_resetn' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_araddr' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_arvalid' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_rready' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_awaddr' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_awvalid' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_wdata' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_wvalid' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 's_axi_lite_bready' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_lcpllclkrsvd0' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_lcpllclkrsvd1' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_lcpllgtgrefclk' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_lcpllrsvd0' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_lcpllrsvd1' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_rpllclkrsvd0' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_rpllclkrsvd1' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_rpllgtgrefclk' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_rpllrsvd0' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk0_rpllrsvd1' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_lcpllclkrsvd0' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_lcpllclkrsvd1' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_lcpllgtgrefclk' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_lcpllrsvd0' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_lcpllrsvd1' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_rpllclkrsvd0' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_rpllclkrsvd1' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_rpllgtgrefclk' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_rpllrsvd0' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7071] port 'hsclk1_rpllrsvd1' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' is unconnected for instance 'inst' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+WARNING: [Synth 8-7023] instance 'inst' of module 'bd_6f6a_cpm_0_0_gt_quad_3_inst' has 1059 connections declared, but only 1016 given [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:3313]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f6a_cpm_0_0_gt_quad_3' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/synth/bd_6f6a_cpm_0_0_gt_quad_3.v:53]
+WARNING: [Synth 8-7071] port 'hsclk0_rxrecclksel' of module 'bd_6f6a_cpm_0_0_gt_quad_3' is unconnected for instance 'gt_quad_inst3' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:2855]
+WARNING: [Synth 8-7071] port 'hsclk1_rxrecclksel' of module 'bd_6f6a_cpm_0_0_gt_quad_3' is unconnected for instance 'gt_quad_inst3' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:2855]
+WARNING: [Synth 8-7023] instance 'gt_quad_inst3' of module 'bd_6f6a_cpm_0_0_gt_quad_3' has 1016 connections declared, but only 1014 given [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:2855]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE5' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:71979]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE5' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:71979]
+INFO: [Synth 8-6157] synthesizing module 'BUFG_PS' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1754]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG_PS' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1754]
+INFO: [Synth 8-6157] synthesizing module 'CPM5' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:7523]
+INFO: [Synth 8-6155] done synthesizing module 'CPM5' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:7523]
+WARNING: [Synth 8-6104] Input port 'iso_cpm5pl_n' has an internal driver [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:8781]
+WARNING: [Synth 8-7071] port 'IFPSCPMLINK0XPIPEBUFGTCE' of module 'CPM5' is unconnected for instance 'CPM_INST' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:3308]
+WARNING: [Synth 8-7071] port 'IFPSCPMLINK0XPIPEBUFGTCEMASK' of module 'CPM5' is unconnected for instance 'CPM_INST' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:3308]
+WARNING: [Synth 8-7071] port 'IFPSCPMLINK0XPIPEBUFGTDIV' of module 'CPM5' is unconnected for instance 'CPM_INST' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:3308]
+WARNING: [Synth 8-7071] port 'IFPSCPMLINK0XPIPEBUFGTRST' of module 'CPM5' is unconnected for instance 'CPM_INST' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:3308]
+WARNING: [Synth 8-7071] port 'IFPSCPMLINK0XPIPEBUFGTRSTMASK' of module 'CPM5' is unconnected for instance 'CPM_INST' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:3308]
+WARNING: [Synth 8-7071] port 'IFPSCPMLINK0XPIPEGTOUTCLK' of module 'CPM5' is unconnected for instance 'CPM_INST' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:3308]
+WARNING: [Synth 8-7071] port 'IFPSCPMLINK0XPIPEPHYREADY' of module 'CPM5' is unconnected for instance 'CPM_INST' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:3308]
+WARNING: [Synth 8-7071] port 'IFPSCPMLINK1XPIPEBUFGTCE' of module 'CPM5' is unconnected for instance 'CPM_INST' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:3308]
+WARNING: [Synth 8-7071] port 'IFPSCPMLINK1XPIPEBUFGTCEMASK' of module 'CPM5' is unconnected for instance 'CPM_INST' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:3308]
+WARNING: [Synth 8-7071] port 'IFPSCPMLINK1XPIPEBUFGTDIV' of module 'CPM5' is unconnected for instance 'CPM_INST' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:3308]
+INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7023] instance 'CPM_INST' of module 'CPM5' has 5210 connections declared, but only 5184 given [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:3308]
+INFO: [Synth 8-6157] synthesizing module 'cpm5_v1_0_12_pcie_wrapper' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/pcie_wrapper.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst__parameterized0' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst__parameterized0' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
+INFO: [Synth 8-6155] done synthesizing module 'cpm5_v1_0_12_pcie_wrapper' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/pcie_wrapper.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f6a_cpm_0_0_core_top' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/hdl/verilog/bd_6f6a_cpm_0_0_core_top.sv:58]
+WARNING: [Synth 8-7023] instance 'inst' of module 'bd_6f6a_cpm_0_0_core_top' has 2104 connections declared, but only 2081 given [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/synth/bd_6f6a_cpm_0_0.sv:2844]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f6a_cpm_0_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/synth/bd_6f6a_cpm_0_0.sv:53]
+WARNING: [Synth 8-7023] instance 'cpm_0' of module 'bd_6f6a_cpm_0_0' has 886 connections declared, but only 877 given [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/synth/bd_6f6a.v:1377]
+INFO: [Synth 8-6157] synthesizing module 'bd_6f6a_pspmc_0_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_0/synth/bd_6f6a_pspmc_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'pspmc_v1_3_2_pspmc' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_0/hdl/pspmc_v1_3_2.v:3]
+WARNING: [Synth 8-693] zero replication count - replication ignored [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_0/hdl/pspmc_v1_3_2.v:7427]
+INFO: [Synth 8-6157] synthesizing module 'BUFG_PS__parameterized0' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1754]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG_PS__parameterized0' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1754]
+INFO: [Synth 8-6157] synthesizing module 'PS9' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:113203]
+INFO: [Synth 8-6155] done synthesizing module 'PS9' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:113203]
+WARNING: [Synth 8-689] width (2) of port connection 'PSPLTRACEDATA' does not match port width (32) of module 'PS9' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_0/hdl/pspmc_v1_3_2.v:8830]
+WARNING: [Synth 8-7023] instance 'PS9_inst' of module 'PS9' has 2286 connections declared, but only 2208 given [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_0/hdl/pspmc_v1_3_2.v:8061]
+INFO: [Synth 8-6155] done synthesizing module 'pspmc_v1_3_2_pspmc' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_0/hdl/pspmc_v1_3_2.v:3]
+WARNING: [Synth 8-7023] instance 'inst' of module 'pspmc_v1_3_2_pspmc' has 3228 connections declared, but only 715 given [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_0/synth/bd_6f6a_pspmc_0_0.v:2268]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f6a_pspmc_0_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_0/synth/bd_6f6a_pspmc_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6f6a' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/synth/bd_6f6a.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'exerciser_versal_cips_0_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/synth/exerciser_versal_cips_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'exerciser' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/synth/exerciser.v:13]
+WARNING: [Synth 8-689] width (4) of port connection 'pcie1_cfg_control_0_flr_done' does not match port width (1) of module 'exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:215]
+WARNING: [Synth 8-689] width (2) of port connection 'pcie1_cfg_status_0_current_speed' does not match port width (3) of module 'exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:279]
+WARNING: [Synth 8-689] width (12) of port connection 'pcie1_cfg_status_0_function_power_state' does not match port width (3) of module 'exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:283]
+WARNING: [Synth 8-689] width (16) of port connection 'pcie1_cfg_status_0_function_status' does not match port width (4) of module 'exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:284]
+WARNING: [Synth 8-689] width (4) of port connection 'pcie1_cfg_status_0_rcb_status' does not match port width (1) of module 'exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:295]
+WARNING: [Synth 8-689] width (10) of port connection 'pcie1_cfg_status_0_rq_tag0' does not match port width (20) of module 'exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:303]
+WARNING: [Synth 8-689] width (10) of port connection 'pcie1_cfg_status_0_rq_tag1' does not match port width (20) of module 'exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:304]
+WARNING: [Synth 8-689] width (1) of port connection 'pcie1_cfg_status_0_rq_tag_vld0' does not match port width (2) of module 'exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:306]
+WARNING: [Synth 8-689] width (1) of port connection 'pcie1_cfg_status_0_rq_tag_vld1' does not match port width (2) of module 'exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:307]
+WARNING: [Synth 8-689] width (4) of port connection 'pcie1_s_axis_cc_0_tready' does not match port width (1) of module 'exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:317]
+WARNING: [Synth 8-689] width (4) of port connection 'pcie1_s_axis_rq_0_tready' does not match port width (1) of module 'exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:323]
+WARNING: [Synth 8-689] width (4) of port connection 'pcie1_cfg_status_0_10b_tag_requester_enable' does not match port width (1) of module 'exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:333]
+WARNING: [Synth 8-689] width (4) of port connection 'pcie1_cfg_status_0_atomic_requester_enable' does not match port width (1) of module 'exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:334]
+WARNING: [Synth 8-7023] instance 'exerciser_i' of module 'exerciser' has 162 connections declared, but only 129 given [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:194]
+INFO: [Synth 8-6157] synthesizing module 'pcie_app_versal_exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/pcie_app_exerciser_1024.v:55]
+	Parameter C_DATA_WIDTH bound to: 1024 - type: integer 
+	Parameter AXISTEN_IF_ENABLE_CLIENT_TAG bound to: 0 - type: integer 
+	Parameter TAG_10B_SUPPORT_EN bound to: FALSE - type: string 
+INFO: [Synth 8-6157] synthesizing module 'OBUF' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:91121]
+INFO: [Synth 8-6155] done synthesizing module 'OBUF' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:91121]
+INFO: [Synth 8-6157] synthesizing module 'EXERCISER_AXIST_1024' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_1024.v:56]
+	Parameter TCQ bound to: 1 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 1024 - type: integer 
+	Parameter AXISTEN_IF_REQ_ALIGNMENT_MODE bound to: 2'b00 
+	Parameter AXISTEN_IF_CMP_ALIGNMENT_MODE bound to: 2'b00 
+	Parameter AXISTEN_IF_ENABLE_CLIENT_TAG bound to: 0 - type: integer 
+	Parameter RQ_AVAIL_TAG_IDX bound to: 8 - type: integer 
+	Parameter RQ_AVAIL_TAG bound to: 256 - type: integer 
+	Parameter AXISTEN_IF_REQ_PARITY_CHECK bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_CMP_PARITY_CHECK bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_RQ_STRADDLE bound to: 2'b00 
+	Parameter AXISTEN_IF_RC_STRADDLE bound to: 2'b10 
+	Parameter AXISTEN_IF_CQ_STRADDLE bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_CC_STRADDLE bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_ENABLE_RX_MSG_INTFC bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_ENABLE_MSG_ROUTE bound to: 18'b101111111111111111 
+	Parameter AXI4_CQ_TUSER_WIDTH bound to: 465 - type: integer 
+	Parameter AXI4_CC_TUSER_WIDTH bound to: 165 - type: integer 
+	Parameter AXI4_RQ_TUSER_WIDTH bound to: 373 - type: integer 
+	Parameter AXI4_RC_TUSER_WIDTH bound to: 337 - type: integer 
+	Parameter KEEP_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'EXERCISER_AXIST_EP_1024' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_1024.v:56]
+	Parameter TCQ bound to: 1 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 1024 - type: integer 
+	Parameter AXISTEN_IF_REQ_ALIGNMENT_MODE bound to: 2'b00 
+	Parameter AXISTEN_IF_CMP_ALIGNMENT_MODE bound to: 2'b00 
+	Parameter AXISTEN_IF_ENABLE_CLIENT_TAG bound to: 0 - type: integer 
+	Parameter RQ_AVAIL_TAG_IDX bound to: 8 - type: integer 
+	Parameter RQ_AVAIL_TAG bound to: 256 - type: integer 
+	Parameter AXISTEN_IF_REQ_PARITY_CHECK bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_CMP_PARITY_CHECK bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_RQ_STRADDLE bound to: 2'b00 
+	Parameter AXISTEN_IF_RC_STRADDLE bound to: 2'b10 
+	Parameter AXISTEN_IF_CQ_STRADDLE bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_CC_STRADDLE bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_ENABLE_RX_MSG_INTFC bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_ENABLE_MSG_ROUTE bound to: 18'b101111111111111111 
+	Parameter AXI4_CQ_TUSER_WIDTH bound to: 465 - type: integer 
+	Parameter AXI4_CC_TUSER_WIDTH bound to: 165 - type: integer 
+	Parameter AXI4_RQ_TUSER_WIDTH bound to: 373 - type: integer 
+	Parameter AXI4_RC_TUSER_WIDTH bound to: 337 - type: integer 
+	Parameter KEEP_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'EXERCISER_AXIST_CQ_CC_SHIM' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_CQ_CC_SHIM.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'EXERCISER_AXIST_CQ_CC_SHIM' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_CQ_CC_SHIM.v:56]
+WARNING: [Synth 8-689] width (165) of port connection 's_axis_cc_tuser_1024' does not match port width (223) of module 'EXERCISER_AXIST_CQ_CC_SHIM' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_1024.v:343]
+INFO: [Synth 8-6157] synthesizing module 'EXERCISER_AXIST_EP_MEM_ACCESS' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_MEM_ACCESS.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_MEM_ACCESS.v:165]
+INFO: [Synth 8-6157] synthesizing module 'EXERCISER_AXIST_EP_MEM' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_MEM.v:18]
+	Parameter NUM_GP_PORTS bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'EXERCISER_AXIST_EP_MEM' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_MEM.v:18]
+WARNING: [Synth 8-689] width (32) of port connection 'cfg_err_cor_o' does not match port width (1) of module 'EXERCISER_AXIST_EP_MEM' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_MEM_ACCESS.v:270]
+INFO: [Synth 8-6155] done synthesizing module 'EXERCISER_AXIST_EP_MEM_ACCESS' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_MEM_ACCESS.v:24]
+WARNING: [Synth 8-689] width (1) of port connection 'cfg_err_cor_o' does not match port width (32) of module 'EXERCISER_AXIST_EP_MEM_ACCESS' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_1024.v:397]
+INFO: [Synth 8-6157] synthesizing module 'EXERCISER_AXIST_RC_1024' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RC_1024.v:56]
+	Parameter AXISTEN_IF_REQ_ALIGNMENT_MODE bound to: 2'b00 
+	Parameter AXISTEN_IF_RC_STRADDLE bound to: 2'b10 
+	Parameter AXISTEN_IF_REQ_PARITY_CHECK bound to: 0 - type: integer 
+	Parameter AXI4_RC_TUSER_WIDTH bound to: 337 - type: integer 
+	Parameter AXISTEN_IF_ENABLE_CLIENT_TAG bound to: 0 - type: integer 
+	Parameter RQ_AVAIL_TAG_IDX bound to: 8 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 1024 - type: integer 
+	Parameter TCQ bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'EXERCISER_AXIST_RC_1024' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RC_1024.v:56]
+INFO: [Synth 8-6157] synthesizing module 'EXERCISER_AXIST_CQ_512' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_CQ_512.v:56]
+	Parameter AXISTEN_IF_CMP_ALIGNMENT_MODE bound to: 2'b00 
+	Parameter AXISTEN_IF_CQ_STRADDLE bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_CMP_PARITY_CHECK bound to: 0 - type: integer 
+	Parameter AXI4_CQ_TUSER_WIDTH bound to: 465 - type: integer 
+	Parameter AXI4_CC_TUSER_WIDTH bound to: 165 - type: integer 
+	Parameter AXI4_RQ_TUSER_WIDTH bound to: 373 - type: integer 
+	Parameter AXI4_RC_TUSER_WIDTH bound to: 337 - type: integer 
+	Parameter TCQ bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_CQ_512.v:546]
+INFO: [Synth 8-155] case statement is not full and has no default [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_CQ_512.v:239]
+INFO: [Synth 8-6155] done synthesizing module 'EXERCISER_AXIST_CQ_512' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_CQ_512.v:56]
+INFO: [Synth 8-6157] synthesizing module 'EXERCISER_AXIST_RQ_1024' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_1024.v:56]
+	Parameter AXISTEN_IF_REQ_ALIGNMENT_MODE bound to: 2'b00 
+	Parameter AXISTEN_IF_RQ_STRADDLE bound to: 2'b00 
+	Parameter AXISTEN_IF_REQ_PARITY_CHECK bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_ENABLE_CLIENT_TAG bound to: 0 - type: integer 
+	Parameter RQ_AVAIL_TAG_IDX bound to: 8 - type: integer 
+	Parameter RQ_AVAIL_TAG bound to: 256 - type: integer 
+	Parameter AXI4_CQ_TUSER_WIDTH bound to: 465 - type: integer 
+	Parameter AXI4_CC_TUSER_WIDTH bound to: 165 - type: integer 
+	Parameter AXI4_RQ_TUSER_WIDTH bound to: 373 - type: integer 
+	Parameter AXI4_RC_TUSER_WIDTH bound to: 337 - type: integer 
+	Parameter TCQ bound to: 1 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 1024 - type: integer 
+	Parameter KEEP_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'EXERCISER_AXIST_RQ_RW_1024' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_RW_1024.v:57]
+	Parameter AXISTEN_IF_REQ_ALIGNMENT_MODE bound to: 2'b00 
+	Parameter AXISTEN_IF_RQ_STRADDLE bound to: 2'b00 
+	Parameter AXISTEN_IF_REQ_PARITY_CHECK bound to: 0 - type: integer 
+	Parameter AXI4_RQ_TUSER_WIDTH bound to: 373 - type: integer 
+	Parameter SEQ_NUM_IGNORE bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_ENABLE_CLIENT_TAG bound to: 0 - type: integer 
+	Parameter RQ_AVAIL_TAG_IDX bound to: 8 - type: integer 
+	Parameter RQ_AVAIL_TAG bound to: 256 - type: integer 
+	Parameter TCQ bound to: 1 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 1024 - type: integer 
+	Parameter KEEP_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_RW_1024.v:410]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_RW_1024.v:914]
+INFO: [Synth 8-6157] synthesizing module 'axis_ila_2' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/synth_1/.Xil/Vivado-2180624-matthew-xilinx/realtime/axis_ila_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axis_ila_2' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/synth_1/.Xil/Vivado-2180624-matthew-xilinx/realtime/axis_ila_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'EXERCISER_AXIST_RQ_RW_1024' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_RW_1024.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'EXERCISER_AXIST_RQ_1024' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_1024.v:56]
+INFO: [Synth 8-6157] synthesizing module 'EXERCISER_AXIST_CC_512' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_CC_512.v:56]
+	Parameter AXISTEN_IF_CMP_ALIGNMENT_MODE bound to: 2'b00 
+	Parameter AXISTEN_IF_CC_STRADDLE bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_CMP_PARITY_CHECK bound to: 0 - type: integer 
+	Parameter AXI4_CQ_TUSER_WIDTH bound to: 465 - type: integer 
+	Parameter AXI4_CC_TUSER_WIDTH bound to: 165 - type: integer 
+	Parameter AXI4_RQ_TUSER_WIDTH bound to: 373 - type: integer 
+	Parameter AXI4_RC_TUSER_WIDTH bound to: 337 - type: integer 
+	Parameter TCQ bound to: 1 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_CC_512.v:493]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_CC_512.v:726]
+INFO: [Synth 8-6157] synthesizing module 'axis_ila_1' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/synth_1/.Xil/Vivado-2180624-matthew-xilinx/realtime/axis_ila_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axis_ila_1' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/synth_1/.Xil/Vivado-2180624-matthew-xilinx/realtime/axis_ila_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'EXERCISER_AXIST_CC_512' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_CC_512.v:56]
+INFO: [Synth 8-6157] synthesizing module 'EXERCISER_AXIST_INTR_CTRL' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_INTR_CTRL.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'EXERCISER_AXIST_INTR_CTRL' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_INTR_CTRL.v:22]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_1024.v:660]
+INFO: [Synth 8-6157] synthesizing module 'axis_ila_0' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/synth_1/.Xil/Vivado-2180624-matthew-xilinx/realtime/axis_ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axis_ila_0' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/synth_1/.Xil/Vivado-2180624-matthew-xilinx/realtime/axis_ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'EXERCISER_AXIST_EP_1024' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_1024.v:56]
+WARNING: [Synth 8-7023] instance 'EXERCISER_AXIST_EP_1024' of module 'EXERCISER_AXIST_EP_1024' has 77 connections declared, but only 76 given [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_1024.v:207]
+INFO: [Synth 8-6157] synthesizing module 'EXERCISER_AXIST_TO_CTRL' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_TO_CTRL.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'EXERCISER_AXIST_TO_CTRL' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_TO_CTRL.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'EXERCISER_AXIST_1024' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_1024.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_app_versal_exerciser' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/pcie_app_exerciser_1024.v:55]
+WARNING: [Synth 8-689] width (4) of port connection 's_axis_rq_tready' does not match port width (1) of module 'pcie_app_versal_exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:382]
+WARNING: [Synth 8-689] width (4) of port connection 's_axis_cc_tready' does not match port width (1) of module 'pcie_app_versal_exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:404]
+WARNING: [Synth 8-689] width (10) of port connection 'pcie_rq_tag' does not match port width (6) of module 'pcie_app_versal_exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:412]
+WARNING: [Synth 8-689] width (4) of port connection 'cfg_10b_tag_requester_enable' does not match port width (1) of module 'pcie_app_versal_exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:466]
+WARNING: [Synth 8-689] width (32) of port connection 'cfg_interrupt_msi_pending_status' does not match port width (64) of module 'pcie_app_versal_exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:513]
+WARNING: [Synth 8-689] width (4) of port connection 'cfg_interrupt_msi_select' does not match port width (2) of module 'pcie_app_versal_exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:520]
+WARNING: [Synth 8-689] width (16) of port connection 'cfg_interrupt_msi_function_number' does not match port width (8) of module 'pcie_app_versal_exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:521]
+WARNING: [Synth 8-689] width (4) of port connection 'cfg_interrupt_pending' does not match port width (2) of module 'pcie_app_versal_exerciser' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:536]
+WARNING: [Synth 8-7023] instance 'pcie_app_versal_i' of module 'pcie_app_versal_exerciser' has 127 connections declared, but only 86 given [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:366]
+INFO: [Synth 8-6155] done synthesizing module 'cpm_pcie_exerciser_wrapper' (0#1) [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/top_wrapper.v:12]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'EP_MEM'. This will prevent further optimization [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_MEM_ACCESS.v:206]
+WARNING: [Synth 8-6014] Unused sequential element cfg_interrupt_int_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_MEM.v:438]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'EP_MEM'. This will prevent further optimization [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_1024.v:348]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'EP_RC_1024'. This will prevent further optimization [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_1024.v:419]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_cq_tkeep_q_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_CQ_512.v:158]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_cq_tvalid_q_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_CQ_512.v:159]
+WARNING: [Synth 8-6014] Unused sequential element data_start_loc_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_CQ_512.v:223]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'EP_RQ_RW_1024'. This will prevent further optimization [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_1024.v:202]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rq_states'. This will prevent further optimization [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_RW_1024.v:914]
+WARNING: [Synth 8-6014] Unused sequential element avail_client_tag_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_RW_1024.v:321]
+WARNING: [Synth 8-6014] Unused sequential element client_tag_assigned_0_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_RW_1024.v:306]
+WARNING: [Synth 8-6014] Unused sequential element client_tag_assigned_1_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_RW_1024.v:307]
+WARNING: [Synth 8-6014] Unused sequential element client_tag_assigned_2_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_RW_1024.v:308]
+WARNING: [Synth 8-6014] Unused sequential element client_tag_assigned_3_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_RW_1024.v:309]
+WARNING: [Synth 8-6014] Unused sequential element client_tag_assigned_num_0_d1_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_RW_1024.v:306]
+WARNING: [Synth 8-6014] Unused sequential element client_tag_assigned_num_1_d1_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_RW_1024.v:307]
+WARNING: [Synth 8-6014] Unused sequential element client_tag_assigned_num_2_d1_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_RW_1024.v:308]
+WARNING: [Synth 8-6014] Unused sequential element client_tag_assigned_num_3_d1_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_RW_1024.v:309]
+WARNING: [Synth 8-6014] Unused sequential element client_tag_assigned_num_0_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_RW_1024.v:874]
+WARNING: [Synth 8-6014] Unused sequential element client_tag_assigned_num_1_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_RW_1024.v:875]
+WARNING: [Synth 8-6014] Unused sequential element client_tag_assigned_num_2_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_RW_1024.v:876]
+WARNING: [Synth 8-6014] Unused sequential element client_tag_assigned_num_3_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_RW_1024.v:877]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'EP_RQ_1024'. This will prevent further optimization [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_1024.v:514]
+WARNING: [Synth 8-6014] Unused sequential element seq_num_assigned_num_0_q_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_1024.v:162]
+WARNING: [Synth 8-6014] Unused sequential element seq_num_assigned_num_1_q_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_RQ_1024.v:163]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_cc_states'. This will prevent further optimization [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_CC_512.v:726]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'EP_CC_512'. This will prevent further optimization [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_1024.v:572]
+WARNING: [Synth 8-6014] Unused sequential element aer_err_uncor_reg_reg was removed.  [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_CC_512.v:249]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'EP_INTR_CTRL'. This will prevent further optimization [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_1024.v:617]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'aer_set'. This will prevent further optimization [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_1024.v:660]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'EP_CQ_512'. This will prevent further optimization [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_1024.v:462]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 4290.883 ; gain = 633.121 ; free physical = 219395 ; free virtual = 236021
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 4296.820 ; gain = 639.059 ; free physical = 219395 ; free virtual = 236021
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 4296.820 ; gain = 639.059 ; free physical = 219395 ; free virtual = 236021
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.4 ; elapsed = 00:00:00.4 . Memory (MB): peak = 4304.820 ; gain = 0.000 ; free physical = 219386 ; free virtual = 236012
+INFO: [Chipscope 16-579] Latest version is versal_cips_v3_3 for versal_cips_v3_2
+INFO: [Constraints 18-6336] Loading Clock Expansion Window constraints config file for device xcvp1202.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_0/axis_ila_0/axis_ila_0_in_context.xdc] for cell 'pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/aer_set'
+Finished Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_0/axis_ila_0/axis_ila_0_in_context.xdc] for cell 'pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/aer_set'
+Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/axis_ila_1/axis_ila_1_in_context.xdc] for cell 'pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_CC_512/axi_cc_states'
+Finished Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_1/axis_ila_1/axis_ila_1_in_context.xdc] for cell 'pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_CC_512/axi_cc_states'
+Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_2/axis_ila_2/axis_ila_2_in_context.xdc] for cell 'pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states'
+Finished Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/ip/axis_ila_2/axis_ila_2/axis_ila_2_in_context.xdc] for cell 'pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states'
+Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_0/bd_6f6a_pspmc_0_0.xdc] for cell 'exerciser_i/versal_cips_0/inst/pspmc_0/inst'
+Finished Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_0/bd_6f6a_pspmc_0_0.xdc] for cell 'exerciser_i/versal_cips_0/inst/pspmc_0/inst'
+Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/bd_6f6a_cpm_0_0_gt_quad_3.xdc] for cell 'exerciser_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst3/inst'
+Finished Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/bd_6f6a_cpm_0_0_gt_quad_3.xdc] for cell 'exerciser_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst3/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_1/bd_6f6a_cpm_0_0_gt_quad_3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cpm_pcie_exerciser_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/cpm_pcie_exerciser_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/bd_6f6a_cpm_0_0_gt_quad_2.xdc] for cell 'exerciser_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst2/inst'
+Finished Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/bd_6f6a_cpm_0_0_gt_quad_2.xdc] for cell 'exerciser_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst2/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_0/bd_6f6a_cpm_0_0_gt_quad_2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cpm_pcie_exerciser_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/cpm_pcie_exerciser_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_cpm5.xdc] for cell 'exerciser_i/versal_cips_0/inst/cpm_0/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_cpm5.xdc:12]
+Finished Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_cpm5.xdc] for cell 'exerciser_i/versal_cips_0/inst/cpm_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser/ip/exerciser_versal_cips_0_0/bd_0/ip/ip_1/ip_cpm5.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cpm_pcie_exerciser_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/cpm_pcie_exerciser_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/tools/Xilinx/Vivado/2023.1/data/xhub/ced/XilinxCEDStore/ced/Xilinx/IPI/Versal_ACAP_CPM_PCIE_PIO_Design/cpm5_pcie_pio/constraints/top_impl.xdc]
+Finished Parsing XDC File [/tools/Xilinx/Vivado/2023.1/data/xhub/ced/XilinxCEDStore/ced/Xilinx/IPI/Versal_ACAP_CPM_PCIE_PIO_Design/cpm5_pcie_pio/constraints/top_impl.xdc]
+Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cpm_pcie_exerciser_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/cpm_pcie_exerciser_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 2 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4818.359 ; gain = 0.000 ; free physical = 219034 ; free virtual = 235660
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 4818.359 ; gain = 0.000 ; free physical = 219034 ; free virtual = 235660
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/aer_set' at clock pin 'clk' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_CC_512/axi_cc_states' at clock pin 'clk' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states' at clock pin 'clk' is different from the actual clock period '4.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 4818.359 ; gain = 1160.598 ; free physical = 219033 ; free virtual = 235659
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvp1202-vsva2785-2MHP-e-S-es1
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 4818.359 ; gain = 1160.598 ; free physical = 219033 ; free virtual = 235659
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for exerciser_i/versal_cips_0/inst/pspmc_0/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/synth_1/dont_touch.xdc, line 31).
+Applied set_property KEEP_HIERARCHY = SOFT for exerciser_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst3/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/synth_1/dont_touch.xdc, line 39).
+Applied set_property KEEP_HIERARCHY = SOFT for exerciser_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst2/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/synth_1/dont_touch.xdc, line 44).
+Applied set_property KEEP_HIERARCHY = SOFT for exerciser_i/versal_cips_0/inst/cpm_0/inst. (constraint file  /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/synth_1/dont_touch.xdc, line 47).
+Applied set_property KEEP_HIERARCHY = SOFT for exerciser_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for exerciser_i/versal_cips_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for exerciser_i/versal_cips_0/inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for exerciser_i/versal_cips_0/inst/pspmc_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for exerciser_i/versal_cips_0/inst/cpm_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for exerciser_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for exerciser_i/versal_cips_0/inst/cpm_0/inst/gt_quad_inst2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/aer_set. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_CC_512/axi_cc_states. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/EP_RQ_1024/EP_RQ_RW_1024/rq_states. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie_1_wrapper_i/user_lnk_up_cdc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie_1_wrapper_i/user_reset_cdc. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 4818.359 ; gain = 1160.598 ; free physical = 219033 ; free virtual = 235659
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 4818.359 ; gain = 1160.598 ; free physical = 219027 ; free virtual = 235658
+---------------------------------------------------------------------------------
+pcie_app_versal_exerciser__GC0EXERCISER_AXIST_1024__GC0bd_6f6a_pspmc_0_0bd_6f6a_cpm_0_0_core_top__GC0cpm5_v1_0_12_pcie_wrapper__GC0cpm5_v1_0_12_pcie_4_0_vf_decode_attr__GB3cpm5_v1_0_12_pcie_4_0_vf_decode_attr__GB2cpm5_v1_0_12_pcie_4_0_vf_decode_attr__GB1---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 4818.359 ; gain = 1160.598 ; free physical = 219025 ; free virtual = 235656
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'EXERCISER_AXIST_CC_512'
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'EXERCISER_AXIST_CC_512', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+EXERCISER_AXIST_TX_RST_STATE |                             0000 |                             0000
+EXERCISER_AXIST_TX_COMPL_C1 |                             0001 |                             0001
+EXERCISER_AXIST_TX_COMPL_WD_C1 |                             0011 |                             0011
+EXERCISER_AXIST_TX_COMPL_WD_2DW |                             1010 |                             1010
+EXERCISER_AXIST_TX_CPL_UR_C1 |                             0110 |                             0110
+EXERCISER_AXIST_TX_COMPL_ERROR |                             1111 |                             1111
+---------------------------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'completion_state_reg' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_1024.v:260]
+WARNING: [Synth 8-327] inferring latch for variable 'posioned_completion_reg' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_1024.v:259]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 4818.359 ; gain = 1160.598 ; free physical = 219012 ; free virtual = 235643
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Mimic Skeleton from Reference
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Mimic Skeleton from Reference : Time (s): cpu = 00:00:30 ; elapsed = 00:00:26 . Memory (MB): peak = 4818.359 ; gain = 1160.598 ; free physical = 219012 ; free virtual = 235643
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: yes
+
+   Stitch points used : changed
+
+
+2. Change Summary
+
+Report Incremental Modules: 
++------+-----------------------+------------+----------+----------+
+|      |Changed Modules        |Replication |Instances |Changed % |
++------+-----------------------+------------+----------+----------+
+|1     |EXERCISER_AXIST_CC_512 |           1|     10135|    5.3763|
++------+-----------------------+------------+----------+----------+
+
+
+   Full Design Size (number of cells) : 188512
+   Resynthesis Design Size (number of cells) : 115219
+   Resynth % : 61.1202,  Reuse % : 38.8798
+
+3. Reference Checkpoint Information
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| DCP Location:  | /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/utils_1/imports/synth_1/cpm_pcie_pio_wrapper.dcp |
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------+------------------------------+
+|         DCP Information        |             Value            |
++--------------------------------+------------------------------+
+| Vivado Version                 |                    v2023.1 |
+| DCP State                      |                              |
++--------------------------------+------------------------------+
+
+
+
+Report RTL Partitions: 
++------+--------------------------------------------------+------------+----------+
+|      |RTL Partition                                     |Replication |Instances |
++------+--------------------------------------------------+------------+----------+
+|1     |EXERCISER_AXIST_EP_1024__GB1                      |           1|     13468|
+|2     |muxpart__148_cpm5_v1_0_12_pcie_4_0_vf_decode_attr |           1|     57600|
+|3     |EXERCISER_AXIST_EP_1024__GB0                      |           1|     44143|
+|4     |cpm5_v1_0_12_pcie_4_0_vf_decode_attr__GB1_#REUSE# |           1|         0|
+|5     |cpm5_v1_0_12_pcie_4_0_vf_decode_attr__GB2_#REUSE# |           1|         0|
+|6     |cpm5_v1_0_12_pcie_4_0_vf_decode_attr__GB3_#REUSE# |           1|         0|
+|7     |cpm5_v1_0_12_pcie_wrapper__GC0_#REUSE#            |           1|         0|
+|8     |bd_6f6a_cpm_0_0_core_top__GC0_#REUSE#             |           1|         0|
+|9     |bd_6f6a_pspmc_0_0_#REUSE#                         |           1|         0|
+|10    |EXERCISER_AXIST_1024__GC0_#REUSE#                 |           1|         0|
+|11    |pcie_app_versal_exerciser__GC0_#REUSE#            |           1|         0|
++------+--------------------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   9 Input   32 Bit       Adders := 2     
+	   2 Input   30 Bit       Adders := 2     
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 9     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input    128 Bit         XORs := 8     
+	   2 Input     32 Bit         XORs := 8     
+	   2 Input     16 Bit         XORs := 8     
+	   2 Input     12 Bit         XORs := 8     
+	   2 Input      4 Bit         XORs := 8     
++---XORs : 
+	                8 Bit    Wide XORs := 128   
++---Registers : 
+	             1024 Bit    Registers := 2     
+	              512 Bit    Registers := 2     
+	              465 Bit    Registers := 1     
+	              373 Bit    Registers := 1     
+	               81 Bit    Registers := 1     
+	               64 Bit    Registers := 4     
+	               32 Bit    Registers := 20    
+	               27 Bit    Registers := 1     
+	               21 Bit    Registers := 2     
+	               16 Bit    Registers := 13    
+	               13 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 18    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 73    
++---Muxes : 
+	   5 Input 1024 Bit        Muxes := 1     
+	   2 Input 1024 Bit        Muxes := 5     
+	   4 Input 1024 Bit        Muxes := 3     
+	   6 Input 1024 Bit        Muxes := 2     
+	   8 Input  512 Bit        Muxes := 1     
+	   3 Input  465 Bit        Muxes := 1     
+	   4 Input  384 Bit        Muxes := 1     
+	   2 Input  373 Bit        Muxes := 1     
+	   6 Input  373 Bit        Muxes := 2     
+	   2 Input  258 Bit        Muxes := 1     
+	   9 Input   81 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 2     
+	   5 Input   64 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 19    
+	   6 Input   32 Bit        Muxes := 2     
+	   3 Input   32 Bit        Muxes := 3     
+	   5 Input   32 Bit        Muxes := 2     
+	   9 Input   32 Bit        Muxes := 1     
+	   2 Input   27 Bit        Muxes := 7     
+	   6 Input   27 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 16    
+	   5 Input   16 Bit        Muxes := 2     
+	   6 Input   16 Bit        Muxes := 3     
+	   3 Input   16 Bit        Muxes := 2     
+	   4 Input   16 Bit        Muxes := 1     
+	   9 Input   16 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 18    
+	   5 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 2     
+	   4 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 18    
+	   5 Input    8 Bit        Muxes := 2     
+	   6 Input    7 Bit        Muxes := 1     
+	   4 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 4     
+	   5 Input    5 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 12    
+	   6 Input    5 Bit        Muxes := 1     
+	  12 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 28    
+	   9 Input    4 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 30    
+	   3 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 5     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 97    
+	   6 Input    1 Bit        Muxes := 6     
+	   4 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 21    
+	   5 Input    1 Bit        Muxes := 23    
+	  11 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 2     
+	  24 Input    1 Bit        Muxes := 20    
+	   9 Input    1 Bit        Muxes := 7     
+	   8 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3984 (col length:166)
+BRAMs: 2682 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (pcie_app_versal_i/led_0_obuf) is unused and will be removed from module cpm_pcie_exerciser_wrapper.
+WARNING: [Synth 8-3332] Sequential element (pcie_app_versal_i/led_1_obuf) is unused and will be removed from module cpm_pcie_exerciser_wrapper.
+WARNING: [Synth 8-3332] Sequential element (pcie_app_versal_i/led_2_obuf) is unused and will be removed from module cpm_pcie_exerciser_wrapper.
+WARNING: [Synth 8-3332] Sequential element (pcie_app_versal_i/led_3_obuf) is unused and will be removed from module cpm_pcie_exerciser_wrapper.
+WARNING: [Synth 8-3332] Sequential element (pcie_app_versal_i/led_4_obuf) is unused and will be removed from module cpm_pcie_exerciser_wrapper.
+WARNING: [Synth 8-3332] Sequential element (pcie_app_versal_i/led_5_obuf) is unused and will be removed from module cpm_pcie_exerciser_wrapper.
+WARNING: [Synth 8-3332] Sequential element (pcie_app_versal_i/led_6_obuf) is unused and will be removed from module cpm_pcie_exerciser_wrapper.
+WARNING: [Synth 8-3332] Sequential element (pcie_app_versal_i/led_7_obuf) is unused and will be removed from module cpm_pcie_exerciser_wrapper.
+INFO: [Synth 8-4471] merging register 'mrd_count_o_reg[15:0]' into 'mrd_count_o_reg[15:0]' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_1024.v:180]
+INFO: [Synth 8-4471] merging register 'mrd_len_o_reg[15:0]' into 'mrd_len_o_reg[15:0]' [/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.srcs/sources_1/imports/sources/EXERCISER_AXIST_EP_1024.v:179]
+DSP Report: Generating DSP expect_cpld_data_size_reg0, operation Mode is: A2*B2.
+DSP Report: register mrd_count_o_reg is absorbed into DSP expect_cpld_data_size_reg0.
+DSP Report: register mrd_len_o_reg is absorbed into DSP expect_cpld_data_size_reg0.
+DSP Report: operator expect_cpld_data_size_reg0 is absorbed into DSP expect_cpld_data_size_reg0.
+INFO: [Synth 8-5544] ROM "s_axis_cc_tkeep0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[1]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[2]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[3]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[4]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[5]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[7]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[11]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[12]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[13]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[14]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[15]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[16]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[17]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[18]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[19]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[20]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[21]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[22]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[23]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[24]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[25]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[26]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[27]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[28]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[29]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[30]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[31]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[32]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[33]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[34]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[35]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[36]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[37]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[38]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[39]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[40]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[41]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[42]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[43]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[44]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[45]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[46]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[47]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[48]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[49]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[50]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[51]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[52]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[53]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[54]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[55]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[56]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[57]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[58]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[59]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[60]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[61]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[62]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[63]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[64]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[65]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[66]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[67]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[68]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[69]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[70]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[71]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[72]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[73]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[74]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[75]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[76]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[77]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[78]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[79]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tuser_reg[80]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tkeep_reg[1]' (FDRE) to 'EP_CC_512/s_axis_cc_tkeep_reg[2]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tkeep_reg[9]' (FDRE) to 'EP_CC_512/s_axis_cc_tkeep_reg[10]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tkeep_reg[10]' (FDRE) to 'EP_CC_512/s_axis_cc_tkeep_reg[11]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tkeep_reg[11]' (FDRE) to 'EP_CC_512/s_axis_cc_tkeep_reg[12]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tkeep_reg[12]' (FDRE) to 'EP_CC_512/s_axis_cc_tkeep_reg[13]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tkeep_reg[13]' (FDRE) to 'EP_CC_512/s_axis_cc_tkeep_reg[14]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tkeep_reg[14]' (FDRE) to 'EP_CC_512/s_axis_cc_tkeep_reg[15]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tdata_reg[35]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tdata_reg[36]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tdata_reg[37]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tdata_reg[38]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tdata_reg[39]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tdata_reg[40]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tdata_reg[41]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tdata_reg[42]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tdata_reg[47]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tdata_reg[72]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[73]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tdata_reg[73]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[75]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tdata_reg[74]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tdata_reg[75]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[76]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tdata_reg[76]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[77]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tdata_reg[77]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[79]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tdata_reg[78]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[511]'
+INFO: [Synth 8-3886] merging instance 'EP_CC_512/s_axis_cc_tdata_reg[79]' (FDRE) to 'EP_CC_512/s_axis_cc_tdata_reg[81]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (EP_CC_512/\s_axis_cc_tdata_reg[511] )
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1023] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1022] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1021] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1020] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1019] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1018] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1017] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1016] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1015] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1014] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1013] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1012] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1011] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1010] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1009] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1008] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1007] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1006] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1005] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1004] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1003] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1002] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1001] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[1000] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[999] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[998] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[997] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[996] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[995] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[994] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[993] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[992] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[991] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[990] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[989] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[988] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[987] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[986] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[985] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[984] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[983] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[982] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[981] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[980] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[979] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[978] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[977] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[976] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[975] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[974] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[973] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[972] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[971] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[970] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[969] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[968] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[967] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[966] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[965] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[964] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[963] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[962] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[961] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[960] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[959] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[958] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[957] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[956] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[955] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[954] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[953] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[952] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[951] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[950] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[949] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[948] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[947] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[946] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[945] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[944] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[943] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[942] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[941] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[940] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[939] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[938] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[937] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[936] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[935] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[934] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[933] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[932] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[931] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[930] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[929] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[928] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[927] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[926] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[925] driven by constant 0
+INFO: [Synth 8-3917] design EXERCISER_AXIST_EP_1024__GB0 has port s_axis_cc_tdata[924] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (EP_RQ_1024/EP_RQ_RW_1024/\s_axis_rq_tuser_reg_reg[83] )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (EP_RQ_1024/EP_RQ_RW_1024/\s_axis_rq_tuser_reg_reg[256] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (EP_RQ_1024/EP_RQ_RW_1024/\s_axis_rq_tuser_reg_reg[372] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (EP_CQ_512/\state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (EP_RQ_1024/\curr_seq_num_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (EP_RQ_1024/\curr_seq_num_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (EP_RQ_1024/\curr_seq_num_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (EP_RQ_1024/\curr_seq_num_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (EP_RQ_1024/\curr_seq_num_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (EP_RQ_1024/\curr_seq_num_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (EP_CQ_512/req_parity_err_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (EP_CQ_512/\req_addr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (EP_CQ_512/\state_reg[2] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:55 . Memory (MB): peak = 4818.359 ; gain = 1160.598 ; free physical = 209790 ; free virtual = 226479
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-----------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name            | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|EXERCISER_AXIST_EP_MEM | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++-----------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Stitch Unchanged AreaOpt Partitions
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged AreaOpt Partitions : Time (s): cpu = 00:00:37 ; elapsed = 00:00:56 . Memory (MB): peak = 4818.359 ; gain = 1160.598 ; free physical = 209790 ; free virtual = 226479
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3321] create_generated_clock : Empty source list for constraint at line  of auto generated constraint. [auto generated constraint:]
+INFO: [Synth 8-5578] Moved timing constraint from pin 'DPLL1_FD_CAL_inst/rst' to pin 'i_0/i_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'DPLL1_FD_CAL_inst/rst_o' to pin 'DPLL1_FD_CAL_inst/in00_inferred/i_0/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:01:10 . Memory (MB): peak = 5874.004 ; gain = 2216.242 ; free physical = 208623 ; free virtual = 225348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:01:11 . Memory (MB): peak = 5893.574 ; gain = 2235.812 ; free physical = 208592 ; free virtual = 225317
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `muxpart__148_cpm5_v1_0_12_pcie_4_0_vf_decode_attr`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `muxpart__148_cpm5_v1_0_12_pcie_4_0_vf_decode_attr' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `cpm5_v1_0_12_pcie_4_0_vf_decode_attr`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `cpm5_v1_0_12_pcie_4_0_vf_decode_attr' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_6f6a_cpm_0_0_core_top`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_6f6a_cpm_0_0_core_top' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_6f6a_cpm_0_0`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_6f6a_cpm_0_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_6f6a`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_6f6a' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `exerciser_versal_cips_0_0`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `exerciser_versal_cips_0_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `exerciser`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `exerciser' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `EXERCISER_AXIST_EP_MEM`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `EXERCISER_AXIST_EP_MEM' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `EXERCISER_AXIST_EP_MEM_ACCESS`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `EXERCISER_AXIST_EP_MEM_ACCESS' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `EXERCISER_AXIST_CC_512__1`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `EXERCISER_AXIST_CC_512__1' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `EXERCISER_AXIST_INTR_CTRL`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `EXERCISER_AXIST_INTR_CTRL' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `EXERCISER_AXIST_EP_1024__GB1`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `EXERCISER_AXIST_EP_1024__GB1' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `cpm_pcie_exerciser_wrapper`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `cpm_pcie_exerciser_wrapper' done
+
+
+WARNING: [Synth 8-207] constrained pin 'exerciser_i/versal_cips_0/inst/cpm_0/inst/i_0/gt_quad_inst2/inst/quad_inst/CH0_RXOUTCLK'  not found
+WARNING: [Synth 8-207] constrained pin 'exerciser_i/versal_cips_0/inst/cpm_0/inst/i_0/gt_quad_inst2/inst/quad_inst/CH1_RXOUTCLK'  not found
+WARNING: [Synth 8-207] constrained pin 'exerciser_i/versal_cips_0/inst/cpm_0/inst/i_0/gt_quad_inst2/inst/quad_inst/CH0_TXOUTCLK'  not found
+WARNING: [Synth 8-207] constrained pin 'exerciser_i/versal_cips_0/inst/cpm_0/inst/i_0/gt_quad_inst2/inst/quad_inst/CH1_TXOUTCLK'  not found
+WARNING: [Synth 8-207] constrained pin 'exerciser_i/versal_cips_0/inst/cpm_0/inst/i_0/gt_quad_inst2/inst/quad_inst/CH2_RXOUTCLK'  not found
+WARNING: [Synth 8-207] constrained pin 'exerciser_i/versal_cips_0/inst/cpm_0/inst/i_0/gt_quad_inst2/inst/quad_inst/CH3_RXOUTCLK'  not found
+WARNING: [Synth 8-207] constrained pin 'exerciser_i/versal_cips_0/inst/cpm_0/inst/i_0/gt_quad_inst2/inst/quad_inst/CH2_TXOUTCLK'  not found
+WARNING: [Synth 8-207] constrained pin 'exerciser_i/versal_cips_0/inst/cpm_0/inst/i_0/gt_quad_inst2/inst/quad_inst/CH3_TXOUTCLK'  not found
+WARNING: [Synth 8-207] constrained pin 'exerciser_i/versal_cips_0/inst/cpm_0/inst/i_0/gt_quad_inst3/inst/quad_inst/CH0_RXOUTCLK'  not found
+WARNING: [Synth 8-207] constrained pin 'exerciser_i/versal_cips_0/inst/cpm_0/inst/i_0/gt_quad_inst3/inst/quad_inst/CH1_RXOUTCLK'  not found
+WARNING: [Synth 8-207] constrained pin 'exerciser_i/versal_cips_0/inst/cpm_0/inst/i_0/gt_quad_inst3/inst/quad_inst/CH0_TXOUTCLK'  not found
+WARNING: [Synth 8-207] constrained pin 'exerciser_i/versal_cips_0/inst/cpm_0/inst/i_0/gt_quad_inst3/inst/quad_inst/CH1_TXOUTCLK'  not found
+WARNING: [Synth 8-207] constrained pin 'exerciser_i/versal_cips_0/inst/cpm_0/inst/i_0/gt_quad_inst3/inst/quad_inst/CH2_RXOUTCLK'  not found
+WARNING: [Synth 8-207] constrained pin 'exerciser_i/versal_cips_0/inst/cpm_0/inst/i_0/gt_quad_inst3/inst/quad_inst/CH3_RXOUTCLK'  not found
+WARNING: [Synth 8-207] constrained pin 'exerciser_i/versal_cips_0/inst/cpm_0/inst/i_0/gt_quad_inst3/inst/quad_inst/CH2_TXOUTCLK'  not found
+WARNING: [Synth 8-207] constrained pin 'exerciser_i/versal_cips_0/inst/cpm_0/inst/i_0/gt_quad_inst3/inst/quad_inst/CH3_TXOUTCLK'  not found
+warning: ./.Xil/Vivado-2180624-matthew-xilinx/realtime/tmp/////////////parallel_timing.xdc:91: value not specified for "set_clock_groups -group"
+---------------------------------------------------------------------
+Usage:
+  set_clock_groups
+    [-help]
+    [-name <String>]
+    [-physically_exclusive]
+    [-logically_exclusive]
+    [-asynchronous]
+    [-allow_paths]
+    [-group <List>]*
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `cpm5_v1_0_12_pcie_4_0_vf_decode_attr`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `cpm5_v1_0_12_pcie_4_0_vf_decode_attr' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_6f6a_cpm_0_0_core_top`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_6f6a_cpm_0_0_core_top' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_6f6a_cpm_0_0`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_6f6a_cpm_0_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_6f6a`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_6f6a' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `exerciser_versal_cips_0_0`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `exerciser_versal_cips_0_0' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `exerciser`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `exerciser' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `EXERCISER_AXIST_RQ_RW_1024`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `EXERCISER_AXIST_RQ_RW_1024' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `EXERCISER_AXIST_RQ_1024`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `EXERCISER_AXIST_RQ_1024' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `EXERCISER_AXIST_RC_1024`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `EXERCISER_AXIST_RC_1024' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `EXERCISER_AXIST_CQ_512`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `EXERCISER_AXIST_CQ_512' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `EXERCISER_AXIST_EP_1024__GB0_tempName`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `EXERCISER_AXIST_EP_1024__GB0_tempName' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `cpm_pcie_exerciser_wrapper`
+   Worst Slack before retiming is -214748368 and worst slack after retiming is -214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `cpm_pcie_exerciser_wrapper' done
+
+
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:01:28 . Memory (MB): peak = 5936.156 ; gain = 2278.395 ; free physical = 207124 ; free virtual = 223868
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Stitch Unchanged Partitions
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged Partitions : Time (s): cpu = 00:00:53 ; elapsed = 00:01:28 . Memory (MB): peak = 5939.461 ; gain = 2281.699 ; free physical = 207116 ; free virtual = 223861
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:cpm_gpi1[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pl_gen34_eq_mismatch_i_1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pl_gen34_redo_eq_speed_i_1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pl_gen34_redo_equalization_i_1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:lpd_cpm5_por_n to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pmc_i2c_scl_in to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pmc_i2c_sda_in to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:uart0_ctsn to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:uart0_dcdn to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:uart0_dsrn to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:uart0_rin to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:uart0_rxd to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:fmio_uart0_sir_in to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:uart1_ctsn to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:uart1_dcdn to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:uart1_dsrn to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:uart1_rin to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:uart1_rxd to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:fmio_uart1_sir_in to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pmc_pl_gpi[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pmc_pl_gpi[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pmc_pl_gpi[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pmc_pl_gpi[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pmc_pl_gpi[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pmc_pl_gpi[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pmc_pl_gpi[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pmc_pl_gpi[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pmc_pl_gpi[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pmc_pl_gpi[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pmc_pl_gpi[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pmc_pl_gpi[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pmc_pl_gpi[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pmc_pl_gpi[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pmc_pl_gpi[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pmc_pl_gpi[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pmc_pl_gpi[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:pmc_pl_gpi[14] to constant 0
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:01:39 . Memory (MB): peak = 5972.141 ; gain = 2314.379 ; free physical = 207024 ; free virtual = 223833
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:04 ; elapsed = 00:01:40 . Memory (MB): peak = 5972.141 ; gain = 2314.379 ; free physical = 207024 ; free virtual = 223833
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:05 ; elapsed = 00:01:40 . Memory (MB): peak = 5972.141 ; gain = 2314.379 ; free physical = 207024 ; free virtual = 223833
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:05 ; elapsed = 00:01:40 . Memory (MB): peak = 5972.141 ; gain = 2314.379 ; free physical = 207024 ; free virtual = 223833
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:05 ; elapsed = 00:01:41 . Memory (MB): peak = 5972.141 ; gain = 2314.379 ; free physical = 207024 ; free virtual = 223833
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:05 ; elapsed = 00:01:41 . Memory (MB): peak = 5972.141 ; gain = 2314.379 ; free physical = 207024 ; free virtual = 223833
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-----------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name            | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|EXERCISER_AXIST_EP_MEM | A'*B'       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++-----------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |axis_ila_2    |         1|
+|2     |axis_ila_1__1 |         1|
+|3     |axis_ila_0    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |axis_ila          |     1|
+|2     |axis_ila_1        |     1|
+|3     |axis_ila          |     1|
+|4     |BUFG_PS           |     8|
+|5     |CPM5              |     1|
+|6     |DSP_ALUADD        |     1|
+|7     |DSP_ALUMUX        |     1|
+|8     |DSP_ALUREG        |     1|
+|9     |DSP_A_B_DATA58    |     1|
+|10    |DSP_C_DATA58      |     1|
+|11    |DSP_MULTIPLIER58  |     1|
+|12    |DSP_M_DATA58      |     1|
+|13    |DSP_OUTPUT58      |     1|
+|14    |DSP_PATDET        |     1|
+|15    |DSP_PREADD58      |     1|
+|16    |DSP_PREADD_DATA58 |     1|
+|17    |DSP_SRCMX_OPTINV  |     1|
+|18    |GTYP_QUAD         |     2|
+|19    |IBUFDS_GTE5       |     1|
+|20    |LOOKAHEAD8        |    31|
+|25    |LUT1              |  1287|
+|26    |LUT2              |   570|
+|27    |LUT3              |   809|
+|28    |LUT4              |  1806|
+|29    |LUT5              |  1772|
+|30    |LUT6              |  3673|
+|31    |LUT6CY            |   232|
+|32    |LUT6              |     7|
+|33    |PS9               |     1|
+|34    |FDCE              |   263|
+|35    |FDPE              |     4|
+|36    |FDRE              |  6000|
+|37    |FDSE              |     7|
+|38    |LD                |     4|
+|39    |IBUF              |     2|
++------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:05 ; elapsed = 00:01:41 . Memory (MB): peak = 5972.141 ; gain = 2314.379 ; free physical = 207024 ; free virtual = 223833
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 47025 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:01:35 . Memory (MB): peak = 5976.051 ; gain = 1796.750 ; free physical = 217894 ; free virtual = 234703
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:46 . Memory (MB): peak = 5976.051 ; gain = 2318.289 ; free physical = 217918 ; free virtual = 234702
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.24 . Memory (MB): peak = 5976.051 ; gain = 0.000 ; free physical = 217918 ; free virtual = 234702
+INFO: [Netlist 29-17] Analyzing 244 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Chipscope 16-579] Latest version is versal_cips_v3_3 for versal_cips_v3_2
+INFO: [Constraints 18-6336] Loading Clock Expansion Window constraints config file for device xcvp1202.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 6158.914 ; gain = 0.000 ; free physical = 217794 ; free virtual = 234578
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 244 instances were transformed.
+  DSP58 => DSP58 (DSP_ALUADD, DSP_ALUMUX, DSP_ALUREG, DSP_A_B_DATA58, DSP_C_DATA58, DSP_MULTIPLIER58, DSP_M_DATA58, DSP_OUTPUT58, DSP_PATDET, DSP_PREADD58, DSP_PREADD_DATA58, DSP_SRCMX_OPTINV, VCC): 1 instance 
+  LD => LDCE: 4 instances
+  LUT6CY => LUT6CY (LUTCY1, LUTCY2): 232 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 7 instances
+
+Synth Design complete | Checksum: 82f3b90
+INFO: [Common 17-83] Releasing license: Synthesis
+440 Infos, 294 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:55 . Memory (MB): peak = 6158.914 ; gain = 3341.543 ; free physical = 217794 ; free virtual = 234578
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 16142.646; main = 5259.302; forked = 11076.871
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 20433.699; main = 6158.918; forked = 14461.555
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint '/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/synth_1/cpm_pcie_exerciser_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cpm_pcie_exerciser_wrapper_utilization_synth.rpt -pb cpm_pcie_exerciser_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  4 21:39:53 2024...

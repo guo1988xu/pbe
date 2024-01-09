@@ -1,0 +1,103 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date         : Mon Oct  9 21:34:04 2023
+| Host         : matthew-xilinx running 64-bit Ubuntu 22.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xcvp1202-vsva2785-2MHP-e-S-es1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cpm_pcie_pio_versal_cips_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of cpm_pcie_pio_versal_cips_0_0 (xilinx.com:ip:versal_cips:3.3 (Rev. 3)) to current project options.
+
+2. Upgrade messages
+-------------------
+
+Set parameter PS_PMC_CONFIG to value BOOT_MODE Custom DESIGN_MODE 1 PCIE_APERTURES_DUAL_ENABLE 0 PCIE_APERTURES_SINGLE_ENABLE 0 PMC_OSPI_PERIPHERAL {{ENABLE 0} {IO {PMC_MIO 0 .. 11}} {MODE Single}} PMC_QSPI_PERIPHERAL_ENABLE 1 PMC_QSPI_PERIPHERAL_MODE {Dual Parallel} PS_BOARD_INTERFACE Custom PS_PCIE1_PERIPHERAL_ENABLE 1 PS_PCIE2_PERIPHERAL_ENABLE 0 PS_PCIE_EP_RESET2_IO {PMC_MIO 39} PS_PCIE_RESET {{ENABLE 1}} SMON_ALARMS Set_Alarms_On SMON_ENABLE_TEMP_AVERAGING 0 SMON_TEMP_AVERAGING_SAMPLES 0 (source 'default')
+Removed parameter PS_PMC_CONFIG_INTERNAL
+Removed parameter CPM_CONFIG_INTERNAL
+Removed parameter XRAM_CONFIG_INTERNAL
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date         : Wed Aug 23 20:18:52 2023
+| Host         : matthew-xilinx running 64-bit Ubuntu 22.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xcvp1202-vsva2785-2MP-e-S-es1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cpm_pcie_pio_versal_cips_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of cpm_pcie_pio_versal_cips_0_0 (xilinx.com:ip:versal_cips:3.3) to (Rev. 3)
+
+2. Upgrade messages
+-------------------
+
+Set parameter PS_PMC_CONFIG to value BOOT_MODE Custom DESIGN_MODE 1 PCIE_APERTURES_DUAL_ENABLE 0 PCIE_APERTURES_SINGLE_ENABLE 0 PMC_OSPI_PERIPHERAL {{ENABLE 0} {IO {PMC_MIO 0 .. 11}} {MODE Single}} PMC_QSPI_PERIPHERAL_ENABLE 1 PMC_QSPI_PERIPHERAL_MODE {Dual Parallel} PS_BOARD_INTERFACE Custom PS_PCIE1_PERIPHERAL_ENABLE 0 PS_PCIE2_PERIPHERAL_ENABLE 1 PS_PCIE_EP_RESET2_IO {PMC_MIO 39} PS_PCIE_RESET {{ENABLE 1}} SMON_ALARMS Set_Alarms_On SMON_ENABLE_TEMP_AVERAGING 0 SMON_TEMP_AVERAGING_SAMPLES 0  (source 'default')
+Removed parameter PS_PMC_CONFIG_INTERNAL
+Removed parameter CPM_CONFIG_INTERNAL
+Removed parameter XRAM_CONFIG_INTERNAL
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date         : Wed Aug 23 20:18:26 2023
+| Host         : matthew-xilinx running 64-bit Ubuntu 22.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xcvp1202-vsva2785-2MP-e-S-es1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'axis_ila_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of axis_ila_0 (xilinx.com:ip:axis_ila:1.2) to (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection and Interface Information
+---------------------------------------
+
+Connection and Interface information can not be compared for deferred elaboration IPs.
+axis_ila_0 may have connection or interface changes.
+
+
+3. Upgrade messages
+-------------------
+
+Set parameter C_SLOT_0_TXN_CNTR_EN to value 0 (source 'default')
+Set parameter C_SLOT_1_TXN_CNTR_EN to value 0 (source 'default')
+Set parameter C_SLOT_2_TXN_CNTR_EN to value 0 (source 'default')
+Set parameter C_SLOT_3_TXN_CNTR_EN to value 0 (source 'default')
+Set parameter C_SLOT_4_TXN_CNTR_EN to value 0 (source 'default')
+Set parameter C_SLOT_5_TXN_CNTR_EN to value 0 (source 'default')
+Set parameter C_SLOT_6_TXN_CNTR_EN to value 0 (source 'default')
+Set parameter C_SLOT_7_TXN_CNTR_EN to value 0 (source 'default')
+Set parameter C_SLOT_8_TXN_CNTR_EN to value 0 (source 'default')
+Set parameter C_SLOT_9_TXN_CNTR_EN to value 0 (source 'default')
+Set parameter C_SLOT_10_TXN_CNTR_EN to value 0 (source 'default')
+Set parameter C_SLOT_11_TXN_CNTR_EN to value 0 (source 'default')
+Set parameter C_SLOT_12_TXN_CNTR_EN to value 0 (source 'default')
+Set parameter C_SLOT_13_TXN_CNTR_EN to value 0 (source 'default')
+Set parameter C_SLOT_14_TXN_CNTR_EN to value 0 (source 'default')
+Set parameter C_SLOT_15_TXN_CNTR_EN to value 0 (source 'default')
+

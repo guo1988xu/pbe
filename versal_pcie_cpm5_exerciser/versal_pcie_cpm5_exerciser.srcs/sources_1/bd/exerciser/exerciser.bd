@@ -1,0 +1,1525 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xD723C15DF3FE5AD6",
+      "device": "xcvp1202-vsva2785-2MHP-e-S-es1",
+      "gen_directory": "../../../../versal_pcie_cpm5_exerciser.gen/sources_1/bd/exerciser",
+      "name": "exerciser",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "versal_cips_0": ""
+    },
+    "interface_ports": {
+      "gt_refclk1_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:diff_clock:1.0",
+        "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          }
+        },
+        "port_maps": {
+          "CLK_N": {
+            "physical_name": "gt_refclk1_0_clk_n",
+            "direction": "I"
+          },
+          "CLK_P": {
+            "physical_name": "gt_refclk1_0_clk_p",
+            "direction": "I"
+          }
+        }
+      },
+      "PCIE1_GT_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:gt:1.0",
+        "vlnv": "xilinx.com:interface:gt_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          }
+        },
+        "port_maps": {
+          "GRX_N": {
+            "physical_name": "PCIE1_GT_0_grx_n",
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "GTX_N": {
+            "physical_name": "PCIE1_GT_0_gtx_n",
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "GRX_P": {
+            "physical_name": "PCIE1_GT_0_grx_p",
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "GTX_P": {
+            "physical_name": "PCIE1_GT_0_gtx_p",
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "pcie1_cfg_control_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:pcie5_cfg_control:1.0",
+        "vlnv": "xilinx.com:interface:pcie5_cfg_control_rtl:1.0",
+        "port_maps": {
+          "err_cor_in": {
+            "physical_name": "pcie1_cfg_control_0_err_cor_in",
+            "direction": "I"
+          },
+          "err_uncor_in": {
+            "physical_name": "pcie1_cfg_control_0_err_uncor_in",
+            "direction": "I"
+          },
+          "flr_done": {
+            "physical_name": "pcie1_cfg_control_0_flr_done",
+            "direction": "I"
+          },
+          "flr_done_function_number": {
+            "physical_name": "pcie1_cfg_control_0_flr_done_function_number",
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "flr_in_process": {
+            "physical_name": "pcie1_cfg_control_0_flr_in_process",
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "hot_reset_in": {
+            "physical_name": "pcie1_cfg_control_0_hot_reset_in",
+            "direction": "I"
+          },
+          "hot_reset_out": {
+            "physical_name": "pcie1_cfg_control_0_hot_reset_out",
+            "direction": "O"
+          },
+          "per_function_req": {
+            "physical_name": "pcie1_cfg_control_0_per_function_req",
+            "direction": "I"
+          },
+          "per_function_number": {
+            "physical_name": "pcie1_cfg_control_0_per_function_number",
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "power_state_change_ack": {
+            "physical_name": "pcie1_cfg_control_0_power_state_change_ack",
+            "direction": "I"
+          },
+          "power_state_change_interrupt": {
+            "physical_name": "pcie1_cfg_control_0_power_state_change_interrupt",
+            "direction": "O"
+          }
+        }
+      },
+      "pcie1_cfg_ext_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:pcie3_cfg_ext:1.0",
+        "vlnv": "xilinx.com:interface:pcie3_cfg_ext_rtl:1.0",
+        "port_maps": {
+          "read_received": {
+            "physical_name": "pcie1_cfg_ext_0_read_received",
+            "direction": "O"
+          },
+          "write_received": {
+            "physical_name": "pcie1_cfg_ext_0_write_received",
+            "direction": "O"
+          },
+          "write_data": {
+            "physical_name": "pcie1_cfg_ext_0_write_data",
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "read_data_valid": {
+            "physical_name": "pcie1_cfg_ext_0_read_data_valid",
+            "direction": "I"
+          },
+          "function_number": {
+            "physical_name": "pcie1_cfg_ext_0_function_number",
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "register_number": {
+            "physical_name": "pcie1_cfg_ext_0_register_number",
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "read_data": {
+            "physical_name": "pcie1_cfg_ext_0_read_data",
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "write_byte_enable": {
+            "physical_name": "pcie1_cfg_ext_0_write_byte_enable",
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "pcie1_cfg_fc_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:pcie_cfg_fc:1.1",
+        "vlnv": "xilinx.com:interface:pcie_cfg_fc_rtl:1.1",
+        "port_maps": {
+          "PH": {
+            "physical_name": "pcie1_cfg_fc_0_ph",
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "PD": {
+            "physical_name": "pcie1_cfg_fc_0_pd",
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "NPH": {
+            "physical_name": "pcie1_cfg_fc_0_nph",
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "NPD": {
+            "physical_name": "pcie1_cfg_fc_0_npd",
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "VC_SEL": {
+            "physical_name": "pcie1_cfg_fc_0_vc_sel",
+            "direction": "I"
+          },
+          "PD_SCALE": {
+            "physical_name": "pcie1_cfg_fc_0_pd_scale",
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "PH_SCALE": {
+            "physical_name": "pcie1_cfg_fc_0_ph_scale",
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "NPD_SCALE": {
+            "physical_name": "pcie1_cfg_fc_0_npd_scale",
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "NPH_SCALE": {
+            "physical_name": "pcie1_cfg_fc_0_nph_scale",
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "SEL": {
+            "physical_name": "pcie1_cfg_fc_0_sel",
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "CPLH": {
+            "physical_name": "pcie1_cfg_fc_0_cplh",
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "CPLD": {
+            "physical_name": "pcie1_cfg_fc_0_cpld",
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "CPLD_SCALE": {
+            "physical_name": "pcie1_cfg_fc_0_cpld_scale",
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "CPLH_SCALE": {
+            "physical_name": "pcie1_cfg_fc_0_cplh_scale",
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      },
+      "pcie1_cfg_interrupt_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:pcie3_cfg_interrupt:1.0",
+        "vlnv": "xilinx.com:interface:pcie3_cfg_interrupt_rtl:1.0",
+        "port_maps": {
+          "SENT": {
+            "physical_name": "pcie1_cfg_interrupt_0_sent",
+            "direction": "O"
+          },
+          "INTx_VECTOR": {
+            "physical_name": "pcie1_cfg_interrupt_0_intx_vector",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "PENDING": {
+            "physical_name": "pcie1_cfg_interrupt_0_pending",
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "pcie1_cfg_mgmt_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:pcie4_cfg_mgmt:1.0",
+        "vlnv": "xilinx.com:interface:pcie4_cfg_mgmt_rtl:1.0",
+        "port_maps": {
+          "READ_EN": {
+            "physical_name": "pcie1_cfg_mgmt_0_read_en",
+            "direction": "I"
+          },
+          "READ_WRITE_DONE": {
+            "physical_name": "pcie1_cfg_mgmt_0_read_write_done",
+            "direction": "O"
+          },
+          "WRITE_EN": {
+            "physical_name": "pcie1_cfg_mgmt_0_write_en",
+            "direction": "I"
+          },
+          "DEBUG_ACCESS": {
+            "physical_name": "pcie1_cfg_mgmt_0_debug_access",
+            "direction": "I"
+          },
+          "READ_DATA": {
+            "physical_name": "pcie1_cfg_mgmt_0_read_data",
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "ADDR": {
+            "physical_name": "pcie1_cfg_mgmt_0_addr",
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "BYTE_EN": {
+            "physical_name": "pcie1_cfg_mgmt_0_byte_en",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "WRITE_DATA": {
+            "physical_name": "pcie1_cfg_mgmt_0_write_data",
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "FUNCTION_NUMBER": {
+            "physical_name": "pcie1_cfg_mgmt_0_function_number",
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "pcie1_cfg_msg_recd_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:pcie3_cfg_msg_received:1.0",
+        "vlnv": "xilinx.com:interface:pcie3_cfg_msg_received_rtl:1.0",
+        "port_maps": {
+          "recd": {
+            "physical_name": "pcie1_cfg_msg_recd_0_recd",
+            "direction": "O"
+          },
+          "recd_data": {
+            "physical_name": "pcie1_cfg_msg_recd_0_recd_data",
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "recd_type": {
+            "physical_name": "pcie1_cfg_msg_recd_0_recd_type",
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          }
+        }
+      },
+      "pcie1_cfg_msg_tx_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:pcie3_cfg_mesg_tx:1.0",
+        "vlnv": "xilinx.com:interface:pcie3_cfg_mesg_tx_rtl:1.0",
+        "port_maps": {
+          "TRANSMIT_DONE": {
+            "physical_name": "pcie1_cfg_msg_tx_0_transmit_done",
+            "direction": "O"
+          },
+          "TRANSMIT": {
+            "physical_name": "pcie1_cfg_msg_tx_0_transmit",
+            "direction": "I"
+          },
+          "TRANSMIT_TYPE": {
+            "physical_name": "pcie1_cfg_msg_tx_0_transmit_type",
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "TRANSMIT_DATA": {
+            "physical_name": "pcie1_cfg_msg_tx_0_transmit_data",
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "pcie1_cfg_msi_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:pcie3_cfg_msi:1.0",
+        "vlnv": "xilinx.com:interface:pcie3_cfg_msi_rtl:1.0",
+        "port_maps": {
+          "fail": {
+            "physical_name": "pcie1_cfg_msi_0_fail",
+            "direction": "O"
+          },
+          "sent": {
+            "physical_name": "pcie1_cfg_msi_0_sent",
+            "direction": "O"
+          },
+          "mask_update": {
+            "physical_name": "pcie1_cfg_msi_0_mask_update",
+            "direction": "O"
+          },
+          "data": {
+            "physical_name": "pcie1_cfg_msi_0_data",
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "enable": {
+            "physical_name": "pcie1_cfg_msi_0_enable",
+            "direction": "O"
+          },
+          "mmenable": {
+            "physical_name": "pcie1_cfg_msi_0_mmenable",
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "tph_present": {
+            "physical_name": "pcie1_cfg_msi_0_tph_present",
+            "direction": "I"
+          },
+          "attr": {
+            "physical_name": "pcie1_cfg_msi_0_attr",
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "select": {
+            "physical_name": "pcie1_cfg_msi_0_select",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "tph_type": {
+            "physical_name": "pcie1_cfg_msi_0_tph_type",
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "tph_st_tag": {
+            "physical_name": "pcie1_cfg_msi_0_tph_st_tag",
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "int_vector": {
+            "physical_name": "pcie1_cfg_msi_0_int_vector",
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "pending_status": {
+            "physical_name": "pcie1_cfg_msi_0_pending_status",
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "function_number": {
+            "physical_name": "pcie1_cfg_msi_0_function_number",
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "pending_status_data_enable": {
+            "physical_name": "pcie1_cfg_msi_0_pending_status_data_enable",
+            "direction": "I"
+          },
+          "pending_status_function_num": {
+            "physical_name": "pcie1_cfg_msi_0_pending_status_function_num",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "pcie1_cfg_status_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:pcie5_cfg_status:1.0",
+        "vlnv": "xilinx.com:interface:pcie5_cfg_status_rtl:1.0",
+        "port_maps": {
+          "err_cor_out": {
+            "physical_name": "pcie1_cfg_status_0_err_cor_out",
+            "direction": "O"
+          },
+          "err_fatal_out": {
+            "physical_name": "pcie1_cfg_status_0_err_fatal_out",
+            "direction": "O"
+          },
+          "err_nonfatal_out": {
+            "physical_name": "pcie1_cfg_status_0_err_nonfatal_out",
+            "direction": "O"
+          },
+          "local_error_valid": {
+            "physical_name": "pcie1_cfg_status_0_local_error_valid",
+            "direction": "O"
+          },
+          "local_error_out": {
+            "physical_name": "pcie1_cfg_status_0_local_error_out",
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "pasid_enable": {
+            "physical_name": "pcie1_cfg_status_0_pasid_enable",
+            "direction": "O"
+          },
+          "pasid_control": {
+            "physical_name": "pcie1_cfg_status_0_pasid_control",
+            "direction": "O",
+            "left": "47",
+            "right": "0"
+          },
+          "max_pasid_width_control": {
+            "physical_name": "pcie1_cfg_status_0_max_pasid_width_control",
+            "direction": "O",
+            "left": "79",
+            "right": "0"
+          },
+          "pasid_exec_permission_enable": {
+            "physical_name": "pcie1_cfg_status_0_pasid_exec_permission_enable",
+            "direction": "O"
+          },
+          "pasid_privil_mode_enable": {
+            "physical_name": "pcie1_cfg_status_0_pasid_privil_mode_enable",
+            "direction": "O"
+          },
+          "rq_tag_vld0": {
+            "physical_name": "pcie1_cfg_status_0_rq_tag_vld0",
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "rq_tag_vld1": {
+            "physical_name": "pcie1_cfg_status_0_rq_tag_vld1",
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "rq_seq_num_vld0": {
+            "physical_name": "pcie1_cfg_status_0_rq_seq_num_vld0",
+            "direction": "O"
+          },
+          "rq_seq_num_vld1": {
+            "physical_name": "pcie1_cfg_status_0_rq_seq_num_vld1",
+            "direction": "O"
+          },
+          "rq_seq_num_vld2": {
+            "physical_name": "pcie1_cfg_status_0_rq_seq_num_vld2",
+            "direction": "O"
+          },
+          "rq_seq_num_vld3": {
+            "physical_name": "pcie1_cfg_status_0_rq_seq_num_vld3",
+            "direction": "O"
+          },
+          "rq_tag_av": {
+            "physical_name": "pcie1_cfg_status_0_rq_tag_av",
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "rq_tag0": {
+            "physical_name": "pcie1_cfg_status_0_rq_tag0",
+            "direction": "O",
+            "left": "19",
+            "right": "0"
+          },
+          "rq_tag1": {
+            "physical_name": "pcie1_cfg_status_0_rq_tag1",
+            "direction": "O",
+            "left": "19",
+            "right": "0"
+          },
+          "rq_seq_num0": {
+            "physical_name": "pcie1_cfg_status_0_rq_seq_num0",
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          },
+          "rq_seq_num1": {
+            "physical_name": "pcie1_cfg_status_0_rq_seq_num1",
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          },
+          "rq_seq_num2": {
+            "physical_name": "pcie1_cfg_status_0_rq_seq_num2",
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          },
+          "rq_seq_num3": {
+            "physical_name": "pcie1_cfg_status_0_rq_seq_num3",
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          },
+          "cq_np_req_count": {
+            "physical_name": "pcie1_cfg_status_0_cq_np_req_count",
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          },
+          "cq_np_req": {
+            "physical_name": "pcie1_cfg_status_0_cq_np_req",
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "function_power_state": {
+            "physical_name": "pcie1_cfg_status_0_function_power_state",
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "atomic_requester_enable": {
+            "physical_name": "pcie1_cfg_status_0_atomic_requester_enable",
+            "direction": "O"
+          },
+          "bus_number": {
+            "physical_name": "pcie1_cfg_status_0_bus_number",
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "phy_link_down": {
+            "physical_name": "pcie1_cfg_status_0_phy_link_down",
+            "direction": "O"
+          },
+          "ext_tag_enable": {
+            "physical_name": "pcie1_cfg_status_0_ext_tag_enable",
+            "direction": "O"
+          },
+          "pl_status_change": {
+            "physical_name": "pcie1_cfg_status_0_pl_status_change",
+            "direction": "O"
+          },
+          "rcb_status": {
+            "physical_name": "pcie1_cfg_status_0_rcb_status",
+            "direction": "O"
+          },
+          "ltssm_state": {
+            "physical_name": "pcie1_cfg_status_0_ltssm_state",
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          },
+          "max_payload": {
+            "physical_name": "pcie1_cfg_status_0_max_payload",
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "tph_st_mode": {
+            "physical_name": "pcie1_cfg_status_0_tph_st_mode",
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "max_read_req": {
+            "physical_name": "pcie1_cfg_status_0_max_read_req",
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "current_speed": {
+            "physical_name": "pcie1_cfg_status_0_current_speed",
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "rx_pm_state": {
+            "physical_name": "pcie1_cfg_status_0_rx_pm_state",
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "tx_pm_state": {
+            "physical_name": "pcie1_cfg_status_0_tx_pm_state",
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "phy_link_status": {
+            "physical_name": "pcie1_cfg_status_0_phy_link_status",
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "function_status": {
+            "physical_name": "pcie1_cfg_status_0_function_status",
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "link_power_state": {
+            "physical_name": "pcie1_cfg_status_0_link_power_state",
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "negotiated_width": {
+            "physical_name": "pcie1_cfg_status_0_negotiated_width",
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "tph_requester_enable": {
+            "physical_name": "pcie1_cfg_status_0_tph_requester_enable",
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "10b_tag_requester_enable": {
+            "physical_name": "pcie1_cfg_status_0_10b_tag_requester_enable",
+            "direction": "O"
+          },
+          "per_function_vld": {
+            "physical_name": "pcie1_cfg_status_0_per_function_vld",
+            "direction": "O"
+          },
+          "per_function_out": {
+            "physical_name": "pcie1_cfg_status_0_per_function_out",
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "wrreq_bme_vld": {
+            "physical_name": "pcie1_cfg_status_0_wrreq_bme_vld",
+            "direction": "O"
+          },
+          "wrreq_flr_vld": {
+            "physical_name": "pcie1_cfg_status_0_wrreq_flr_vld",
+            "direction": "O"
+          },
+          "wrreq_msi_vld": {
+            "physical_name": "pcie1_cfg_status_0_wrreq_msi_vld",
+            "direction": "O"
+          },
+          "wrreq_vfe_vld": {
+            "physical_name": "pcie1_cfg_status_0_wrreq_vfe_vld",
+            "direction": "O"
+          },
+          "wrreq_msix_vld": {
+            "physical_name": "pcie1_cfg_status_0_wrreq_msix_vld",
+            "direction": "O"
+          },
+          "wrreq_out_value": {
+            "physical_name": "pcie1_cfg_status_0_wrreq_out_value",
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "wrreq_function_number": {
+            "physical_name": "pcie1_cfg_status_0_wrreq_function_number",
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "pcie1_m_axis_cq_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "bd_6f6a_cpm_0_0_pcie1_user_clk",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "250000000",
+            "value_src": "user_prop"
+          },
+          "HAS_TKEEP": {
+            "value": "1",
+            "value_src": "auto_prop"
+          },
+          "HAS_TLAST": {
+            "value": "1",
+            "value_src": "auto_prop"
+          },
+          "HAS_TREADY": {
+            "value": "1",
+            "value_src": "auto_prop"
+          },
+          "HAS_TSTRB": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "128",
+            "value_src": "auto_prop"
+          },
+          "TDEST_WIDTH": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "TID_WIDTH": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "TUSER_WIDTH": {
+            "value": "465",
+            "value_src": "auto_prop"
+          }
+        },
+        "port_maps": {
+          "TDATA": {
+            "physical_name": "pcie1_m_axis_cq_0_tdata",
+            "direction": "O",
+            "left": "1023",
+            "right": "0"
+          },
+          "TKEEP": {
+            "physical_name": "pcie1_m_axis_cq_0_tkeep",
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "TLAST": {
+            "physical_name": "pcie1_m_axis_cq_0_tlast",
+            "direction": "O"
+          },
+          "TREADY": {
+            "physical_name": "pcie1_m_axis_cq_0_tready",
+            "direction": "I"
+          },
+          "TUSER": {
+            "physical_name": "pcie1_m_axis_cq_0_tuser",
+            "direction": "O",
+            "left": "464",
+            "right": "0"
+          },
+          "TVALID": {
+            "physical_name": "pcie1_m_axis_cq_0_tvalid",
+            "direction": "O"
+          }
+        }
+      },
+      "pcie1_m_axis_rc_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "bd_6f6a_cpm_0_0_pcie1_user_clk",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "250000000",
+            "value_src": "user_prop"
+          },
+          "HAS_TKEEP": {
+            "value": "1",
+            "value_src": "auto_prop"
+          },
+          "HAS_TLAST": {
+            "value": "1",
+            "value_src": "auto_prop"
+          },
+          "HAS_TREADY": {
+            "value": "1",
+            "value_src": "auto_prop"
+          },
+          "HAS_TSTRB": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "128",
+            "value_src": "auto_prop"
+          },
+          "TDEST_WIDTH": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "TID_WIDTH": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "TUSER_WIDTH": {
+            "value": "337",
+            "value_src": "auto_prop"
+          }
+        },
+        "port_maps": {
+          "TDATA": {
+            "physical_name": "pcie1_m_axis_rc_0_tdata",
+            "direction": "O",
+            "left": "1023",
+            "right": "0"
+          },
+          "TKEEP": {
+            "physical_name": "pcie1_m_axis_rc_0_tkeep",
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "TLAST": {
+            "physical_name": "pcie1_m_axis_rc_0_tlast",
+            "direction": "O"
+          },
+          "TREADY": {
+            "physical_name": "pcie1_m_axis_rc_0_tready",
+            "direction": "I"
+          },
+          "TUSER": {
+            "physical_name": "pcie1_m_axis_rc_0_tuser",
+            "direction": "O",
+            "left": "336",
+            "right": "0"
+          },
+          "TVALID": {
+            "physical_name": "pcie1_m_axis_rc_0_tvalid",
+            "direction": "O"
+          }
+        }
+      },
+      "pcie1_s_axis_cc_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "bd_6f6a_cpm_0_0_pcie1_user_clk",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "250000000",
+            "value_src": "user_prop"
+          },
+          "HAS_TKEEP": {
+            "value": "1"
+          },
+          "HAS_TLAST": {
+            "value": "1"
+          },
+          "HAS_TREADY": {
+            "value": "1"
+          },
+          "HAS_TSTRB": {
+            "value": "0"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "128"
+          },
+          "TDEST_WIDTH": {
+            "value": "0"
+          },
+          "TID_WIDTH": {
+            "value": "0"
+          },
+          "TUSER_WIDTH": {
+            "value": "165"
+          }
+        },
+        "port_maps": {
+          "TREADY": {
+            "physical_name": "pcie1_s_axis_cc_0_tready",
+            "direction": "O"
+          },
+          "TDATA": {
+            "physical_name": "pcie1_s_axis_cc_0_tdata",
+            "direction": "I",
+            "left": "1023",
+            "right": "0"
+          },
+          "TKEEP": {
+            "physical_name": "pcie1_s_axis_cc_0_tkeep",
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "TLAST": {
+            "physical_name": "pcie1_s_axis_cc_0_tlast",
+            "direction": "I"
+          },
+          "TUSER": {
+            "physical_name": "pcie1_s_axis_cc_0_tuser",
+            "direction": "I",
+            "left": "164",
+            "right": "0"
+          },
+          "TVALID": {
+            "physical_name": "pcie1_s_axis_cc_0_tvalid",
+            "direction": "I"
+          }
+        }
+      },
+      "pcie1_s_axis_rq_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "bd_6f6a_cpm_0_0_pcie1_user_clk",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "250000000",
+            "value_src": "user_prop"
+          },
+          "HAS_TKEEP": {
+            "value": "1"
+          },
+          "HAS_TLAST": {
+            "value": "1"
+          },
+          "HAS_TREADY": {
+            "value": "1"
+          },
+          "HAS_TSTRB": {
+            "value": "0"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "128"
+          },
+          "TDEST_WIDTH": {
+            "value": "0"
+          },
+          "TID_WIDTH": {
+            "value": "0"
+          },
+          "TUSER_WIDTH": {
+            "value": "373"
+          }
+        },
+        "port_maps": {
+          "TREADY": {
+            "physical_name": "pcie1_s_axis_rq_0_tready",
+            "direction": "O"
+          },
+          "TDATA": {
+            "physical_name": "pcie1_s_axis_rq_0_tdata",
+            "direction": "I",
+            "left": "1023",
+            "right": "0"
+          },
+          "TKEEP": {
+            "physical_name": "pcie1_s_axis_rq_0_tkeep",
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "TLAST": {
+            "physical_name": "pcie1_s_axis_rq_0_tlast",
+            "direction": "I"
+          },
+          "TUSER": {
+            "physical_name": "pcie1_s_axis_rq_0_tuser",
+            "direction": "I",
+            "left": "372",
+            "right": "0"
+          },
+          "TVALID": {
+            "physical_name": "pcie1_s_axis_rq_0_tvalid",
+            "direction": "I"
+          }
+        }
+      },
+      "pcie1_transmit_fc_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:pcie3_transmit_fc:1.0",
+        "vlnv": "xilinx.com:interface:pcie3_transmit_fc_rtl:1.0",
+        "port_maps": {
+          "npd_av": {
+            "physical_name": "pcie1_transmit_fc_0_npd_av",
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "nph_av": {
+            "physical_name": "pcie1_transmit_fc_0_nph_av",
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "ports": {
+      "cpm_irq0_0": {
+        "type": "intr",
+        "direction": "I",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default"
+          },
+          "SENSITIVITY": {
+            "value": "LEVEL_HIGH",
+            "value_src": "default"
+          }
+        }
+      },
+      "cpm_irq1_0": {
+        "type": "intr",
+        "direction": "I",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default"
+          },
+          "SENSITIVITY": {
+            "value": "LEVEL_HIGH",
+            "value_src": "default"
+          }
+        }
+      },
+      "cpm_cor_irq_0": {
+        "type": "intr",
+        "direction": "O",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default"
+          },
+          "SENSITIVITY": {
+            "value": "LEVEL_HIGH",
+            "value_src": "default"
+          }
+        }
+      },
+      "cpm_misc_irq_0": {
+        "type": "intr",
+        "direction": "O",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default"
+          },
+          "SENSITIVITY": {
+            "value": "LEVEL_HIGH",
+            "value_src": "default"
+          }
+        }
+      },
+      "cpm_uncor_irq_0": {
+        "type": "intr",
+        "direction": "O",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default"
+          },
+          "SENSITIVITY": {
+            "value": "LEVEL_HIGH",
+            "value_src": "default"
+          }
+        }
+      },
+      "pcie1_user_clk_0": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "ASSOCIATED_BUSIF": {
+            "value": "pcie1_m_axis_cq_0:pcie1_m_axis_rc_0:pcie1_s_axis_cc_0:pcie1_s_axis_rq_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "bd_6f6a_cpm_0_0_pcie1_user_clk",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "250000000",
+            "value_src": "user_prop"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "pcie1_user_lnk_up_0": {
+        "direction": "O"
+      },
+      "pcie1_user_reset_0": {
+        "type": "rst",
+        "direction": "O",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH",
+            "value_src": "user_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "versal_cips_0": {
+        "vlnv": "xilinx.com:ip:versal_cips:3.3",
+        "xci_name": "exerciser_versal_cips_0_0",
+        "xci_path": "ip/exerciser_versal_cips_0_0/exerciser_versal_cips_0_0.xci",
+        "inst_hier_path": "versal_cips_0",
+        "parameters": {
+          "CPM_CONFIG": {
+            "value": [
+              "CPM_PCIE0_MODES None CPM_PCIE1_ACS_CAP_ON 1 CPM_PCIE1_ARI_CAP_ENABLED 0 CPM_PCIE1_CFG_CTL_IF 1 CPM_PCIE1_CFG_EXT_IF 1 CPM_PCIE1_CFG_FC_IF 1 CPM_PCIE1_CFG_MGMT_IF 1 CPM_PCIE1_CFG_STS_IF 1",
+              "CPM_PCIE1_MAX_LINK_SPEED 32.0_GT/s CPM_PCIE1_MESG_RSVD_IF 1 CPM_PCIE1_MESG_TRANSMIT_IF 1 CPM_PCIE1_MODES PCIE CPM_PCIE1_MODE_SELECTION Advanced CPM_PCIE1_MSI_X_OPTIONS None CPM_PCIE1_PASID_IF 1",
+              "CPM_PCIE1_PF0_BAR0_SCALE Megabytes CPM_PCIE1_PF0_BAR0_SIZE 1 CPM_PCIE1_PF0_DEV_CAP_FUNCTION_LEVEL_RESET_CAPABLE 1 CPM_PCIE1_PF0_PASID_CAP_ON 1 CPM_PCIE1_PF0_PM_CAP_PMESUPPORT_D0 0",
+              "CPM_PCIE1_PF0_PM_CAP_PMESUPPORT_D1 0 CPM_PCIE1_PF0_PM_CAP_PMESUPPORT_D3HOT 0 CPM_PCIE1_PF0_PM_CAP_SUPP_D1_STATE 0 CPM_PCIE1_RC_STRADDLE_SIZE 4_TLP CPM_PCIE1_TX_FC_IF 1"
+            ]
+          },
+          "PS_PMC_CONFIG": {
+            "value": [
+              "DESIGN_MODE 1",
+              "PCIE_APERTURES_DUAL_ENABLE 0",
+              "PCIE_APERTURES_SINGLE_ENABLE 0",
+              "PS_BOARD_INTERFACE Custom",
+              "PS_PCIE1_PERIPHERAL_ENABLE 0",
+              "PS_PCIE2_PERIPHERAL_ENABLE 1",
+              "PS_PCIE_EP_RESET2_IO {PS_MIO 19}",
+              "PS_PCIE_RESET {{ENABLE 1}}",
+              "SMON_ALARMS Set_Alarms_On",
+              "SMON_ENABLE_TEMP_AVERAGING 0",
+              "SMON_TEMP_AVERAGING_SAMPLES 0"
+            ]
+          }
+        },
+        "interface_ports": {
+          "pcie1_cfg_control": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:pcie5_cfg_control:1.0",
+            "vlnv": "xilinx.com:interface:pcie5_cfg_control_rtl:1.0"
+          },
+          "pcie1_cfg_interrupt": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:pcie3_cfg_interrupt:1.0",
+            "vlnv": "xilinx.com:interface:pcie3_cfg_interrupt_rtl:1.0"
+          },
+          "pcie1_s_axis_rq": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "pcie1_s_axis_cc": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "pcie1_m_axis_rc": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "pcie1_m_axis_cq": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "pcie1_cfg_mgmt": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:pcie4_cfg_mgmt:1.0",
+            "vlnv": "xilinx.com:interface:pcie4_cfg_mgmt_rtl:1.0"
+          },
+          "pcie1_cfg_msi": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:pcie3_cfg_msi:1.0",
+            "vlnv": "xilinx.com:interface:pcie3_cfg_msi_rtl:1.0"
+          },
+          "pcie1_cfg_ext": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:pcie3_cfg_ext:1.0",
+            "vlnv": "xilinx.com:interface:pcie3_cfg_ext_rtl:1.0"
+          },
+          "pcie1_cfg_fc": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:pcie_cfg_fc:1.1",
+            "vlnv": "xilinx.com:interface:pcie_cfg_fc_rtl:1.1"
+          },
+          "pcie1_cfg_msg_tx": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:pcie3_cfg_mesg_tx:1.0",
+            "vlnv": "xilinx.com:interface:pcie3_cfg_mesg_tx_rtl:1.0"
+          },
+          "pcie1_cfg_status": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:pcie5_cfg_status:1.0",
+            "vlnv": "xilinx.com:interface:pcie5_cfg_status_rtl:1.0"
+          },
+          "pcie1_transmit_fc": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:pcie3_transmit_fc:1.0",
+            "vlnv": "xilinx.com:interface:pcie3_transmit_fc_rtl:1.0"
+          },
+          "pcie1_cfg_msg_recd": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:pcie3_cfg_msg_received:1.0",
+            "vlnv": "xilinx.com:interface:pcie3_cfg_msg_received_rtl:1.0"
+          },
+          "PCIE1_GT": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:gt:1.0",
+            "vlnv": "xilinx.com:interface:gt_rtl:1.0"
+          },
+          "gt_refclk1": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:diff_clock:1.0",
+            "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "gt_refclk1_0_1": {
+        "interface_ports": [
+          "gt_refclk1_0",
+          "versal_cips_0/gt_refclk1"
+        ]
+      },
+      "pcie1_cfg_control_0_1": {
+        "interface_ports": [
+          "pcie1_cfg_control_0",
+          "versal_cips_0/pcie1_cfg_control"
+        ]
+      },
+      "pcie1_cfg_interrupt_0_1": {
+        "interface_ports": [
+          "pcie1_cfg_interrupt_0",
+          "versal_cips_0/pcie1_cfg_interrupt"
+        ]
+      },
+      "pcie1_cfg_mgmt_0_1": {
+        "interface_ports": [
+          "pcie1_cfg_mgmt_0",
+          "versal_cips_0/pcie1_cfg_mgmt"
+        ]
+      },
+      "pcie1_cfg_msi_0_1": {
+        "interface_ports": [
+          "pcie1_cfg_msi_0",
+          "versal_cips_0/pcie1_cfg_msi"
+        ]
+      },
+      "pcie1_s_axis_cc_0_1": {
+        "interface_ports": [
+          "pcie1_s_axis_cc_0",
+          "versal_cips_0/pcie1_s_axis_cc"
+        ]
+      },
+      "pcie1_s_axis_rq_0_1": {
+        "interface_ports": [
+          "pcie1_s_axis_rq_0",
+          "versal_cips_0/pcie1_s_axis_rq"
+        ]
+      },
+      "versal_cips_0_PCIE1_GT": {
+        "interface_ports": [
+          "PCIE1_GT_0",
+          "versal_cips_0/PCIE1_GT"
+        ]
+      },
+      "versal_cips_0_pcie1_cfg_ext": {
+        "interface_ports": [
+          "pcie1_cfg_ext_0",
+          "versal_cips_0/pcie1_cfg_ext"
+        ]
+      },
+      "versal_cips_0_pcie1_cfg_fc": {
+        "interface_ports": [
+          "pcie1_cfg_fc_0",
+          "versal_cips_0/pcie1_cfg_fc"
+        ]
+      },
+      "versal_cips_0_pcie1_cfg_msg_recd": {
+        "interface_ports": [
+          "pcie1_cfg_msg_recd_0",
+          "versal_cips_0/pcie1_cfg_msg_recd"
+        ]
+      },
+      "versal_cips_0_pcie1_cfg_msg_tx": {
+        "interface_ports": [
+          "pcie1_cfg_msg_tx_0",
+          "versal_cips_0/pcie1_cfg_msg_tx"
+        ]
+      },
+      "versal_cips_0_pcie1_cfg_status": {
+        "interface_ports": [
+          "pcie1_cfg_status_0",
+          "versal_cips_0/pcie1_cfg_status"
+        ]
+      },
+      "versal_cips_0_pcie1_m_axis_cq": {
+        "interface_ports": [
+          "pcie1_m_axis_cq_0",
+          "versal_cips_0/pcie1_m_axis_cq"
+        ]
+      },
+      "versal_cips_0_pcie1_m_axis_rc": {
+        "interface_ports": [
+          "pcie1_m_axis_rc_0",
+          "versal_cips_0/pcie1_m_axis_rc"
+        ]
+      },
+      "versal_cips_0_pcie1_transmit_fc": {
+        "interface_ports": [
+          "pcie1_transmit_fc_0",
+          "versal_cips_0/pcie1_transmit_fc"
+        ]
+      }
+    },
+    "nets": {
+      "cpm_irq0_0_1": {
+        "ports": [
+          "cpm_irq0_0",
+          "versal_cips_0/cpm_irq0"
+        ]
+      },
+      "cpm_irq1_0_1": {
+        "ports": [
+          "cpm_irq1_0",
+          "versal_cips_0/cpm_irq1"
+        ]
+      },
+      "versal_cips_0_cpm_cor_irq": {
+        "ports": [
+          "versal_cips_0/cpm_cor_irq",
+          "cpm_cor_irq_0"
+        ]
+      },
+      "versal_cips_0_cpm_misc_irq": {
+        "ports": [
+          "versal_cips_0/cpm_misc_irq",
+          "cpm_misc_irq_0"
+        ]
+      },
+      "versal_cips_0_cpm_uncor_irq": {
+        "ports": [
+          "versal_cips_0/cpm_uncor_irq",
+          "cpm_uncor_irq_0"
+        ]
+      },
+      "versal_cips_0_pcie1_user_clk": {
+        "ports": [
+          "versal_cips_0/pcie1_user_clk",
+          "pcie1_user_clk_0"
+        ]
+      },
+      "versal_cips_0_pcie1_user_lnk_up": {
+        "ports": [
+          "versal_cips_0/pcie1_user_lnk_up",
+          "pcie1_user_lnk_up_0"
+        ]
+      },
+      "versal_cips_0_pcie1_user_reset": {
+        "ports": [
+          "versal_cips_0/pcie1_user_reset",
+          "pcie1_user_reset_0"
+        ]
+      }
+    }
+  }
+}

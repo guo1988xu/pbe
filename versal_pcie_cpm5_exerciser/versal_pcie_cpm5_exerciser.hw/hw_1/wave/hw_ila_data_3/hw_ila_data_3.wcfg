@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="1,025"></ZoomEndTime>
+      <Cursor1Time time="0"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="653"></NameColumnWidth>
+      <ValueColumnWidth column_width="92"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject type="array" fp_name="pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/aer_err_cor_done">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/aer_err_cor_done[31:0]</obj_property>
+      <obj_property name="ObjectShortName">aer_err_cor_done[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/aer_err_cor_o">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/aer_err_cor_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">aer_err_cor_o[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/compl_done">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/compl_done</obj_property>
+      <obj_property name="ObjectShortName">compl_done</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/req_compl_error_reg">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/req_compl_error_reg</obj_property>
+      <obj_property name="ObjectShortName">req_compl_error_reg</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/req_compl_reg">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/req_compl_reg</obj_property>
+      <obj_property name="ObjectShortName">req_compl_reg</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/req_compl_ur_reg">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/req_compl_ur_reg</obj_property>
+      <obj_property name="ObjectShortName">req_compl_ur_reg</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/req_compl_wd_reg">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pcie_app_versal_i/EXERCISER_AXIST_1024/EXERCISER_AXIST_EP_1024/req_compl_wd_reg</obj_property>
+      <obj_property name="ObjectShortName">req_compl_wd_reg</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,589 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date              : Thu Jan  4 21:48:37 2024
+| Host              : matthew-xilinx running 64-bit Ubuntu 22.04.1 LTS
+| Command           : report_clock_utilization -file cpm_pcie_exerciser_wrapper_clock_utilization_routed.rpt
+| Design            : cpm_pcie_exerciser_wrapper
+| Device            : xcvp1202-vsva2785
+| Speed File        : -2MHP  ENGINEERING-SAMPLE 1.19 2023-02-03
+| Temperature Grade : E
+| Design State      : Routed
+| GCLK Deskew       : Off
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Clock Utilization Report
+
+Table of Contents
+-----------------
+1. Clock Primitive Utilization
+2. Global Clock Resources
+3. Global Clock Source Details
+4. Local Clock Details
+5. Clock Regions : Clock Primitives
+6. Clock Regions : Load Primitives
+7. Clock Regions : Global Clock Summary
+8. Clock Regions : Routing Resource Utilization
+9. Device Cell Placement Summary for Global Clock g0
+10. Device Cell Placement Summary for Global Clock g1
+11. Device Cell Placement Summary for Global Clock g2
+12. Clock Region Cell Placement per Global Clock: Region X1Y2
+13. Clock Region Cell Placement per Global Clock: Region X1Y3
+14. Clock Region Cell Placement per Global Clock: Region X2Y3
+15. Clock Region Cell Placement per Global Clock: Region X3Y3
+16. Clock Region Cell Placement per Global Clock: Region X4Y3
+17. Clock Region Cell Placement per Global Clock: Region X0Y4
+18. Clock Region Cell Placement per Global Clock: Region X1Y4
+19. Clock Region Cell Placement per Global Clock: Region X2Y4
+
+1. Clock Primitive Utilization
+------------------------------
+
++------------------+------+-----------+-----+--------------+--------+
+| Type             | Used | Available | LOC | Clock Region | Pblock |
++------------------+------+-----------+-----+--------------+--------+
+| (M)BUFGCE        |    0 |       312 |   0 |            0 |      0 |
+| (M)BUFGCE_DIV    |    0 |        44 |   0 |            0 |      0 |
+| (M)BUFGCTRL      |    0 |        88 |   0 |            0 |      0 |
+| BUFG_FABRIC      |    0 |       384 |   0 |            0 |      0 |
+| (M)BUFG_GT       |    0 |       120 |   0 |            0 |      0 |
+| (M)BUFG_PS       |    3 |        36 |   0 |            0 |      0 |
+| DPLL             |    0 |        21 |   0 |            0 |      0 |
+|   DPLL (BUFGCE)  |    0 |        13 |   0 |            0 |      0 |
+|   DPLL (BUFG_GT) |    0 |         8 |   0 |            0 |      0 |
+| MMCM             |    0 |        13 |   0 |            0 |      0 |
+| XPLL             |    0 |        26 |   0 |            0 |      0 |
++------------------+------+-----------+-----+--------------+--------+
+
+
+2. Global Clock Resources
+-------------------------
+
++-----------+-----------+-----------------+------------+---------------+--------------+------+-------------+-------------------+------------------+-------------------+-------------+-----------------+--------------+------------------------------------------------------------------+-----------------------------------------------------------------------+-----------------------------------------------------------------+
+| Global Id | Source Id | Driver Type/Pin | Constraint | Site          | Clock Region | Root | GCLK Deskew | Clock Delay Group | Clock Low Fanout | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock                                                            | Driver Pin                                                            | Net                                                             |
++-----------+-----------+-----------------+------------+---------------+--------------+------+-------------+-------------------+------------------+-------------------+-------------+-----------------+--------------+------------------------------------------------------------------+-----------------------------------------------------------------------+-----------------------------------------------------------------+
+| g0        | src0      | BUFG_PS/O       | None       | BUFG_PS_X0Y35 | X1Y3         | X1Y3 | Off         |                   |                  |                 8 |       28126 |               0 |        4.000 | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/CPM5RCLK1INT0 | exerciser_i/versal_cips_0/inst/cpm_0/inst/bufgps_pcie_1/O             | exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie1_user_clk        |
+| g1        | src1      | BUFG_PS/O       | None       | BUFG_PS_X0Y28 | X1Y3         | X1Y2 | Off         |                   |                  |                 2 |         240 |               0 |        6.400 | dpll_ref_clk                                                     | exerciser_i/versal_cips_0/inst/cpm_0/inst/bufgps_pcie_dpll_ref_clk/O  | exerciser_i/versal_cips_0/inst/cpm_0/inst/dpll_drp_dclk         |
+| g2        | src2      | BUFG_PS/O       | None       | BUFG_PS_X0Y34 | X1Y3         | X1Y3 | Off         |                   |                  |                 1 |          22 |               0 |        3.200 | dpll1_dco_clk                                                    | exerciser_i/versal_cips_0/inst/cpm_0/inst/bufgps_pcie_dpll1_dco_clk/O | exerciser_i/versal_cips_0/inst/cpm_0/inst/dpll1_dco_dclk_bufgps |
++-----------+-----------+-----------------+------------+---------------+--------------+------+-------------+-------------------+------------------+-------------------+-------------+-----------------+--------------+------------------------------------------------------------------+-----------------------------------------------------------------------+-----------------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+*** In GCLK Deskew column, symbol '*' indicates non-default GCLK Deskew value using GCLK_DESKEW property on net
+
+
+3. Global Clock Source Details
+------------------------------
+
++-----------+-----------+--------------------+------------+-----------+--------------+-------------+-----------------+---------------------+------------------------------------------------------------------+------------------------------------------------------------------+---------------------------------------------------------+
+| Source Id | Global Id | Driver Type/Pin    | Constraint | Site      | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock                                                     | Driver Pin                                                       | Net                                                     |
++-----------+-----------+--------------------+------------+-----------+--------------+-------------+-----------------+---------------------+------------------------------------------------------------------+------------------------------------------------------------------+---------------------------------------------------------+
+| src0      | g0        | CPM5/CPM5RCLK1[11] | None       | CPM5_X0Y0 | X0Y2         |           1 |               0 |               4.000 | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/CPM5RCLK1INT0 | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/CPM5RCLK1[11] | exerciser_i/versal_cips_0/inst/cpm_0/inst/cpm5rclk1[11] |
+| src1      | g1        | CPM5/CPM5RCLK1[4]  | None       | CPM5_X0Y0 | X0Y2         |           1 |               0 |                     |                                                                  | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/CPM5RCLK1[4]  | exerciser_i/versal_cips_0/inst/cpm_0/inst/cpm5rclk1[4]  |
+| src2      | g2        | CPM5/CPM5RCLK1[10] | None       | CPM5_X0Y0 | X0Y2         |           1 |               0 |               1.000 | ch0_txoutclk                                                     | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/CPM5RCLK1[10] | exerciser_i/versal_cips_0/inst/cpm_0/inst/cpm5rclk1[10] |
++-----------+-----------+--------------------+------------+-----------+--------------+-------------+-----------------+---------------------+------------------------------------------------------------------+------------------------------------------------------------------+---------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+
+
+4. Local Clock Details
+----------------------
+
++----------+-------------------------------------+------------+----------------+--------------+-------------+-----------------+--------------+-------+-------------------------------------------------------------------------------------+------------------------------------------------------------------+
+| Local Id | Driver Type/Pin                     | Constraint | Site/BEL       | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin                                                                          | Net                                                              |
++----------+-------------------------------------+------------+----------------+--------------+-------------+-----------------+--------------+-------+-------------------------------------------------------------------------------------+------------------------------------------------------------------+
+| 0        | CPM5/IFPSCPMHSDPLINKXPIPEGTRXOUTCLK | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFPSCPMHSDPLINKXPIPEGTRXOUTCLK   | exerciser_i/versal_cips_0/inst/cpm_0/inst/hsdp_gt_rxoutclk       |
+| 1        | CPM5/IFFCQ20CKPINRSRVD0FS           | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ20CKPINRSRVD0FS             | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq20ckpinrsrvd0     |
+| 2        | CPM5/IFFCQ20CKPINRSRVD1FS           | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ20CKPINRSRVD1FS             | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq20ckpinrsrvd1     |
+| 3        | CPM5/IFFCQ20DMONCLKFS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ20DMONCLKFS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq20dmonclk         |
+| 4        | CPM5/IFFCQ20RXLATCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ20RXLATCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq20rxlatclk        |
+| 5        | CPM5/IFFCQ20RXUSRCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ20RXUSRCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq20rxusrclk        |
+| 6        | CPM5/IFFCQ20TCOCLKFSMFROUTFS        | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ20TCOCLKFSMFROUTFS          | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq20tcoclkfsmfrout  |
+| 7        | CPM5/IFFCQ20TSTCLK0FS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ20TSTCLK0FS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq20tstclk0         |
+| 8        | CPM5/IFFCQ20TSTCLK1FS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ20TSTCLK1FS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq20tstclk1         |
+| 9        | CPM5/IFFCQ20TXLATCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ20TXLATCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq20txlatclk        |
+| 10       | CPM5/IFFCQ20TXUSRCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ20TXUSRCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq20txusrclk        |
+| 11       | CPM5/IFFCQ21CKPINRSRVD0FS           | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ21CKPINRSRVD0FS             | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq21ckpinrsrvd0     |
+| 12       | CPM5/IFFCQ21CKPINRSRVD1FS           | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ21CKPINRSRVD1FS             | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq21ckpinrsrvd1     |
+| 13       | CPM5/IFFCQ21DMONCLKFS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ21DMONCLKFS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq21dmonclk         |
+| 14       | CPM5/IFFCQ21RXLATCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ21RXLATCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq21rxlatclk        |
+| 15       | CPM5/IFFCQ21RXUSRCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ21RXUSRCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq21rxusrclk        |
+| 16       | CPM5/IFFCQ21TCOCLKFSMFROUTFS        | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ21TCOCLKFSMFROUTFS          | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq21tcoclkfsmfrout  |
+| 17       | CPM5/IFFCQ21TSTCLK0FS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ21TSTCLK0FS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq21tstclk0         |
+| 18       | CPM5/IFFCQ21TSTCLK1FS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ21TSTCLK1FS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq21tstclk1         |
+| 19       | CPM5/IFFCQ21TXLATCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ21TXLATCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq21txlatclk        |
+| 20       | CPM5/IFFCQ21TXUSRCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ21TXUSRCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq21txusrclk        |
+| 21       | CPM5/IFFCQ22CKPINRSRVD0FS           | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ22CKPINRSRVD0FS             | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq22ckpinrsrvd0     |
+| 22       | CPM5/IFFCQ22CKPINRSRVD1FS           | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ22CKPINRSRVD1FS             | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq22ckpinrsrvd1     |
+| 23       | CPM5/IFFCQ22DMONCLKFS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ22DMONCLKFS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq22dmonclk         |
+| 24       | CPM5/IFFCQ22RXLATCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ22RXLATCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq22rxlatclk        |
+| 25       | CPM5/IFFCQ22RXUSRCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ22RXUSRCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq22rxusrclk        |
+| 26       | CPM5/IFFCQ22TCOCLKFSMFROUTFS        | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ22TCOCLKFSMFROUTFS          | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq22tcoclkfsmfrout  |
+| 27       | CPM5/IFFCQ22TSTCLK0FS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ22TSTCLK0FS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq22tstclk0         |
+| 28       | CPM5/IFFCQ22TSTCLK1FS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ22TSTCLK1FS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq22tstclk1         |
+| 29       | CPM5/IFFCQ22TXLATCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ22TXLATCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq22txlatclk        |
+| 30       | CPM5/IFFCQ22TXUSRCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ22TXUSRCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq22txusrclk        |
+| 31       | CPM5/IFFCQ23CKPINRSRVD0FS           | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ23CKPINRSRVD0FS             | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq23ckpinrsrvd0     |
+| 32       | CPM5/IFFCQ23CKPINRSRVD1FS           | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ23CKPINRSRVD1FS             | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq23ckpinrsrvd1     |
+| 33       | CPM5/IFFCQ23DMONCLKFS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ23DMONCLKFS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq23dmonclk         |
+| 34       | CPM5/IFFCQ23RXLATCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ23RXLATCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq23rxlatclk        |
+| 35       | CPM5/IFFCQ23RXUSRCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ23RXUSRCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq23rxusrclk        |
+| 36       | CPM5/IFFCQ23TCOCLKFSMFROUTFS        | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ23TCOCLKFSMFROUTFS          | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq23tcoclkfsmfrout  |
+| 37       | CPM5/IFFCQ23TSTCLK0FS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ23TSTCLK0FS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq23tstclk0         |
+| 38       | CPM5/IFFCQ23TSTCLK1FS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ23TSTCLK1FS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq23tstclk1         |
+| 39       | CPM5/IFFCQ23TXLATCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ23TXLATCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq23txlatclk        |
+| 40       | CPM5/IFFCQ23TXUSRCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ23TXUSRCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq23txusrclk        |
+| 41       | CPM5/IFFCQ30CKPINRSRVD0FS           | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ30CKPINRSRVD0FS             | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq30ckpinrsrvd0     |
+| 42       | CPM5/IFFCQ30CKPINRSRVD1FS           | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ30CKPINRSRVD1FS             | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq30ckpinrsrvd1     |
+| 43       | CPM5/IFFCQ30DMONCLKFS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ30DMONCLKFS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq30dmonclk         |
+| 44       | CPM5/IFFCQ30RXLATCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ30RXLATCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq30rxlatclk        |
+| 45       | CPM5/IFFCQ30RXUSRCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ30RXUSRCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq30rxusrclk        |
+| 46       | CPM5/IFFCQ30TCOCLKFSMFROUTFS        | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ30TCOCLKFSMFROUTFS          | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq30tcoclkfsmfrout  |
+| 47       | CPM5/IFFCQ30TSTCLK0FS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ30TSTCLK0FS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq30tstclk0         |
+| 48       | CPM5/IFFCQ30TSTCLK1FS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ30TSTCLK1FS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq30tstclk1         |
+| 49       | CPM5/IFFCQ30TXLATCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ30TXLATCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq30txlatclk        |
+| 50       | CPM5/IFFCQ30TXUSRCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ30TXUSRCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq30txusrclk        |
+| 51       | CPM5/IFFCQ31CKPINRSRVD0FS           | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ31CKPINRSRVD0FS             | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq31ckpinrsrvd0     |
+| 52       | CPM5/IFFCQ31CKPINRSRVD1FS           | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ31CKPINRSRVD1FS             | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq31ckpinrsrvd1     |
+| 53       | CPM5/IFFCQ31DMONCLKFS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ31DMONCLKFS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq31dmonclk         |
+| 54       | CPM5/IFFCQ31RXLATCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ31RXLATCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq31rxlatclk        |
+| 55       | CPM5/IFFCQ31RXUSRCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ31RXUSRCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq31rxusrclk        |
+| 56       | CPM5/IFFCQ31TCOCLKFSMFROUTFS        | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ31TCOCLKFSMFROUTFS          | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq31tcoclkfsmfrout  |
+| 57       | CPM5/IFFCQ31TSTCLK0FS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ31TSTCLK0FS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq31tstclk0         |
+| 58       | CPM5/IFFCQ31TSTCLK1FS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ31TSTCLK1FS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq31tstclk1         |
+| 59       | CPM5/IFFCQ31TXLATCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ31TXLATCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq31txlatclk        |
+| 60       | CPM5/IFFCQ31TXUSRCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ31TXUSRCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq31txusrclk        |
+| 61       | CPM5/IFFCQ32CKPINRSRVD0FS           | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ32CKPINRSRVD0FS             | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq32ckpinrsrvd0     |
+| 62       | CPM5/IFFCQ32CKPINRSRVD1FS           | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ32CKPINRSRVD1FS             | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq32ckpinrsrvd1     |
+| 63       | CPM5/IFFCQ32DMONCLKFS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ32DMONCLKFS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq32dmonclk         |
+| 64       | CPM5/IFFCQ32RXLATCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ32RXLATCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq32rxlatclk        |
+| 65       | CPM5/IFFCQ32RXUSRCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ32RXUSRCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq32rxusrclk        |
+| 66       | CPM5/IFFCQ32TCOCLKFSMFROUTFS        | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ32TCOCLKFSMFROUTFS          | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq32tcoclkfsmfrout  |
+| 67       | CPM5/IFFCQ32TSTCLK0FS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ32TSTCLK0FS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq32tstclk0         |
+| 68       | CPM5/IFFCQ32TSTCLK1FS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ32TSTCLK1FS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq32tstclk1         |
+| 69       | CPM5/IFFCQ32TXLATCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ32TXLATCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq32txlatclk        |
+| 70       | CPM5/IFFCQ32TXUSRCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ32TXUSRCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq32txusrclk        |
+| 71       | CPM5/IFFCQ33CKPINRSRVD0FS           | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ33CKPINRSRVD0FS             | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq33ckpinrsrvd0     |
+| 72       | CPM5/IFFCQ33CKPINRSRVD1FS           | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ33CKPINRSRVD1FS             | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq33ckpinrsrvd1     |
+| 73       | CPM5/IFFCQ33DMONCLKFS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ33DMONCLKFS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq33dmonclk         |
+| 74       | CPM5/IFFCQ33RXLATCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ33RXLATCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq33rxlatclk        |
+| 75       | CPM5/IFFCQ33RXUSRCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ33RXUSRCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq33rxusrclk        |
+| 76       | CPM5/IFFCQ33TCOCLKFSMFROUTFS        | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ33TCOCLKFSMFROUTFS          | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq33tcoclkfsmfrout  |
+| 77       | CPM5/IFFCQ33TSTCLK0FS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ33TSTCLK0FS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq33tstclk0         |
+| 78       | CPM5/IFFCQ33TSTCLK1FS               | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ33TSTCLK1FS                 | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq33tstclk1         |
+| 79       | CPM5/IFFCQ33TXLATCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ33TXLATCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq33txlatclk        |
+| 80       | CPM5/IFFCQ33TXUSRCLKFS              | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCQ33TXUSRCLKFS                | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffcq33txusrclk        |
+| 81       | CPM5/IFFCTRLQ2APB3CLKFS             | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCTRLQ2APB3CLKFS               | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffctrlq2apb3clk       |
+| 82       | CPM5/IFFCTRLQ2AXISCLKFS             | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCTRLQ2AXISCLKFS               | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffctrlq2axisclk       |
+| 83       | CPM5/IFFCTRLQ2DEBUGTRACECLKFS       | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCTRLQ2DEBUGTRACECLKFS         | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffctrlq2debugtraceclk |
+| 84       | CPM5/IFFCTRLQ2RXMARGINCLKFS         | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCTRLQ2RXMARGINCLKFS           | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffctrlq2rxmarginclk   |
+| 85       | CPM5/IFFCTRLQ3APB3CLKFS             | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCTRLQ3APB3CLKFS               | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffctrlq3apb3clk       |
+| 86       | CPM5/IFFCTRLQ3AXISCLKFS             | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCTRLQ3AXISCLKFS               | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffctrlq3axisclk       |
+| 87       | CPM5/IFFCTRLQ3DEBUGTRACECLKFS       | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCTRLQ3DEBUGTRACECLKFS         | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffctrlq3debugtraceclk |
+| 88       | CPM5/IFFCTRLQ3RXMARGINCLKFS         | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFCTRLQ3RXMARGINCLKFS           | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffctrlq3rxmarginclk   |
+| 89       | CPM5/IFFRCKQ20HROWTESTCKFS          | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFRCKQ20HROWTESTCKFS            | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffrckq20hrowtestck    |
+| 90       | CPM5/IFFRCKQ21HROWTESTCKFS          | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFRCKQ21HROWTESTCKFS            | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffrckq21hrowtestck    |
+| 91       | CPM5/IFFRCKQ30HROWTESTCKFS          | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFRCKQ30HROWTESTCKFS            | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffrckq30hrowtestck    |
+| 92       | CPM5/IFFRCKQ31HROWTESTCKFS          | None       | CPM5_X0Y0/CPM5 | X0Y2         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/IFFRCKQ31HROWTESTCKFS            | exerciser_i/versal_cips_0/inst/cpm_0/inst/iffrckq31hrowtestck    |
+| 93       | PS9/CPMOSCCLKDIV2                   | PS9_X0Y0   | PS9_X0Y0/PS9   | X0Y1         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/pspmc_0/inst/PS9_inst/CPMOSCCLKDIV2                  | exerciser_i/versal_cips_0/inst/pspmc_0/inst/cpm_osc_clk_div2     |
+| 94       | PS9/IFPSCPMHSDPLINKXPIPEGTRXUSRCLK  | PS9_X0Y0   | PS9_X0Y0/PS9   | X0Y1         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/pspmc_0/inst/PS9_inst/IFPSCPMHSDPLINKXPIPEGTRXUSRCLK | exerciser_i/versal_cips_0/inst/pspmc_0/inst/hsdp_gt_txusrclk     |
+| 95       | PS9/LPDCPMINREFCLK                  | PS9_X0Y0   | PS9_X0Y0/PS9   | X0Y1         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/pspmc_0/inst/PS9_inst/LPDCPMINREFCLK                 | exerciser_i/versal_cips_0/inst/pspmc_0/inst/lpd_refclk_in        |
+| 96       | PS9/LPDCPMTOPSWCLK                  | PS9_X0Y0   | PS9_X0Y0/PS9   | X0Y1         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/pspmc_0/inst/PS9_inst/LPDCPMTOPSWCLK                 | exerciser_i/versal_cips_0/inst/pspmc_0/inst/lpd_swclk            |
+| 97       | PS9/PSPMCNOCAXI0CLK                 | PS9_X0Y0   | PS9_X0Y0/PS9   | X0Y1         |           1 |               0 |              |       | exerciser_i/versal_cips_0/inst/pspmc_0/inst/PS9_inst/PSPMCNOCAXI0CLK                | exerciser_i/versal_cips_0/inst/pspmc_0/inst/pmc_axi_noc_axi0_clk |
++----------+-------------------------------------+------------+----------------+--------------+-------------+-----------------+--------------+-------+-------------------------------------------------------------------------------------+------------------------------------------------------------------+
+* Local Clocks in this context represents only clocks driven by non-global buffers
+** Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+*** Non-Clock Loads column represents cell count of non-clock pin loads
+
+
+5. Clock Regions : Clock Primitives
+-----------------------------------
+
++-------------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+|                   |  Global Clock |   (M)BUFGCE   | (M)BUFGCE_DIV |  (M)BUFGCTRL  |   (M)BUFG_GT  |   (M)BUFG_PS  |      MMCM     | DPLL (non-GT) |   DPLL (GT)   |      XPLL     |
++-------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+| Clock Region Name | Used  | Avail | Used  | Avail | Used  | Avail | Used  | Avail | Used  | Avail | Used  | Avail | Used  | Avail | Used  | Avail | Used  | Avail | Used  | Avail |
++-------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+| X0Y0              |     0 |    24 |     0 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     1 |     0 |     1 |     0 |     2 |
+| X1Y0              |     0 |    24 |     0 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     1 |     0 |     1 |     0 |     2 |
+| X2Y0              |     0 |    24 |     0 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     1 |     0 |     1 |     0 |     2 |
+| X3Y0              |     0 |    24 |     0 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     1 |     0 |     1 |     0 |     2 |
+| X4Y0              |     0 |    24 |     0 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     1 |     0 |     1 |     0 |     2 |
+| X5Y0              |     0 |    24 |     0 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     1 |     0 |     1 |     0 |     2 |
+| X6Y0              |     0 |    24 |     0 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     1 |     0 |     1 |     0 |     2 |
+| X7Y0              |     0 |    24 |     0 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     1 |     0 |     1 |     0 |     2 |
+| X8Y0              |     0 |    24 |     0 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     1 |     0 |     1 |     0 |     2 |
+| X9Y0              |     0 |    24 |     0 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     1 |     0 |     1 |     0 |     2 |
+| X10Y0             |     0 |    24 |     0 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     1 |     0 |     1 |     0 |     2 |
+| X11Y0             |     0 |    24 |     0 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     1 |     0 |     1 |     0 |     2 |
+| X12Y0             |     0 |    24 |     0 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     1 |     0 |     1 |     0 |     2 |
+| X0Y1              |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X1Y1              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |    12 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X2Y1              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X3Y1              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X4Y1              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X5Y1              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X6Y1              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X7Y1              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X8Y1              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X9Y1              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     2 |     0 |     2 |     0 |     0 |
+| X0Y2              |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X1Y2              |     1 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |    12 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X2Y2              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X3Y2              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X4Y2              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X5Y2              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X6Y2              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X7Y2              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X8Y2              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X9Y2              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     2 |     0 |     2 |     0 |     0 |
+| X0Y3              |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X1Y3              |     3 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     3 |    12 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X2Y3              |     1 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X3Y3              |     1 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X4Y3              |     1 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X5Y3              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X6Y3              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X7Y3              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X8Y3              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X9Y3              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     2 |     0 |     2 |     0 |     0 |
+| X0Y4              |     1 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     1 |     0 |     0 |
+| X1Y4              |     1 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X2Y4              |     1 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X3Y4              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X4Y4              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X5Y4              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X6Y4              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X7Y4              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X8Y4              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+| X9Y4              |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |    24 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     1 |     0 |     0 |
++-------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+* Global Clock column represents track count; while other columns represents cell counts
+
+
+6. Clock Regions : Load Primitives
+----------------------------------
+
++-------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+|                   |   Global Clock   |        FF        |      LUTRAM      |  Block RAM (18K) |       URAM       |        DSP       |        GT        |      HARD IP     |        NOC       |
++-------------------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+
+| Clock Region Name | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   |
++-------------------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+
+| X0Y0              |      0 |      24 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       1 |      0 |       0 |
+| X1Y0              |      0 |      24 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X2Y0              |      0 |      24 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X3Y0              |      0 |      24 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X4Y0              |      0 |      24 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       1 |      0 |       0 |
+| X5Y0              |      0 |      24 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X6Y0              |      0 |      24 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       1 |      0 |       0 |
+| X7Y0              |      0 |      24 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X8Y0              |      0 |      24 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X9Y0              |      0 |      24 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       1 |      0 |       0 |
+| X10Y0             |      0 |      24 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X11Y0             |      0 |      24 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X12Y0             |      0 |      24 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X0Y1              |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X1Y1              |      0 |      24 |      0 |   52992 |      0 |   13248 |      0 |      46 |      0 |      23 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       4 |
+| X2Y1              |      0 |      24 |      0 |   58880 |      0 |   14720 |      0 |      92 |      0 |      23 |      0 |     276 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X3Y1              |      0 |      24 |      0 |   58880 |      0 |   14720 |      0 |      92 |      0 |      23 |      0 |     276 |      0 |       0 |      0 |       0 |      0 |       4 |
+| X4Y1              |      0 |      24 |      0 |   58880 |      0 |   14720 |      0 |      92 |      0 |      23 |      0 |     276 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X5Y1              |      0 |      24 |      0 |   58880 |      0 |   14720 |      0 |      92 |      0 |      23 |      0 |     276 |      0 |       0 |      0 |       0 |      0 |       4 |
+| X6Y1              |      0 |      24 |      0 |   58880 |      0 |   14720 |      0 |      92 |      0 |      23 |      0 |     276 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X7Y1              |      0 |      24 |      0 |   58880 |      0 |   14720 |      0 |      92 |      0 |      23 |      0 |     276 |      0 |       0 |      0 |       0 |      0 |       4 |
+| X8Y1              |      0 |      24 |      0 |   41216 |      0 |   10304 |      0 |     140 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X9Y1              |      0 |      24 |      0 |   41216 |      0 |   10304 |      0 |       0 |      0 |      24 |      0 |       0 |      0 |       0 |      0 |       1 |      0 |       0 |
+| X0Y2              |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X1Y2              |      1 |      24 |      0 |   55296 |      0 |   13824 |      0 |      48 |      0 |      24 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       4 |
+| X2Y2              |      0 |      24 |      0 |   61440 |      0 |   15360 |      0 |      96 |      0 |      24 |      0 |     288 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X3Y2              |      0 |      24 |      0 |   61440 |      0 |   15360 |      0 |      96 |      0 |      24 |      0 |     288 |      0 |       0 |      0 |       0 |      0 |       4 |
+| X4Y2              |      0 |      24 |      0 |   61440 |      0 |   15360 |      0 |      96 |      0 |      24 |      0 |     288 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X5Y2              |      0 |      24 |      0 |   61440 |      0 |   15360 |      0 |      96 |      0 |      24 |      0 |     288 |      0 |       0 |      0 |       0 |      0 |       4 |
+| X6Y2              |      0 |      24 |      0 |   61440 |      0 |   15360 |      0 |      96 |      0 |      24 |      0 |     288 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X7Y2              |      0 |      24 |      0 |   61440 |      0 |   15360 |      0 |      96 |      0 |      24 |      0 |     288 |      0 |       0 |      0 |       0 |      0 |       4 |
+| X8Y2              |      0 |      24 |      0 |   43008 |      0 |   10752 |      0 |     144 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X9Y2              |      0 |      24 |      0 |   43008 |      0 |   10752 |      0 |       0 |      0 |      24 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X0Y3              |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X1Y3              |      3 |      24 |  11673 |   55296 |     51 |   13824 |     34 |      48 |      0 |      24 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       4 |
+| X2Y3              |      1 |      24 |   6853 |   61440 |     22 |   15360 |     11 |      96 |      0 |      24 |      1 |     288 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X3Y3              |      1 |      24 |    535 |   61440 |      0 |   15360 |      0 |      96 |      0 |      24 |      0 |     288 |      0 |       0 |      0 |       0 |      1 |       4 |
+| X4Y3              |      1 |      24 |    427 |   61440 |      0 |   15360 |      0 |      96 |      0 |      24 |      0 |     288 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X5Y3              |      0 |      24 |      0 |   61440 |      0 |   15360 |      0 |      96 |      0 |      24 |      0 |     288 |      0 |       0 |      0 |       0 |      0 |       4 |
+| X6Y3              |      0 |      24 |      0 |   61440 |      0 |   15360 |      0 |      96 |      0 |      24 |      0 |     288 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X7Y3              |      0 |      24 |      0 |   61440 |      0 |   15360 |      0 |      96 |      0 |      24 |      0 |     288 |      0 |       0 |      0 |       0 |      0 |       4 |
+| X8Y3              |      0 |      24 |      0 |   43008 |      0 |   10752 |      0 |     144 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X9Y3              |      0 |      24 |      0 |   43008 |      0 |   10752 |      0 |       0 |      0 |      24 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X0Y4              |      1 |      24 |    446 |   21504 |      0 |    5376 |     22 |      24 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       1 |      0 |       0 |
+| X1Y4              |      1 |      24 |   6301 |   43008 |      1 |   10752 |     24 |      24 |      0 |      24 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       2 |
+| X2Y4              |      1 |      24 |   1040 |   30720 |      0 |    7680 |     18 |      48 |      0 |      12 |      0 |     144 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X3Y4              |      0 |      24 |      0 |   30720 |      0 |    7680 |      0 |      48 |      0 |      12 |      0 |     144 |      0 |       0 |      0 |       0 |      0 |       2 |
+| X4Y4              |      0 |      24 |      0 |   30720 |      0 |    7680 |      0 |      48 |      0 |      12 |      0 |     144 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X5Y4              |      0 |      24 |      0 |   30720 |      0 |    7680 |      0 |      48 |      0 |      12 |      0 |     144 |      0 |       0 |      0 |       0 |      0 |       2 |
+| X6Y4              |      0 |      24 |      0 |   30720 |      0 |    7680 |      0 |      48 |      0 |      12 |      0 |     144 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X7Y4              |      0 |      24 |      0 |   30720 |      0 |    7680 |      0 |      48 |      0 |      12 |      0 |     144 |      0 |       0 |      0 |       0 |      0 |       2 |
+| X8Y4              |      0 |      24 |      0 |   21504 |      0 |    5376 |      0 |      72 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |
+| X9Y4              |      0 |      24 |      0 |   21504 |      0 |    5376 |      0 |       0 |      0 |      12 |      0 |       0 |      0 |       0 |      0 |       0 |      0 |       0 |
++-------------------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+
+* Global Clock column represents track count; while other columns represents cell counts
+
+
+7. Clock Regions : Global Clock Summary
+---------------------------------------
+
+All Modules
++----+----+----+----+----+----+----+----+----+----+----+-----+-----+-----+
+|    | X0 | X1 | X2 | X3 | X4 | X5 | X6 | X7 | X8 | X9 | X10 | X11 | X12 |
++----+----+----+----+----+----+----+----+----+----+----+-----+-----+-----+
+| Y4 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |   0 |   0 |   0 |
+| Y3 |  0 |  3 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |   0 |   0 |   0 |
+| Y2 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |   0 |   0 |   0 |
+| Y1 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |   0 |   0 |   0 |
+| Y0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |   0 |   0 |   0 |
++----+----+----+----+----+----+----+----+----+----+----+-----+-----+-----+
+
+
+8. Clock Regions : Routing Resource Utilization
+-----------------------------------------------
+
+All Modules
++-------------------+----------------------+----------------------+----------------------+----------------------+
+|                   |        HROUTES       |        HDISTRS       |        VROUTES       |        VDISTRS       |
++-------------------+------+-------+-------+------+-------+-------+------+-------+-------+------+-------+-------+
+| Clock Region Name | Used | Avail | Util% | Used | Avail | Util% | Used | Avail | Util% | Used | Avail | Util% |
++-------------------+------+-------+-------+------+-------+-------+------+-------+-------+------+-------+-------+
+| X0Y0              |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X1Y0              |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X2Y0              |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X3Y0              |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X4Y0              |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X5Y0              |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X6Y0              |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X7Y0              |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X8Y0              |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X9Y0              |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X10Y0             |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X11Y0             |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X12Y0             |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X0Y1              |    0 |     0 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X1Y1              |    0 |     0 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X2Y1              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X3Y1              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X4Y1              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X5Y1              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X6Y1              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X7Y1              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X8Y1              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X9Y1              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X0Y2              |    0 |     0 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X1Y2              |    0 |     0 |  0.00 |    1 |    24 |  4.17 |    1 |    24 |  4.17 |    1 |    24 |  4.17 |
+| X2Y2              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X3Y2              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X4Y2              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X5Y2              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X6Y2              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X7Y2              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X8Y2              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X9Y2              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X0Y3              |    0 |     0 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X1Y3              |    0 |     0 |  0.00 |    3 |    24 | 12.50 |    3 |    24 | 12.50 |    3 |    24 | 12.50 |
+| X2Y3              |    0 |    12 |  0.00 |    1 |    24 |  4.17 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X3Y3              |    0 |    12 |  0.00 |    1 |    24 |  4.17 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X4Y3              |    0 |    12 |  0.00 |    1 |    24 |  4.17 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X5Y3              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X6Y3              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X7Y3              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X8Y3              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X9Y3              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X0Y4              |    0 |    12 |  0.00 |    1 |    24 |  4.17 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X1Y4              |    0 |    12 |  0.00 |    1 |    24 |  4.17 |    0 |    24 |  0.00 |    1 |    24 |  4.17 |
+| X2Y4              |    0 |    12 |  0.00 |    1 |    24 |  4.17 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X3Y4              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X4Y4              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X5Y4              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X6Y4              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X7Y4              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
+| X8Y4              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |     0 |  0.00 |    0 |     0 |  0.00 |
+| X9Y4              |    0 |    12 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |
++-------------------+------+-------+-------+------+-------+-------+------+-------+-------+------+-------+-------+
+
+
+9. Device Cell Placement Summary for Global Clock g0
+----------------------------------------------------
+
++-----------+-----------------+-------------------+------------------------------------------------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+----------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock                                                            | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                      |
++-----------+-----------------+-------------------+------------------------------------------------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+----------------------------------------------------------+
+| g0        | BUFG_PS/O       | X1Y3              | exerciser_i/versal_cips_0/inst/cpm_0/inst/CPM_INST/CPM5RCLK1INT0 |       4.000 | {0.000 2.000} | X1Y3     |       27147 |        0 |              0 |        0 | exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie1_user_clk |
++-----------+-----------------+-------------------+------------------------------------------------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+----------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+------+---------------+-------+------+------+----+----+----+----+----+-----+-----+-----+
+|    | X0   | X1            | X2    | X3   | X4   | X5 | X6 | X7 | X8 | X9 | X10 | X11 | X12 |
++----+------+---------------+-------+------+------+----+----+----+----+----+-----+-----+-----+
+| Y4 |  457 |          6314 |  1050 |    0 |    0 |  0 |  0 |  0 |  0 |  0 |   0 |   0 |   0 |
+| Y3 |    0 | (R) (D) 11480 |  6882 |  536 |  427 |  0 |  0 |  0 |  0 |  0 |   0 |   0 |   0 |
+| Y2 |    1 |             0 |     0 |    0 |    0 |  0 |  0 |  0 |  0 |  0 |   0 |   0 |   0 |
+| Y1 |    0 |             0 |     0 |    0 |    0 |  0 |  0 |  0 |  0 |  0 |   0 |   0 |   0 |
+| Y0 |    0 |             0 |     0 |    0 |    0 |  0 |  0 |  0 |  0 |  0 |   0 |   0 |   0 |
++----+------+---------------+-------+------+------+----+----+----+----+----+-----+-----+-----+
+
+
+10. Device Cell Placement Summary for Global Clock g1
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+--------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock        | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                     |
++-----------+-----------------+-------------------+--------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------+
+| g1        | BUFG_PS/O       | X1Y3              | dpll_ref_clk |       6.400 | {0.000 3.200} | X1Y2     |         240 |        0 |              0 |        0 | exerciser_i/versal_cips_0/inst/cpm_0/inst/dpll_drp_dclk |
++-----------+-----------------+-------------------+--------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+----------+----+----+----+----+----+----+----+----+-----+-----+-----+
+|    | X0 | X1       | X2 | X3 | X4 | X5 | X6 | X7 | X8 | X9 | X10 | X11 | X12 |
++----+----+----------+----+----+----+----+----+----+----+----+-----+-----+-----+
+| Y4 |  0 |        0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |   0 |   0 |   0 |
+| Y3 |  0 |  (D) 239 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |   0 |   0 |   0 |
+| Y2 |  1 |    (R) 0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |   0 |   0 |   0 |
+| Y1 |  0 |        0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |   0 |   0 |   0 |
+| Y0 |  0 |        0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |   0 |   0 |   0 |
++----+----+----------+----+----+----+----+----+----+----+----+-----+-----+-----+
+
+
+11. Device Cell Placement Summary for Global Clock g2
+-----------------------------------------------------
+
++-----------+-----------------+-------------------+---------------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------------------------------+
+| Global Id | Driver Type/Pin | Driver Region (D) | Clock         | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                             |
++-----------+-----------------+-------------------+---------------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------------------------------+
+| g2        | BUFG_PS/O       | X1Y3              | dpll1_dco_clk |       3.200 | {0.000 1.600} | X1Y3     |          22 |        0 |              0 |        0 | exerciser_i/versal_cips_0/inst/cpm_0/inst/dpll1_dco_dclk_bufgps |
++-----------+-----------------+-------------------+---------------+-------------+---------------+----------+-------------+----------+----------------+----------+-----------------------------------------------------------------+
+* Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
+** IO Loads column represents load cell count of IO types
+*** Clocking Loads column represents load cell count that are clock resources (global clock buffer, MMCM, PLL, etc)
+**** GT Loads column represents load cell count of GT types
+
+
++----+----+------------+----+----+----+----+----+----+----+----+-----+-----+-----+
+|    | X0 | X1         | X2 | X3 | X4 | X5 | X6 | X7 | X8 | X9 | X10 | X11 | X12 |
++----+----+------------+----+----+----+----+----+----+----+----+-----+-----+-----+
+| Y4 |  0 |          0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |   0 |   0 |   0 |
+| Y3 |  0 | (R) (D) 22 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |   0 |   0 |   0 |
+| Y2 |  0 |          0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |   0 |   0 |   0 |
+| Y1 |  0 |          0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |   0 |   0 |   0 |
+| Y0 |  0 |          0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 |   0 |   0 |   0 |
++----+----+------------+----+----+----+----+----+----+----+----+-----+-----+-----+
+
+
+12. Clock Region Cell Placement per Global Clock: Region X1Y2
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+----+-------------+------+------+-----+----+------+-----+---------+---------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | Memory LUTs | RAMB | URAM | DSP | GT | MMCM | NOC | Hard IP | Net                                                     |
++-----------+-------+-----------------+------------+-------------+-----------------+----+-------------+------+------+-----+----+------+-----+---------+---------------------------------------------------------+
+| g1+       | 0     | BUFG_PS/O       | None       |           0 |               0 |  0 |           0 |    0 |    0 |   0 |  0 |    0 |   0 |       0 | exerciser_i/versal_cips_0/inst/cpm_0/inst/dpll_drp_dclk |
++-----------+-------+-----------------+------------+-------------+-----------------+----+-------------+------+------+-----+----+------+-----+---------+---------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+**** In Global Id column, sympbol '+' indicates that global clock was used only to route through the clock region.
+
+
+13. Clock Region Cell Placement per Global Clock: Region X1Y3
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+-------+-------------+------+------+-----+----+------+-----+---------+-----------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF    | Memory LUTs | RAMB | URAM | DSP | GT | MMCM | NOC | Hard IP | Net                                                             |
++-----------+-------+-----------------+------------+-------------+-----------------+-------+-------------+------+------+-----+----+------+-----+---------+-----------------------------------------------------------------+
+| g0        | 2     | BUFG_PS/O       | None       |       11480 |               0 | 11412 |          51 |   17 |    0 |   0 |  0 |    0 |   0 |       0 | exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie1_user_clk        |
+| g1        | 0     | BUFG_PS/O       | None       |         239 |               0 |   239 |           0 |    0 |    0 |   0 |  0 |    0 |   0 |       0 | exerciser_i/versal_cips_0/inst/cpm_0/inst/dpll_drp_dclk         |
+| g2        | 23    | BUFG_PS/O       | None       |          22 |               0 |    22 |           0 |    0 |    0 |   0 |  0 |    0 |   0 |       0 | exerciser_i/versal_cips_0/inst/cpm_0/inst/dpll1_dco_dclk_bufgps |
++-----------+-------+-----------------+------------+-------------+-----------------+-------+-------------+------+------+-----+----+------+-----+---------+-----------------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+14. Clock Region Cell Placement per Global Clock: Region X2Y3
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+------+-----+----+------+-----+---------+----------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | Memory LUTs | RAMB | URAM | DSP | GT | MMCM | NOC | Hard IP | Net                                                      |
++-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+------+-----+----+------+-----+---------+----------------------------------------------------------+
+| g0        | 2     | BUFG_PS/O       | None       |        6882 |               0 | 6853 |          22 |    6 |    0 |   1 |  0 |    0 |   0 |       0 | exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie1_user_clk |
++-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+------+-----+----+------+-----+---------+----------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+15. Clock Region Cell Placement per Global Clock: Region X3Y3
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+------+-----+----+------+-----+---------+----------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | Memory LUTs | RAMB | URAM | DSP | GT | MMCM | NOC | Hard IP | Net                                                      |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+------+-----+----+------+-----+---------+----------------------------------------------------------+
+| g0        | 2     | BUFG_PS/O       | None       |         536 |               0 | 535 |           0 |    0 |    0 |   0 |  0 |    0 |   1 |       0 | exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie1_user_clk |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+------+-----+----+------+-----+---------+----------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+16. Clock Region Cell Placement per Global Clock: Region X4Y3
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+------+-----+----+------+-----+---------+----------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | Memory LUTs | RAMB | URAM | DSP | GT | MMCM | NOC | Hard IP | Net                                                      |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+------+-----+----+------+-----+---------+----------------------------------------------------------+
+| g0        | 2     | BUFG_PS/O       | None       |         427 |               0 | 427 |           0 |    0 |    0 |   0 |  0 |    0 |   0 |       0 | exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie1_user_clk |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+------+-----+----+------+-----+---------+----------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+17. Clock Region Cell Placement per Global Clock: Region X0Y4
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+------+-----+----+------+-----+---------+----------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | Memory LUTs | RAMB | URAM | DSP | GT | MMCM | NOC | Hard IP | Net                                                      |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+------+-----+----+------+-----+---------+----------------------------------------------------------+
+| g0        | 2     | BUFG_PS/O       | None       |         457 |               0 | 446 |           0 |   11 |    0 |   0 |  0 |    0 |   0 |       0 | exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie1_user_clk |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+------+-----+----+------+-----+---------+----------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+18. Clock Region Cell Placement per Global Clock: Region X1Y4
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+------+-----+----+------+-----+---------+----------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | Memory LUTs | RAMB | URAM | DSP | GT | MMCM | NOC | Hard IP | Net                                                      |
++-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+------+-----+----+------+-----+---------+----------------------------------------------------------+
+| g0        | 2     | BUFG_PS/O       | None       |        6314 |               0 | 6301 |           1 |   12 |    0 |   0 |  0 |    0 |   0 |       0 | exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie1_user_clk |
++-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+------+-----+----+------+-----+---------+----------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+19. Clock Region Cell Placement per Global Clock: Region X2Y4
+-------------------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+------+-----+----+------+-----+---------+----------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | Memory LUTs | RAMB | URAM | DSP | GT | MMCM | NOC | Hard IP | Net                                                      |
++-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+------+-----+----+------+-----+---------+----------------------------------------------------------+
+| g0        | 2     | BUFG_PS/O       | None       |        1050 |               0 | 1040 |           0 |   10 |    0 |   0 |  0 |    0 |   0 |       0 | exerciser_i/versal_cips_0/inst/cpm_0/inst/pcie1_user_clk |
++-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+------+-----+----+------+-----+---------+----------------------------------------------------------+
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Jan  3 15:47:22 2024
+# Process ID: 4060153
+# Current directory: /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1
+# Command line: vivado -log axis_ila_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axis_ila_1.tcl
+# Log file: /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/axis_ila_1.vds
+# Journal file: /root/xuguo/xilinx_pro/vpk120/versal_pcie_cpm5_exerciser/versal_pcie_cpm5_exerciser.runs/axis_ila_1_synth_1/vivado.jou
+# Running On: matthew-xilinx, OS: Linux, CPU Frequency: 400.000 MHz, CPU Physical cores: 32, Host memory: 269937 MB
+#-----------------------------------------------------------
+source axis_ila_1.tcl -notrace

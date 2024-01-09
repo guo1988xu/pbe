@@ -1,0 +1,61 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-1244,-594",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port gt_refclk1_0 -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
+preplace port PCIE1_GT_0 -pg 1 -lvl 2 -x 540 -y 220 -defaultsOSRD
+preplace port pcie1_cfg_control_0 -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port pcie1_cfg_ext_0 -pg 1 -lvl 2 -x 540 -y 100 -defaultsOSRD
+preplace port pcie1_cfg_fc_0 -pg 1 -lvl 2 -x 540 -y 120 -defaultsOSRD
+preplace port pcie1_cfg_interrupt_0 -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace port pcie1_cfg_mgmt_0 -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace port pcie1_cfg_msg_recd_0 -pg 1 -lvl 2 -x 540 -y 200 -defaultsOSRD
+preplace port pcie1_cfg_msg_tx_0 -pg 1 -lvl 2 -x 540 -y 140 -defaultsOSRD
+preplace port pcie1_cfg_msi_0 -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace port pcie1_cfg_status_0 -pg 1 -lvl 2 -x 540 -y 160 -defaultsOSRD
+preplace port pcie1_m_axis_cq_0 -pg 1 -lvl 2 -x 540 -y 80 -defaultsOSRD
+preplace port pcie1_m_axis_rc_0 -pg 1 -lvl 2 -x 540 -y 60 -defaultsOSRD
+preplace port pcie1_s_axis_cc_0 -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port pcie1_s_axis_rq_0 -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace port pcie1_transmit_fc_0 -pg 1 -lvl 2 -x 540 -y 180 -defaultsOSRD
+preplace port port-id_cpm_irq0_0 -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
+preplace port port-id_cpm_irq1_0 -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace port port-id_cpm_cor_irq_0 -pg 1 -lvl 2 -x 540 -y 280 -defaultsOSRD
+preplace port port-id_cpm_misc_irq_0 -pg 1 -lvl 2 -x 540 -y 260 -defaultsOSRD
+preplace port port-id_cpm_uncor_irq_0 -pg 1 -lvl 2 -x 540 -y 300 -defaultsOSRD
+preplace port port-id_pcie1_user_clk_0 -pg 1 -lvl 2 -x 540 -y 240 -defaultsOSRD
+preplace port port-id_pcie1_user_lnk_up_0 -pg 1 -lvl 2 -x 540 -y 340 -defaultsOSRD
+preplace port port-id_pcie1_user_reset_0 -pg 1 -lvl 2 -x 540 -y 320 -defaultsOSRD
+preplace inst versal_cips_0 -pg 1 -lvl 1 -x 270 -y 200 -defaultsOSRD
+preplace netloc cpm_irq0_0_1 1 0 1 NJ 260
+preplace netloc cpm_irq1_0_1 1 0 1 NJ 280
+preplace netloc versal_cips_0_cpm_cor_irq 1 1 1 NJ 280
+preplace netloc versal_cips_0_cpm_misc_irq 1 1 1 NJ 260
+preplace netloc versal_cips_0_cpm_uncor_irq 1 1 1 NJ 300
+preplace netloc versal_cips_0_pcie1_user_clk 1 1 1 NJ 240
+preplace netloc versal_cips_0_pcie1_user_lnk_up 1 1 1 NJ 340
+preplace netloc versal_cips_0_pcie1_user_reset 1 1 1 NJ 320
+preplace netloc gt_refclk1_0_1 1 0 1 NJ 240
+preplace netloc pcie1_cfg_control_0_1 1 0 1 NJ 120
+preplace netloc pcie1_cfg_interrupt_0_1 1 0 1 NJ 140
+preplace netloc pcie1_cfg_mgmt_0_1 1 0 1 NJ 200
+preplace netloc pcie1_cfg_msi_0_1 1 0 1 NJ 220
+preplace netloc pcie1_s_axis_cc_0_1 1 0 1 NJ 180
+preplace netloc pcie1_s_axis_rq_0_1 1 0 1 NJ 160
+preplace netloc versal_cips_0_PCIE1_GT 1 1 1 NJ 220
+preplace netloc versal_cips_0_pcie1_cfg_ext 1 1 1 NJ 100
+preplace netloc versal_cips_0_pcie1_cfg_fc 1 1 1 NJ 120
+preplace netloc versal_cips_0_pcie1_cfg_msg_recd 1 1 1 NJ 200
+preplace netloc versal_cips_0_pcie1_cfg_msg_tx 1 1 1 NJ 140
+preplace netloc versal_cips_0_pcie1_cfg_status 1 1 1 NJ 160
+preplace netloc versal_cips_0_pcie1_m_axis_cq 1 1 1 NJ 80
+preplace netloc versal_cips_0_pcie1_m_axis_rc 1 1 1 NJ 60
+preplace netloc versal_cips_0_pcie1_transmit_fc 1 1 1 NJ 180
+levelinfo -pg 1 0 270 540
+pagesize -pg 1 -db -bbox -sgen -210 0 750 400
+"
+}
+0
